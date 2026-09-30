@@ -7,13 +7,16 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator
 
-TK = "/private/tmp/claude-501/-Users-atae/77395a14-31c7-47ff-9160-46cffd570e2b/scratchpad/tsct_context/eval_toolkit"
+# Paths: repo-relative defaults, each overridable with an environment variable.
+from pathlib import Path
+REPO = Path(__file__).resolve().parents[2]
+TK = os.environ.get("TSCT_EVAL_TOOLKIT", str(REPO / "src" / "evaluation"))  # eval_pipeline, hedge_quality_rubric
 sys.path.insert(0, TK)
 from eval_pipeline import compute_ece, compute_accuracy_metrics, HEDGE_TO_CONFIDENCE
 from hedge_quality_rubric import GOLD_HEDGE_FOR_VOLATILITY
 
-D = "/Users/atae/Downloads/tsct_ablation_results/predictions/with_year"
-FIG = "/Users/atae/Downloads/tsct_ablation_results/figures"
+D = os.environ.get("TSCT_ABLATION_DIR", str(REPO / "data" / "prep" / "llama3_hedge_sft" / "ablations"))  # ablation predictions (HF DavidS64/llama3-hedge-sft)
+FIG = os.environ.get("TSCT_FIG_DIR", str(REPO / "figures" / "results"))
 os.makedirs(FIG, exist_ok=True)
 
 # ── assigned palette (teal sequential ramp) ───────────────────────────────────
