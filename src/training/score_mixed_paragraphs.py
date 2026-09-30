@@ -39,7 +39,7 @@ deployment realism for a clean measurement; conditioning is the obvious follow-u
 
 Usage:
     python -m src.training.score_mixed_paragraphs \
-        --base /Users/edward/.oMLX/models/gemma-4-26b-a4b-it-MLX-4bit \
+        --base "$TSCT_MODELS_DIR/gemma-4-26b-a4b-it-MLX-4bit" \
         --out data/prep/predictions_7b/mixed_gemma4_26b.jsonl
 """
 import argparse

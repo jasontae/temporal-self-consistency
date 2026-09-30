@@ -16,7 +16,7 @@ declare -a MODELS=(
   "g3_4b|--base $M/gemma-3-4b-it-4bit"
   "qwen3_4b_it|--base $M/Qwen3-4B-Instruct-2507-4bit"
   "qwen25_7b|--base mlx-community/Qwen2.5-7B-Instruct-4bit"
-  "tsct|--adapter /Users/edward/Projects/temporal-self-consistency/data/prep/tcl_mlx_7b/tsct_seed1/adapter_fixed"
+  "tsct|--adapter data/prep/tcl_mlx_7b/tsct_seed1/adapter_fixed"
   "qwen25_7b_base|--base $M/Qwen2.5-7B-4bit"
   "gptoss_20b|--base $M/gpt-oss-20b-MXFP4-Q4 --bos off"
   "qwen36_35b|--base $M/Qwen3.6-35B-A3B-4bit"

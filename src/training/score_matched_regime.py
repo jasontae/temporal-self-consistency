@@ -18,7 +18,7 @@ regime effect, and must be reported as such.
 
 Usage:
     python3 -m src.training.score_matched_regime \
-        --base /Users/edward/.oMLX/models/Qwen2.5-7B-Instruct-MLX \
+        --base "$TSCT_MODELS_DIR/Qwen2.5-7B-Instruct-MLX" \
         --out data/prep/predictions_7b/matched_qwen25_7b.jsonl
 """
 import argparse
