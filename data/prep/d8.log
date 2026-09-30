@@ -1,0 +1,67 @@
+[d8] 3622 rows, 3205 unique (entity,property) pairs
+[d8] fetching claims for 3153 entities
+  claims 0/3153
+  claims 250/3153
+    [429] backing off 37s
+  claims 500/3153
+    [429] backing off 35s
+  claims 750/3153
+    [429] backing off 32s
+  claims 1000/3153
+    [429] backing off 32s
+  claims 1250/3153
+    [429] backing off 33s
+  claims 1500/3153
+    [429] backing off 33s
+  claims 1750/3153
+    [429] backing off 34s
+[d8] 3622 rows, 3205 unique (entity,property) pairs
+[d8] fetching claims for 3153 entities
+  claims 0/3153
+  claims 250/3153
+  claims 500/3153
+  claims 750/3153
+  claims 1000/3153
+  claims 1250/3153
+  claims 1500/3153
+  claims 1750/3153
+  claims 2000/3153
+    [429] backing off 16s
+  claims 2250/3153
+    [429] backing off 35s
+  claims 2500/3153
+    [429] backing off 35s
+  claims 2750/3153
+    [429] backing off 33s
+  claims 3000/3153
+    [429] backing off 36s
+[d8] resolving 2436 value labels
+  labels 0/2436
+    [429] backing off 40s
+  labels 250/2436
+    [429] backing off 41s
+  labels 500/2436
+    [429] backing off 41s
+  labels 750/2436
+    [429] backing off 42s
+  labels 1000/2436
+    [429] backing off 42s
+  labels 1250/2436
+    [429] backing off 42s
+  labels 1500/2436
+    [429] backing off 41s
+  labels 1750/2436
+    [429] backing off 40s
+  labels 2000/2436
+    [429] backing off 41s
+  labels 2250/2436
+
+[d8] === RESULT (3205 unique pairs) ===
+   gold_is_current       35    1.1%
+   gold_is_stale       2575   80.3%
+   indeterminate        595   18.6%
+
+   Of pairs where Wikidata gives an unambiguous current value (n=2610):
+   STALE GOLD RATE = 2575/2610 = 98.7%
+
+[d8] wrote data/prep/gold_currency_audit.json

@@ -1,0 +1,92 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 309415.87it/s]
+[gen] 3622 examples | source=temporal-delta:test | arm=tsct | adapter=data/prep/tcl_mlx_7b/tsct_seed0_paired/adapter_fixed
+[gen] 100/3622  EM=0.050 hedge_acc=1.000 fallback=0.000 (23s, 0.23s/ex)
+[gen] 200/3622  EM=0.030 hedge_acc=0.995 fallback=0.000 (45s, 0.23s/ex)
+[gen] 300/3622  EM=0.053 hedge_acc=0.997 fallback=0.000 (68s, 0.23s/ex)
+[gen] 400/3622  EM=0.048 hedge_acc=0.998 fallback=0.000 (93s, 0.23s/ex)
+[gen] 500/3622  EM=0.046 hedge_acc=0.998 fallback=0.000 (120s, 0.24s/ex)
+[gen] 600/3622  EM=0.038 hedge_acc=0.998 fallback=0.000 (149s, 0.25s/ex)
+[gen] 700/3622  EM=0.037 hedge_acc=0.999 fallback=0.000 (174s, 0.25s/ex)
+[gen] 800/3622  EM=0.033 hedge_acc=0.999 fallback=0.000 (202s, 0.25s/ex)
+[gen] 900/3622  EM=0.029 hedge_acc=0.999 fallback=0.000 (228s, 0.25s/ex)
+[gen] 1000/3622  EM=0.026 hedge_acc=0.999 fallback=0.000 (255s, 0.25s/ex)
+[gen] 1100/3622  EM=0.024 hedge_acc=0.999 fallback=0.000 (281s, 0.26s/ex)
+[gen] 1200/3622  EM=0.022 hedge_acc=0.999 fallback=0.000 (307s, 0.26s/ex)
+[gen] 1300/3622  EM=0.021 hedge_acc=0.999 fallback=0.000 (333s, 0.26s/ex)
+[gen] 1400/3622  EM=0.020 hedge_acc=0.999 fallback=0.000 (359s, 0.26s/ex)
+[gen] 1500/3622  EM=0.019 hedge_acc=0.999 fallback=0.000 (385s, 0.26s/ex)
+[gen] 1600/3622  EM=0.019 hedge_acc=0.999 fallback=0.000 (412s, 0.26s/ex)
+[gen] 1700/3622  EM=0.021 hedge_acc=0.999 fallback=0.000 (435s, 0.26s/ex)
+[gen] 1800/3622  EM=0.020 hedge_acc=0.999 fallback=0.000 (459s, 0.25s/ex)
+[gen] 1900/3622  EM=0.021 hedge_acc=0.999 fallback=0.000 (484s, 0.25s/ex)
+[gen] 2000/3622  EM=0.021 hedge_acc=1.000 fallback=0.000 (507s, 0.25s/ex)
+[gen] 2100/3622  EM=0.021 hedge_acc=1.000 fallback=0.000 (531s, 0.25s/ex)
+[gen] 2200/3622  EM=0.020 hedge_acc=1.000 fallback=0.000 (555s, 0.25s/ex)
+[gen] 2300/3622  EM=0.020 hedge_acc=1.000 fallback=0.000 (578s, 0.25s/ex)
+[gen] 2400/3622  EM=0.022 hedge_acc=1.000 fallback=0.000 (601s, 0.25s/ex)
+[gen] 2500/3622  EM=0.027 hedge_acc=0.999 fallback=0.000 (623s, 0.25s/ex)
+[gen] 2600/3622  EM=0.028 hedge_acc=0.999 fallback=0.000 (647s, 0.25s/ex)
+[gen] 2700/3622  EM=0.028 hedge_acc=0.999 fallback=0.000 (670s, 0.25s/ex)
+[gen] 2800/3622  EM=0.028 hedge_acc=0.999 fallback=0.000 (694s, 0.25s/ex)
+[gen] 2900/3622  EM=0.028 hedge_acc=0.999 fallback=0.000 (716s, 0.25s/ex)
+[gen] 3000/3622  EM=0.027 hedge_acc=0.999 fallback=0.000 (741s, 0.25s/ex)
+[gen] 3100/3622  EM=0.026 hedge_acc=0.999 fallback=0.000 (766s, 0.25s/ex)
+[gen] 3200/3622  EM=0.026 hedge_acc=0.999 fallback=0.000 (791s, 0.25s/ex)
+[gen] 3300/3622  EM=0.026 hedge_acc=0.999 fallback=0.000 (814s, 0.25s/ex)
+[gen] 3400/3622  EM=0.028 hedge_acc=0.999 fallback=0.000 (834s, 0.25s/ex)
+[gen] 3500/3622  EM=0.028 hedge_acc=0.999 fallback=0.000 (856s, 0.24s/ex)
+[gen] 3600/3622  EM=0.028 hedge_acc=0.999 fallback=0.000 (878s, 0.24s/ex)
+
+[gen] wrote data/prep/predictions_7b/tsct_test.jsonl
+[gen] n=3622  EM=0.0273  hedge_acc=0.9994  fallback_rate=0.0000  wall=882s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 23490.19it/s]
+[gen] 3622 examples | source=temporal-delta:test | arm=sft_only | adapter=data/prep/tcl_mlx_7b/sft_only_seed0/adapter_fixed
+[gen] 100/3622  EM=0.060 hedge_acc=1.000 fallback=0.000 (23s, 0.23s/ex)
+[gen] 200/3622  EM=0.035 hedge_acc=1.000 fallback=0.000 (45s, 0.23s/ex)
+[gen] 300/3622  EM=0.057 hedge_acc=1.000 fallback=0.000 (68s, 0.23s/ex)
+[gen] 400/3622  EM=0.050 hedge_acc=1.000 fallback=0.000 (92s, 0.23s/ex)
+[gen] 500/3622  EM=0.048 hedge_acc=1.000 fallback=0.000 (119s, 0.24s/ex)
+[gen] 600/3622  EM=0.040 hedge_acc=1.000 fallback=0.000 (147s, 0.25s/ex)
+[gen] 700/3622  EM=0.040 hedge_acc=1.000 fallback=0.000 (173s, 0.25s/ex)
+[gen] 800/3622  EM=0.035 hedge_acc=1.000 fallback=0.000 (201s, 0.25s/ex)
+[gen] 900/3622  EM=0.031 hedge_acc=1.000 fallback=0.000 (229s, 0.25s/ex)
+[gen] 1000/3622  EM=0.028 hedge_acc=1.000 fallback=0.000 (256s, 0.26s/ex)
+[gen] 1100/3622  EM=0.025 hedge_acc=1.000 fallback=0.000 (283s, 0.26s/ex)
+[gen] 1200/3622  EM=0.023 hedge_acc=1.000 fallback=0.000 (310s, 0.26s/ex)
+[gen] 1300/3622  EM=0.022 hedge_acc=1.000 fallback=0.000 (336s, 0.26s/ex)
+[gen] 1400/3622  EM=0.021 hedge_acc=1.000 fallback=0.000 (364s, 0.26s/ex)
+[gen] 1500/3622  EM=0.021 hedge_acc=1.000 fallback=0.000 (390s, 0.26s/ex)
+[gen] 1600/3622  EM=0.020 hedge_acc=1.000 fallback=0.000 (417s, 0.26s/ex)
+[gen] 1700/3622  EM=0.022 hedge_acc=0.999 fallback=0.000 (440s, 0.26s/ex)
+[gen] 1800/3622  EM=0.022 hedge_acc=0.999 fallback=0.000 (463s, 0.26s/ex)
+[gen] 1900/3622  EM=0.023 hedge_acc=0.999 fallback=0.001 (488s, 0.26s/ex)
+[gen] 2000/3622  EM=0.022 hedge_acc=1.000 fallback=0.001 (512s, 0.26s/ex)
+[gen] 2100/3622  EM=0.021 hedge_acc=1.000 fallback=0.000 (536s, 0.26s/ex)
+[gen] 2200/3622  EM=0.021 hedge_acc=1.000 fallback=0.000 (559s, 0.25s/ex)
+[gen] 2300/3622  EM=0.020 hedge_acc=1.000 fallback=0.000 (582s, 0.25s/ex)
+[gen] 2400/3622  EM=0.023 hedge_acc=1.000 fallback=0.001 (604s, 0.25s/ex)
+[gen] 2500/3622  EM=0.026 hedge_acc=1.000 fallback=0.001 (626s, 0.25s/ex)
+[gen] 2600/3622  EM=0.026 hedge_acc=1.000 fallback=0.001 (650s, 0.25s/ex)
+[gen] 2700/3622  EM=0.026 hedge_acc=1.000 fallback=0.001 (673s, 0.25s/ex)
+[gen] 2800/3622  EM=0.025 hedge_acc=1.000 fallback=0.001 (696s, 0.25s/ex)
+[gen] 2900/3622  EM=0.025 hedge_acc=1.000 fallback=0.001 (719s, 0.25s/ex)
+[gen] 3000/3622  EM=0.025 hedge_acc=1.000 fallback=0.001 (744s, 0.25s/ex)
+[gen] 3100/3622  EM=0.024 hedge_acc=1.000 fallback=0.001 (769s, 0.25s/ex)
+[gen] 3200/3622  EM=0.023 hedge_acc=1.000 fallback=0.001 (794s, 0.25s/ex)
+[gen] 3300/3622  EM=0.023 hedge_acc=1.000 fallback=0.001 (816s, 0.25s/ex)
+[gen] 3400/3622  EM=0.024 hedge_acc=1.000 fallback=0.001 (835s, 0.25s/ex)
+[gen] 3500/3622  EM=0.023 hedge_acc=1.000 fallback=0.001 (857s, 0.24s/ex)
+[gen] 3600/3622  EM=0.023 hedge_acc=1.000 fallback=0.001 (878s, 0.24s/ex)
+
+[gen] wrote data/prep/predictions_7b/sft_test.jsonl
+[gen] n=3622  EM=0.0226  hedge_acc=0.9997  fallback_rate=0.0006  wall=883s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 28554.26it/s]
+[gen] 49 examples | source=stress:stable | arm=tsct | adapter=data/prep/tcl_mlx_7b/tsct_seed0_paired/adapter_fixed
+
+[gen] wrote data/prep/predictions_7b/tsct_stable.jsonl
+[gen] n=49  EM=0.8776  hedge_acc=0.9388  fallback_rate=0.0000  wall=9s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 28575.88it/s]
+[gen] 49 examples | source=stress:stable | arm=sft_only | adapter=data/prep/tcl_mlx_7b/sft_only_seed0/adapter_fixed
+
+[gen] wrote data/prep/predictions_7b/sft_stable.jsonl
+[gen] n=49  EM=0.8571  hedge_acc=1.0000  fallback_rate=0.0000  wall=9s

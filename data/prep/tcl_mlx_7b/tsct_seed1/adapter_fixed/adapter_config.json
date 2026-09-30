@@ -1,0 +1,19 @@
+{
+  "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "lora_rank": 8,
+  "lora_scale": 20.0,
+  "lora_layers": 16,
+  "lm_head_adapted": true,
+  "hedge_token_ids": [
+    151665,
+    151666,
+    151667,
+    151668
+  ],
+  "hedge_tokens": [
+    "[CONFIDENT]",
+    "[COND_CONFIDENT]",
+    "[TEMPORAL_HEDGE]",
+    "[UNKNOWN]"
+  ]
+}
