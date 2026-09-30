@@ -1,0 +1,206 @@
+=== start 2026-09-28T12:13:59Z
+[matched] gemma-3-4b-it-4bit: bos_token_id=2 (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (14s)
+[matched] 300/424 (20s)
+[matched] 400/424 (27s)
+[matched] gemma-3-4b-it-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2026_g3_4b.jsonl
+=== asof2026 g3_4b wall 33s
+[matched] Qwen3-4B-Thinking-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (14s)
+[matched] 300/424 (21s)
+[matched] 400/424 (27s)
+[matched] Qwen3-4B-Thinking-2507-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2026_qwen3_4b_th.jsonl
+=== asof2026 qwen3_4b_th wall 32s
+[matched] Qwen3-4B-Instruct-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (13s)
+[matched] 300/424 (20s)
+[matched] 400/424 (27s)
+[matched] Qwen3-4B-Instruct-2507-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2026_qwen3_4b_it.jsonl
+=== asof2026 qwen3_4b_it wall 31s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 41850.04it/s]
+[matched] Qwen2.5-7B-Instruct-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (10s)
+[matched] 200/424 (20s)
+[matched] 300/424 (31s)
+[matched] 400/424 (41s)
+[matched] Qwen2.5-7B-Instruct-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2026_qwen25_7b.jsonl
+=== asof2026 qwen25_7b wall 49s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 12714.29it/s]
+[matched] tsct_seed1: bos_token_id=None (--bos auto)
+[matched] 100/424 (12s)
+[matched] 200/424 (24s)
+[matched] 300/424 (37s)
+[matched] 400/424 (49s)
+[matched] tsct_seed1: wrote 424 rows to data/prep/predictions_7b/date_asof2026_tsct.jsonl
+=== asof2026 tsct wall 57s
+[matched] gpt-oss-20b-MXFP4-Q4: bos_token_id=None (--bos off)
+[matched] 100/424 (13s)
+[matched] 200/424 (26s)
+[matched] 300/424 (38s)
+[matched] 400/424 (51s)
+[matched] gpt-oss-20b-MXFP4-Q4: wrote 424 rows to data/prep/predictions_7b/date_asof2026_gptoss_20b.jsonl
+=== asof2026 gptoss_20b wall 60s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-35B-A3B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (11s)
+[matched] 200/424 (20s)
+[matched] 300/424 (29s)
+[matched] 400/424 (38s)
+[matched] Qwen3.6-35B-A3B-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2026_qwen36_35b.jsonl
+=== asof2026 qwen36_35b wall 48s
+[gen] /Users/edward/.oMLX/models/Qwen3.5-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.5-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (39s)
+[matched] 200/424 (78s)
+[matched] 300/424 (118s)
+[matched] 400/424 (157s)
+[matched] Qwen3.5-27B-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2026_qwen35_27b.jsonl
+=== asof2026 qwen35_27b wall 173s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (40s)
+[matched] 200/424 (79s)
+[matched] 300/424 (119s)
+[matched] 400/424 (159s)
+[matched] Qwen3.6-27B-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2026_qwen36_27b_stock.jsonl
+=== asof2026 qwen36_27b_stock wall 175s
+[matched] gemma-3-4b-it-4bit: bos_token_id=2 (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (14s)
+[matched] 300/424 (21s)
+[matched] 400/424 (28s)
+[matched] gemma-3-4b-it-4bit: wrote 424 rows to data/prep/predictions_7b/date_in2026_g3_4b.jsonl
+=== in2026 g3_4b wall 33s
+[matched] Qwen3-4B-Thinking-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (14s)
+[matched] 300/424 (21s)
+[matched] 400/424 (28s)
+[matched] Qwen3-4B-Thinking-2507-4bit: wrote 424 rows to data/prep/predictions_7b/date_in2026_qwen3_4b_th.jsonl
+=== in2026 qwen3_4b_th wall 33s
+[matched] Qwen3-4B-Instruct-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (14s)
+[matched] 300/424 (21s)
+[matched] 400/424 (27s)
+[matched] Qwen3-4B-Instruct-2507-4bit: wrote 424 rows to data/prep/predictions_7b/date_in2026_qwen3_4b_it.jsonl
+=== in2026 qwen3_4b_it wall 32s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 25644.52it/s]
+[matched] Qwen2.5-7B-Instruct-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (10s)
+[matched] 200/424 (21s)
+[matched] 300/424 (31s)
+[matched] 400/424 (42s)
+[matched] Qwen2.5-7B-Instruct-4bit: wrote 424 rows to data/prep/predictions_7b/date_in2026_qwen25_7b.jsonl
+=== in2026 qwen25_7b wall 50s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 12914.38it/s]
+[matched] tsct_seed1: bos_token_id=None (--bos auto)
+[matched] 100/424 (12s)
+[matched] 200/424 (25s)
+[matched] 300/424 (37s)
+[matched] 400/424 (50s)
+[matched] tsct_seed1: wrote 424 rows to data/prep/predictions_7b/date_in2026_tsct.jsonl
+=== in2026 tsct wall 59s
+[matched] gpt-oss-20b-MXFP4-Q4: bos_token_id=None (--bos off)
+[matched] 100/424 (13s)
+[matched] 200/424 (25s)
+[matched] 300/424 (38s)
+[matched] 400/424 (50s)
+[matched] gpt-oss-20b-MXFP4-Q4: wrote 424 rows to data/prep/predictions_7b/date_in2026_gptoss_20b.jsonl
+=== in2026 gptoss_20b wall 58s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-35B-A3B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (11s)
+[matched] 200/424 (20s)
+[matched] 300/424 (29s)
+[matched] 400/424 (38s)
+[matched] Qwen3.6-35B-A3B-4bit: wrote 424 rows to data/prep/predictions_7b/date_in2026_qwen36_35b.jsonl
+=== in2026 qwen36_35b wall 48s
+[gen] /Users/edward/.oMLX/models/Qwen3.5-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.5-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (40s)
+[matched] 200/424 (79s)
+[matched] 300/424 (119s)
+[matched] 400/424 (159s)
+[matched] Qwen3.5-27B-4bit: wrote 424 rows to data/prep/predictions_7b/date_in2026_qwen35_27b.jsonl
+=== in2026 qwen35_27b wall 174s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (39s)
+[matched] 200/424 (79s)
+[matched] 300/424 (118s)
+[matched] 400/424 (158s)
+[matched] Qwen3.6-27B-4bit: wrote 424 rows to data/prep/predictions_7b/date_in2026_qwen36_27b_stock.jsonl
+=== in2026 qwen36_27b_stock wall 174s
+[matched] gemma-3-4b-it-4bit: bos_token_id=2 (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (14s)
+[matched] 300/424 (21s)
+[matched] 400/424 (28s)
+[matched] gemma-3-4b-it-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2020_g3_4b.jsonl
+=== asof2020 g3_4b wall 34s
+[matched] Qwen3-4B-Thinking-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (14s)
+[matched] 300/424 (21s)
+[matched] 400/424 (28s)
+[matched] Qwen3-4B-Thinking-2507-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2020_qwen3_4b_th.jsonl
+=== asof2020 qwen3_4b_th wall 32s
+[matched] Qwen3-4B-Instruct-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (14s)
+[matched] 300/424 (21s)
+[matched] 400/424 (28s)
+[matched] Qwen3-4B-Instruct-2507-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2020_qwen3_4b_it.jsonl
+=== asof2020 qwen3_4b_it wall 32s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 19826.02it/s]
+[matched] Qwen2.5-7B-Instruct-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (10s)
+[matched] 200/424 (21s)
+[matched] 300/424 (31s)
+[matched] 400/424 (42s)
+[matched] Qwen2.5-7B-Instruct-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2020_qwen25_7b.jsonl
+=== asof2020 qwen25_7b wall 49s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 8955.81it/s]
+[matched] tsct_seed1: bos_token_id=None (--bos auto)
+[matched] 100/424 (12s)
+[matched] 200/424 (25s)
+[matched] 300/424 (37s)
+[matched] 400/424 (50s)
+[matched] tsct_seed1: wrote 424 rows to data/prep/predictions_7b/date_asof2020_tsct.jsonl
+=== asof2020 tsct wall 57s
+[matched] gpt-oss-20b-MXFP4-Q4: bos_token_id=None (--bos off)
+[matched] 100/424 (13s)
+[matched] 200/424 (25s)
+[matched] 300/424 (38s)
+[matched] 400/424 (51s)
+[matched] gpt-oss-20b-MXFP4-Q4: wrote 424 rows to data/prep/predictions_7b/date_asof2020_gptoss_20b.jsonl
+=== asof2020 gptoss_20b wall 59s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-35B-A3B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (11s)
+[matched] 200/424 (20s)
+[matched] 300/424 (30s)
+[matched] 400/424 (39s)
+[matched] Qwen3.6-35B-A3B-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2020_qwen36_35b.jsonl
+=== asof2020 qwen36_35b wall 47s
+[gen] /Users/edward/.oMLX/models/Qwen3.5-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.5-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (39s)
+[matched] 200/424 (77s)
+[matched] 300/424 (116s)
+[matched] 400/424 (155s)
+[matched] Qwen3.5-27B-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2020_qwen35_27b.jsonl
+=== asof2020 qwen35_27b wall 170s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (39s)
+[matched] 200/424 (77s)
+[matched] 300/424 (117s)
+[matched] 400/424 (157s)
+[matched] Qwen3.6-27B-4bit: wrote 424 rows to data/prep/predictions_7b/date_asof2020_qwen36_27b_stock.jsonl
+=== asof2020 qwen36_27b_stock wall 172s
+=== DATE PROBE DONE 2026-09-28T12:46:50Z

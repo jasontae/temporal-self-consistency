@@ -1,0 +1,2234 @@
+{
+  "g3_4b": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.423728813559322,
+        "acc_by_type": {
+          "never-changing": 0.4863013698630137,
+          "slow-changing": 0.45255474452554745,
+          "fast-changing": 0.3230769230769231
+        },
+        "ece_oracle": 0.30254237288135594,
+        "ece_const_unknown": 0.32372881355932204,
+        "constant_wins": false,
+        "oracle_reliability": 0.11042983581135273,
+        "oracle_resolution": 0.0048486194121242785,
+        "oracle_auroc": 0.5729771908763506,
+        "freshqa_crossover_fast_acc": 0.289
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.36893203883495146,
+        "acc_by_type": {
+          "never-changing": 0.4863013698630137,
+          "slow-changing": 0.40145985401459855,
+          "fast-changing": 0.20155038759689922
+        },
+        "ece_oracle": 0.3580097087378641,
+        "ece_const_unknown": 0.2689320388349514,
+        "constant_wins": true,
+        "oracle_reliability": 0.13591747404999094,
+        "oracle_resolution": 0.014005653897290415,
+        "oracle_auroc": 0.6340207489878542,
+        "freshqa_crossover_fast_acc": 0.3435
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.31234866828087166,
+        "acc_by_type": {
+          "never-changing": 0.4863013698630137,
+          "slow-changing": 0.35766423357664234,
+          "fast-changing": 0.06923076923076923
+        },
+        "ece_oracle": 0.4139225181598063,
+        "ece_const_unknown": 0.21234866828087165,
+        "constant_wins": true,
+        "oracle_reliability": 0.1727082848150275,
+        "oracle_resolution": 0.029983155981534927,
+        "oracle_auroc": 0.7132601812424937,
+        "freshqa_crossover_fast_acc": 0.389
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.3026634382566586,
+        "acc_by_type": {
+          "never-changing": 0.4863013698630137,
+          "slow-changing": 0.34306569343065696,
+          "fast-changing": 0.05384615384615385
+        },
+        "ece_oracle": 0.42360774818401936,
+        "ece_const_unknown": 0.20266343825665858,
+        "constant_wins": true,
+        "oracle_reliability": 0.18034118142478917,
+        "oracle_resolution": 0.03195031028173269,
+        "oracle_auroc": 0.7253333333333334,
+        "freshqa_crossover_fast_acc": 0.4045
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.3050847457627119,
+        "acc_by_type": {
+          "never-changing": 0.4863013698630137,
+          "slow-changing": 0.3284671532846715,
+          "fast-changing": 0.07692307692307693
+        },
+        "ece_oracle": 0.4211864406779661,
+        "ece_const_unknown": 0.20508474576271188,
+        "constant_wins": true,
+        "oracle_reliability": 0.1787654961920459,
+        "oracle_resolution": 0.02817668755741711,
+        "oracle_auroc": 0.7130274874177314,
+        "freshqa_crossover_fast_acc": 0.42
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.7269417475728156,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5702669902912622,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  },
+  "gptoss_20b": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.03631961259079903,
+        "acc_by_type": {
+          "never-changing": 0.06164383561643835,
+          "slow-changing": 0.043795620437956206,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.6899515738498789,
+        "ece_const_unknown": 0.06368038740920098,
+        "constant_wins": true,
+        "oracle_reliability": 0.5081599715331131,
+        "oracle_resolution": 0.0006604698651663365,
+        "oracle_auroc": 0.6932160804020101,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.038834951456310676,
+        "acc_by_type": {
+          "never-changing": 0.06164383561643835,
+          "slow-changing": 0.051094890510948905,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.6881067961165048,
+        "ece_const_unknown": 0.06116504854368933,
+        "constant_wins": true,
+        "oracle_reliability": 0.5054914047430208,
+        "oracle_resolution": 0.000706552259280623,
+        "oracle_auroc": 0.6795296717171717,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.04116222760290557,
+        "acc_by_type": {
+          "never-changing": 0.06164383561643835,
+          "slow-changing": 0.058394160583941604,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.6851089588377725,
+        "ece_const_unknown": 0.05883777239709444,
+        "constant_wins": true,
+        "oracle_reliability": 0.5013909147826138,
+        "oracle_resolution": 0.0007801209103391849,
+        "oracle_auroc": 0.6689691027926322,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.043583535108958835,
+        "acc_by_type": {
+          "never-changing": 0.06164383561643835,
+          "slow-changing": 0.058394160583941604,
+          "fast-changing": 0.007692307692307693
+        },
+        "ece_oracle": 0.6826876513317192,
+        "ece_const_unknown": 0.05641646489104117,
+        "constant_wins": true,
+        "oracle_reliability": 0.49923036346952004,
+        "oracle_resolution": 0.0005935508013329943,
+        "oracle_auroc": 0.640084388185654,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.0387409200968523,
+        "acc_by_type": {
+          "never-changing": 0.06164383561643835,
+          "slow-changing": 0.051094890510948905,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.6875302663438256,
+        "ece_const_unknown": 0.0612590799031477,
+        "constant_wins": true,
+        "oracle_reliability": 0.5047577693804469,
+        "oracle_resolution": 0.0007084843403751833,
+        "oracle_auroc": 0.6803369017632241,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.7269417475728156,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5702669902912622,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  },
+  "qwen25_7b": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.3171912832929782,
+        "acc_by_type": {
+          "never-changing": 0.5,
+          "slow-changing": 0.31386861313868614,
+          "fast-changing": 0.11538461538461539
+        },
+        "ece_oracle": 0.4090799031476998,
+        "ece_const_unknown": 0.21719128329297818,
+        "constant_wins": true,
+        "oracle_reliability": 0.16992643969911073,
+        "oracle_resolution": 0.02463695274661644,
+        "oracle_auroc": 0.697038601050295,
+        "freshqa_crossover_fast_acc": 0.42
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.2912621359223301,
+        "acc_by_type": {
+          "never-changing": 0.5,
+          "slow-changing": 0.2773722627737226,
+          "fast-changing": 0.06976744186046512
+        },
+        "ece_oracle": 0.4356796116504854,
+        "ece_const_unknown": 0.19126213592233007,
+        "constant_wins": true,
+        "oracle_reliability": 0.19130595379161566,
+        "oracle_resolution": 0.0308655258530729,
+        "oracle_auroc": 0.7315211187214612,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.28087167070217917,
+        "acc_by_type": {
+          "never-changing": 0.5068493150684932,
+          "slow-changing": 0.25547445255474455,
+          "fast-changing": 0.05384615384615385
+        },
+        "ece_oracle": 0.4453995157384988,
+        "ece_const_unknown": 0.18087167070217916,
+        "constant_wins": true,
+        "oracle_reliability": 0.19994643639566012,
+        "oracle_resolution": 0.03448974438245726,
+        "oracle_auroc": 0.7498693834900731,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.28329297820823246,
+        "acc_by_type": {
+          "never-changing": 0.5068493150684932,
+          "slow-changing": 0.24087591240875914,
+          "fast-changing": 0.07692307692307693
+        },
+        "ece_oracle": 0.4429782082324455,
+        "ece_const_unknown": 0.18329297820823245,
+        "constant_wins": true,
+        "oracle_reliability": 0.1992190924789063,
+        "oracle_resolution": 0.0316699921148308,
+        "oracle_auroc": 0.7367752367752368,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.2711864406779661,
+        "acc_by_type": {
+          "never-changing": 0.5068493150684932,
+          "slow-changing": 0.24087591240875914,
+          "fast-changing": 0.038461538461538464
+        },
+        "ece_oracle": 0.45508474576271185,
+        "ece_const_unknown": 0.1711864406779661,
+        "constant_wins": true,
+        "oracle_reliability": 0.20871806807957682,
+        "oracle_resolution": 0.036985909832767644,
+        "oracle_auroc": 0.7642234219269103,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.7269417475728156,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5702669902912622,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  },
+  "qwen35_27b": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.43341404358353514,
+        "acc_by_type": {
+          "never-changing": 0.6232876712328768,
+          "slow-changing": 0.45985401459854014,
+          "fast-changing": 0.19230769230769232
+        },
+        "ece_oracle": 0.2928571428571428,
+        "ece_const_unknown": 0.3334140435835351,
+        "constant_wins": false,
+        "oracle_reliability": 0.08656216297722061,
+        "oracle_resolution": 0.03127496248944149,
+        "oracle_auroc": 0.6935491572363081,
+        "freshqa_crossover_fast_acc": 0.1275
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.4538834951456311,
+        "acc_by_type": {
+          "never-changing": 0.6232876712328768,
+          "slow-changing": 0.48905109489051096,
+          "fast-changing": 0.2248062015503876
+        },
+        "ece_oracle": 0.27305825242718446,
+        "ece_const_unknown": 0.3538834951456311,
+        "constant_wins": false,
+        "oracle_reliability": 0.07634704195343991,
+        "oracle_resolution": 0.027011572069379243,
+        "oracle_auroc": 0.6765894236482471,
+        "freshqa_crossover_fast_acc": 0.0955
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.4406779661016949,
+        "acc_by_type": {
+          "never-changing": 0.6232876712328768,
+          "slow-changing": 0.5036496350364964,
+          "fast-changing": 0.16923076923076924
+        },
+        "ece_oracle": 0.28559322033898304,
+        "ece_const_unknown": 0.3406779661016949,
+        "constant_wins": false,
+        "oracle_reliability": 0.08267937003096112,
+        "oracle_resolution": 0.0362970701992215,
+        "oracle_auroc": 0.701786308929166,
+        "freshqa_crossover_fast_acc": 0.0815
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.4213075060532688,
+        "acc_by_type": {
+          "never-changing": 0.6232876712328768,
+          "slow-changing": 0.48175182481751827,
+          "fast-changing": 0.13076923076923078
+        },
+        "ece_oracle": 0.3049636803874092,
+        "ece_const_unknown": 0.32130750605326874,
+        "constant_wins": false,
+        "oracle_reliability": 0.09368129647269952,
+        "oracle_resolution": 0.04220428423718195,
+        "oracle_auroc": 0.7215889962968307,
+        "freshqa_crossover_fast_acc": 0.1045
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.387409200968523,
+        "acc_by_type": {
+          "never-changing": 0.6232876712328768,
+          "slow-changing": 0.4233576642335766,
+          "fast-changing": 0.08461538461538462
+        },
+        "ece_oracle": 0.33886198547215496,
+        "ece_const_unknown": 0.28740920096852296,
+        "constant_wins": true,
+        "oracle_reliability": 0.11515058556539577,
+        "oracle_resolution": 0.04895694838630697,
+        "oracle_auroc": 0.750197628458498,
+        "freshqa_crossover_fast_acc": 0.166
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.7269417475728156,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5702669902912622,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  },
+  "qwen36_27b_stock": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.45278450363196127,
+        "acc_by_type": {
+          "never-changing": 0.6712328767123288,
+          "slow-changing": 0.46715328467153283,
+          "fast-changing": 0.19230769230769232
+        },
+        "ece_oracle": 0.2734866828087167,
+        "ece_const_unknown": 0.35278450363196123,
+        "constant_wins": false,
+        "oracle_reliability": 0.07491240785588045,
+        "oracle_resolution": 0.03829448490387863,
+        "oracle_auroc": 0.7137499408452037,
+        "freshqa_crossover_fast_acc": 0.066
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.48058252427184467,
+        "acc_by_type": {
+          "never-changing": 0.6712328767123288,
+          "slow-changing": 0.48905109489051096,
+          "fast-changing": 0.2558139534883721
+        },
+        "ece_oracle": 0.24635922330097088,
+        "ece_const_unknown": 0.3805825242718447,
+        "constant_wins": false,
+        "oracle_reliability": 0.06198812072958429,
+        "oracle_resolution": 0.028722732851367692,
+        "oracle_auroc": 0.683965826489191,
+        "freshqa_crossover_fast_acc": 0.041
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.4794188861985472,
+        "acc_by_type": {
+          "never-changing": 0.6712328767123288,
+          "slow-changing": 0.49635036496350365,
+          "fast-changing": 0.24615384615384617
+        },
+        "ece_oracle": 0.24685230024213073,
+        "ece_const_unknown": 0.37941888619854724,
+        "constant_wins": false,
+        "oracle_reliability": 0.061893631506657484,
+        "oracle_resolution": 0.030229129164496844,
+        "oracle_auroc": 0.6881841672539347,
+        "freshqa_crossover_fast_acc": 0.035500000000000004
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.45036319612590797,
+        "acc_by_type": {
+          "never-changing": 0.6712328767123288,
+          "slow-changing": 0.4744525547445255,
+          "fast-changing": 0.17692307692307693
+        },
+        "ece_oracle": 0.27590799031477,
+        "ece_const_unknown": 0.35036319612590794,
+        "constant_wins": false,
+        "oracle_reliability": 0.07613067492840957,
+        "oracle_resolution": 0.04097315802909023,
+        "oracle_auroc": 0.7204656340296528,
+        "freshqa_crossover_fast_acc": 0.0585
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.4092009685230024,
+        "acc_by_type": {
+          "never-changing": 0.6712328767123288,
+          "slow-changing": 0.41605839416058393,
+          "fast-changing": 0.1076923076923077
+        },
+        "ece_oracle": 0.31707021791767553,
+        "ece_const_unknown": 0.3092009685230024,
+        "constant_wins": true,
+        "oracle_reliability": 0.10134707673766057,
+        "oracle_resolution": 0.05290285475125037,
+        "oracle_auroc": 0.7581724706567078,
+        "freshqa_crossover_fast_acc": 0.12
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.7269417475728156,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5702669902912622,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  },
+  "qwen36_35b": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.4648910411622276,
+        "acc_by_type": {
+          "never-changing": 0.6438356164383562,
+          "slow-changing": 0.48905109489051096,
+          "fast-changing": 0.23846153846153847
+        },
+        "ece_oracle": 0.2613801452784503,
+        "ece_const_unknown": 0.3648910411622276,
+        "constant_wins": false,
+        "oracle_reliability": 0.06981060289389202,
+        "oracle_resolution": 0.027651813782154255,
+        "oracle_auroc": 0.6797346342383107,
+        "freshqa_crossover_fast_acc": 0.074
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.49029126213592233,
+        "acc_by_type": {
+          "never-changing": 0.6438356164383562,
+          "slow-changing": 0.5109489051094891,
+          "fast-changing": 0.29457364341085274
+        },
+        "ece_oracle": 0.23665048543689315,
+        "ece_const_unknown": 0.39029126213592236,
+        "constant_wins": false,
+        "oracle_reliability": 0.05978342172932551,
+        "oracle_resolution": 0.020490133012198555,
+        "oracle_auroc": 0.6539368222536539,
+        "freshqa_crossover_fast_acc": 0.049
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.4600484261501211,
+        "acc_by_type": {
+          "never-changing": 0.6438356164383562,
+          "slow-changing": 0.49635036496350365,
+          "fast-changing": 0.2153846153846154
+        },
+        "ece_oracle": 0.2662227602905569,
+        "ece_const_unknown": 0.3600484261501211,
+        "constant_wins": false,
+        "oracle_reliability": 0.07180542855567301,
+        "oracle_resolution": 0.031220196186367934,
+        "oracle_auroc": 0.6898277082841633,
+        "freshqa_crossover_fast_acc": 0.066
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.43825665859564167,
+        "acc_by_type": {
+          "never-changing": 0.6438356164383562,
+          "slow-changing": 0.4744525547445255,
+          "fast-changing": 0.16923076923076924
+        },
+        "ece_oracle": 0.28801452784503634,
+        "ece_const_unknown": 0.3382566585956417,
+        "constant_wins": false,
+        "oracle_reliability": 0.08313690297016116,
+        "oracle_resolution": 0.038156381890715324,
+        "oracle_auroc": 0.7123261573633073,
+        "freshqa_crossover_fast_acc": 0.089
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.4019370460048426,
+        "acc_by_type": {
+          "never-changing": 0.636986301369863,
+          "slow-changing": 0.43795620437956206,
+          "fast-changing": 0.1
+        },
+        "ece_oracle": 0.32433414043583536,
+        "ece_const_unknown": 0.3019370460048426,
+        "constant_wins": true,
+        "oracle_reliability": 0.10549539537571664,
+        "oracle_resolution": 0.048657502792656446,
+        "oracle_auroc": 0.7462318911272621,
+        "freshqa_crossover_fast_acc": 0.1355
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.7269417475728156,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5702669902912622,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  },
+  "qwen3_4b_it": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.2857142857142857,
+        "acc_by_type": {
+          "never-changing": 0.4041095890410959,
+          "slow-changing": 0.31386861313868614,
+          "fast-changing": 0.12307692307692308
+        },
+        "ece_oracle": 0.44055690072639225,
+        "ece_const_unknown": 0.1857142857142857,
+        "constant_wins": true,
+        "oracle_reliability": 0.20208364863830247,
+        "oracle_resolution": 0.013544215916061055,
+        "oracle_auroc": 0.6513501867279518,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.2815533980582524,
+        "acc_by_type": {
+          "never-changing": 0.3972602739726027,
+          "slow-changing": 0.29927007299270075,
+          "fast-changing": 0.13178294573643412
+        },
+        "ece_oracle": 0.4453883495145631,
+        "ece_const_unknown": 0.1815533980582524,
+        "constant_wins": true,
+        "oracle_reliability": 0.20752786155492975,
+        "oracle_resolution": 0.011872050451149967,
+        "oracle_auroc": 0.6444547996272134,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.2542372881355932,
+        "acc_by_type": {
+          "never-changing": 0.3972602739726027,
+          "slow-changing": 0.25547445255474455,
+          "fast-changing": 0.09230769230769231
+        },
+        "ece_oracle": 0.47203389830508474,
+        "ece_const_unknown": 0.1542372881355932,
+        "constant_wins": true,
+        "oracle_reliability": 0.229401680478255,
+        "oracle_resolution": 0.01548542078276522,
+        "oracle_auroc": 0.6782622139764997,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.24213075060532688,
+        "acc_by_type": {
+          "never-changing": 0.3972602739726027,
+          "slow-changing": 0.24817518248175183,
+          "fast-changing": 0.06153846153846154
+        },
+        "ece_oracle": 0.48414043583535105,
+        "ece_const_unknown": 0.14213075060532687,
+        "constant_wins": true,
+        "oracle_reliability": 0.23904082272905133,
+        "oracle_resolution": 0.01878519304253154,
+        "oracle_auroc": 0.7025239616613419,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.22760290556900725,
+        "acc_by_type": {
+          "never-changing": 0.3972602739726027,
+          "slow-changing": 0.23357664233576642,
+          "fast-changing": 0.03076923076923077
+        },
+        "ece_oracle": 0.49866828087167075,
+        "ece_const_unknown": 0.12760290556900725,
+        "constant_wins": true,
+        "oracle_reliability": 0.2517944924170276,
+        "oracle_resolution": 0.022382450955800784,
+        "oracle_auroc": 0.7308077102647902,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.7269417475728156,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5702669902912622,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  },
+  "qwen3_4b_th": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.1162227602905569,
+        "acc_by_type": {
+          "never-changing": 0.14383561643835616,
+          "slow-changing": 0.1678832116788321,
+          "fast-changing": 0.03076923076923077
+        },
+        "ece_oracle": 0.6100484261501211,
+        "ece_const_unknown": 0.0162227602905569,
+        "constant_wins": true,
+        "oracle_reliability": 0.39747563858812474,
+        "oracle_resolution": 0.0034533807335322274,
+        "oracle_auroc": 0.6172089041095891,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.10922330097087378,
+        "acc_by_type": {
+          "never-changing": 0.14383561643835616,
+          "slow-changing": 0.15328467153284672,
+          "fast-changing": 0.023255813953488372
+        },
+        "ece_oracle": 0.6177184466019418,
+        "ece_const_unknown": 0.009223300970873774,
+        "constant_wins": true,
+        "oracle_reliability": 0.4057264405079022,
+        "oracle_resolution": 0.0033840896737048673,
+        "oracle_auroc": 0.6326067211625794,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.1089588377723971,
+        "acc_by_type": {
+          "never-changing": 0.14383561643835616,
+          "slow-changing": 0.145985401459854,
+          "fast-changing": 0.03076923076923077
+        },
+        "ece_oracle": 0.6173123486682809,
+        "ece_const_unknown": 0.008958837772397088,
+        "constant_wins": true,
+        "oracle_reliability": 0.4060916050786428,
+        "oracle_resolution": 0.0028091651276552386,
+        "oracle_auroc": 0.6254528985507246,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.10653753026634383,
+        "acc_by_type": {
+          "never-changing": 0.14383561643835616,
+          "slow-changing": 0.1386861313868613,
+          "fast-changing": 0.03076923076923077
+        },
+        "ece_oracle": 0.6197336561743342,
+        "ece_const_unknown": 0.006537530266343822,
+        "constant_wins": true,
+        "oracle_reliability": 0.40903428901848127,
+        "oracle_resolution": 0.002641670781873218,
+        "oracle_auroc": 0.6284491254003449,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.1016949152542373,
+        "acc_by_type": {
+          "never-changing": 0.14383561643835616,
+          "slow-changing": 0.12408759124087591,
+          "fast-changing": 0.03076923076923077
+        },
+        "ece_oracle": 0.6245762711864407,
+        "ece_const_unknown": 0.0016949152542372892,
+        "constant_wins": true,
+        "oracle_reliability": 0.4150256995626569,
+        "oracle_resolution": 0.0023775483745746414,
+        "oracle_auroc": 0.6348671544089334,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.7269417475728156,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5702669902912622,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.0,
+        "acc_by_type": {
+          "never-changing": 0.0,
+          "slow-changing": 0.0,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.726271186440678,
+        "ece_const_unknown": 0.1,
+        "constant_wins": true,
+        "oracle_reliability": 0.5693765133171913,
+        "oracle_resolution": 0.0,
+        "oracle_auroc": 0.5,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  },
+  "adapter_sft_only_seed0": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.16464891041162227,
+        "acc_by_type": {
+          "never-changing": 0.3356164383561644,
+          "slow-changing": 0.11678832116788321,
+          "fast-changing": 0.023076923076923078
+        },
+        "ece_oracle": 0.5616222760290557,
+        "ece_const_unknown": 0.06464891041162227,
+        "constant_wins": true,
+        "oracle_reliability": 0.32381488955779414,
+        "oracle_resolution": 0.01740175176604998,
+        "oracle_auroc": 0.7552855924978688,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.16019417475728157,
+        "acc_by_type": {
+          "never-changing": 0.3356164383561644,
+          "slow-changing": 0.10218978102189781,
+          "fast-changing": 0.023255813953488372
+        },
+        "ece_oracle": 0.566747572815534,
+        "ece_const_unknown": 0.06019417475728156,
+        "constant_wins": true,
+        "oracle_reliability": 0.3303291986786871,
+        "oracle_resolution": 0.017895180392326474,
+        "oracle_auroc": 0.7615825888947276,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.15980629539951574,
+        "acc_by_type": {
+          "never-changing": 0.3356164383561644,
+          "slow-changing": 0.10948905109489052,
+          "fast-changing": 0.015384615384615385
+        },
+        "ece_oracle": 0.5664648910411623,
+        "ece_const_unknown": 0.059806295399515735,
+        "constant_wins": true,
+        "oracle_reliability": 0.3289850132606408,
+        "oracle_resolution": 0.018331949104785968,
+        "oracle_auroc": 0.7680333595319186,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.16464891041162227,
+        "acc_by_type": {
+          "never-changing": 0.3356164383561644,
+          "slow-changing": 0.10218978102189781,
+          "fast-changing": 0.038461538461538464
+        },
+        "ece_oracle": 0.5616222760290557,
+        "ece_const_unknown": 0.06464891041162227,
+        "constant_wins": true,
+        "oracle_reliability": 0.32595803899773923,
+        "oracle_resolution": 0.016639332198731243,
+        "oracle_auroc": 0.7439045183290708,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.15980629539951574,
+        "acc_by_type": {
+          "never-changing": 0.3287671232876712,
+          "slow-changing": 0.10948905109489052,
+          "fast-changing": 0.023076923076923078
+        },
+        "ece_oracle": 0.5664648910411623,
+        "ece_const_unknown": 0.059806295399515735,
+        "constant_wins": true,
+        "oracle_reliability": 0.32989077107375875,
+        "oracle_resolution": 0.016816399411850622,
+        "oracle_auroc": 0.7560256746135708,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.15254237288135594,
+        "acc_by_type": {
+          "never-changing": 0.3150684931506849,
+          "slow-changing": 0.10948905109489052,
+          "fast-changing": 0.015384615384615385
+        },
+        "ece_oracle": 0.5737288135593221,
+        "ece_const_unknown": 0.05254237288135594,
+        "constant_wins": true,
+        "oracle_reliability": 0.33805994111894455,
+        "oracle_resolution": 0.015874300703628743,
+        "oracle_auroc": 0.7602267573696145,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.14805825242718446,
+        "acc_by_type": {
+          "never-changing": 0.3150684931506849,
+          "slow-changing": 0.0948905109489051,
+          "fast-changing": 0.015503875968992248
+        },
+        "ece_oracle": 0.5788834951456311,
+        "ece_const_unknown": 0.04805825242718445,
+        "constant_wins": true,
+        "oracle_reliability": 0.3446789686388477,
+        "oracle_resolution": 0.01632568369210438,
+        "oracle_auroc": 0.7673625706412591,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.14527845036319612,
+        "acc_by_type": {
+          "never-changing": 0.3150684931506849,
+          "slow-changing": 0.10218978102189781,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.5809927360774819,
+        "ece_const_unknown": 0.04527845036319611,
+        "constant_wins": true,
+        "oracle_reliability": 0.34546321457442636,
+        "oracle_resolution": 0.01745060677347774,
+        "oracle_auroc": 0.7846553352219074,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.14769975786924938,
+        "acc_by_type": {
+          "never-changing": 0.3150684931506849,
+          "slow-changing": 0.0948905109489051,
+          "fast-changing": 0.015384615384615385
+        },
+        "ece_oracle": 0.5785714285714286,
+        "ece_const_unknown": 0.047699757869249376,
+        "constant_wins": true,
+        "oracle_reliability": 0.3443341321017833,
+        "oracle_resolution": 0.016338526217947433,
+        "oracle_auroc": 0.7679769001490313,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.14285714285714285,
+        "acc_by_type": {
+          "never-changing": 0.3082191780821918,
+          "slow-changing": 0.10218978102189781,
+          "fast-changing": 0.0
+        },
+        "ece_oracle": 0.5834140435835351,
+        "ece_const_unknown": 0.042857142857142844,
+        "constant_wins": true,
+        "oracle_reliability": 0.3485545277191409,
+        "oracle_resolution": 0.01663910053131664,
+        "oracle_auroc": 0.7822704203772862,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  },
+  "adapter_sft_only_seed1": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.1694915254237288,
+        "acc_by_type": {
+          "never-changing": 0.3082191780821918,
+          "slow-changing": 0.1386861313868613,
+          "fast-changing": 0.046153846153846156
+        },
+        "ece_oracle": 0.5567796610169492,
+        "ece_const_unknown": 0.0694915254237288,
+        "constant_wins": true,
+        "oracle_reliability": 0.3209063500895208,
+        "oracle_resolution": 0.011906575804627255,
+        "oracle_auroc": 0.7085172844648063,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.1553398058252427,
+        "acc_by_type": {
+          "never-changing": 0.3082191780821918,
+          "slow-changing": 0.10218978102189781,
+          "fast-changing": 0.03875968992248062
+        },
+        "ece_oracle": 0.5716019417475728,
+        "ece_const_unknown": 0.0553398058252427,
+        "constant_wins": true,
+        "oracle_reliability": 0.3384570834893631,
+        "oracle_resolution": 0.013477113652432208,
+        "oracle_auroc": 0.7316136853448276,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.15738498789346247,
+        "acc_by_type": {
+          "never-changing": 0.3082191780821918,
+          "slow-changing": 0.11678832116788321,
+          "fast-changing": 0.03076923076923077
+        },
+        "ece_oracle": 0.5688861985472156,
+        "ece_const_unknown": 0.05738498789346247,
+        "constant_wins": true,
+        "oracle_reliability": 0.3339323319018443,
+        "oracle_resolution": 0.01363566310505236,
+        "oracle_auroc": 0.7349027409372237,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.15738498789346247,
+        "acc_by_type": {
+          "never-changing": 0.3082191780821918,
+          "slow-changing": 0.10948905109489052,
+          "fast-changing": 0.038461538461538464
+        },
+        "ece_oracle": 0.5688861985472156,
+        "ece_const_unknown": 0.05738498789346247,
+        "constant_wins": true,
+        "oracle_reliability": 0.33500485828675464,
+        "oracle_resolution": 0.0132554049863308,
+        "oracle_auroc": 0.729000884173298,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.15980629539951574,
+        "acc_by_type": {
+          "never-changing": 0.3150684931506849,
+          "slow-changing": 0.10948905109489052,
+          "fast-changing": 0.038461538461538464
+        },
+        "ece_oracle": 0.5664648910411623,
+        "ece_const_unknown": 0.059806295399515735,
+        "constant_wins": true,
+        "oracle_reliability": 0.3319135451420401,
+        "oracle_resolution": 0.013996558468025467,
+        "oracle_auroc": 0.7320103047768753,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.162227602905569,
+        "acc_by_type": {
+          "never-changing": 0.2876712328767123,
+          "slow-changing": 0.1386861313868613,
+          "fast-changing": 0.046153846153846156
+        },
+        "ece_oracle": 0.564043583535109,
+        "ece_const_unknown": 0.062227602905569,
+        "constant_wins": true,
+        "oracle_reliability": 0.33037930109950453,
+        "oracle_resolution": 0.009987656076082894,
+        "oracle_auroc": 0.6986886377361746,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.14805825242718446,
+        "acc_by_type": {
+          "never-changing": 0.2876712328767123,
+          "slow-changing": 0.10218978102189781,
+          "fast-changing": 0.03875968992248062
+        },
+        "ece_oracle": 0.5788834951456311,
+        "ece_const_unknown": 0.04805825242718445,
+        "constant_wins": true,
+        "oracle_reliability": 0.34795302709888565,
+        "oracle_resolution": 0.011347314967676304,
+        "oracle_auroc": 0.7222922796693289,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.14769975786924938,
+        "acc_by_type": {
+          "never-changing": 0.2876712328767123,
+          "slow-changing": 0.10948905109489052,
+          "fast-changing": 0.03076923076923077
+        },
+        "ece_oracle": 0.5785714285714286,
+        "ece_const_unknown": 0.047699757869249376,
+        "constant_wins": true,
+        "oracle_reliability": 0.34648935707099804,
+        "oracle_resolution": 0.011714090170213038,
+        "oracle_auroc": 0.7291821907600596,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.14527845036319612,
+        "acc_by_type": {
+          "never-changing": 0.2876712328767123,
+          "slow-changing": 0.10218978102189781,
+          "fast-changing": 0.03076923076923077
+        },
+        "ece_oracle": 0.5809927360774818,
+        "ece_const_unknown": 0.04527845036319611,
+        "constant_wins": true,
+        "oracle_reliability": 0.34960877878500096,
+        "oracle_resolution": 0.011910940959839328,
+        "oracle_auroc": 0.7327195467422096,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.14769975786924938,
+        "acc_by_type": {
+          "never-changing": 0.2945205479452055,
+          "slow-changing": 0.10218978102189781,
+          "fast-changing": 0.03076923076923077
+        },
+        "ece_oracle": 0.5785714285714286,
+        "ece_const_unknown": 0.047699757869249376,
+        "constant_wins": true,
+        "oracle_reliability": 0.3464179598523664,
+        "oracle_resolution": 0.012611215954002702,
+        "oracle_auroc": 0.7357721684053651,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  },
+  "adapter_tsct_seed0_paired": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.17675544794188863,
+        "acc_by_type": {
+          "never-changing": 0.3287671232876712,
+          "slow-changing": 0.13138686131386862,
+          "fast-changing": 0.05384615384615385
+        },
+        "ece_oracle": 0.5495157384987893,
+        "ece_const_unknown": 0.07675544794188863,
+        "constant_wins": true,
+        "oracle_reliability": 0.31277290193312574,
+        "oracle_resolution": 0.013606684742428718,
+        "oracle_auroc": 0.7124697824335213,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.1650485436893204,
+        "acc_by_type": {
+          "never-changing": 0.3287671232876712,
+          "slow-changing": 0.11678832116788321,
+          "fast-changing": 0.031007751937984496
+        },
+        "ece_oracle": 0.5618932038834952,
+        "ece_const_unknown": 0.06504854368932039,
+        "constant_wins": true,
+        "oracle_reliability": 0.3250569564666172,
+        "oracle_resolution": 0.015898458964496365,
+        "oracle_auroc": 0.7429035567715458,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.16464891041162227,
+        "acc_by_type": {
+          "never-changing": 0.3287671232876712,
+          "slow-changing": 0.12408759124087591,
+          "fast-changing": 0.023076923076923078
+        },
+        "ece_oracle": 0.5616222760290557,
+        "ece_const_unknown": 0.06464891041162227,
+        "constant_wins": true,
+        "oracle_reliability": 0.32375797031025155,
+        "oracle_resolution": 0.01637630951608611,
+        "oracle_auroc": 0.7492540494458653,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.17191283292978207,
+        "acc_by_type": {
+          "never-changing": 0.3287671232876712,
+          "slow-changing": 0.11678832116788321,
+          "fast-changing": 0.05384615384615385
+        },
+        "ece_oracle": 0.5543583535108959,
+        "ece_const_unknown": 0.07191283292978207,
+        "constant_wins": true,
+        "oracle_reliability": 0.31883500758696715,
+        "oracle_resolution": 0.01409333412930484,
+        "oracle_auroc": 0.7178362573099415,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.16707021791767554,
+        "acc_by_type": {
+          "never-changing": 0.3219178082191781,
+          "slow-changing": 0.12408759124087591,
+          "fast-changing": 0.038461538461538464
+        },
+        "ece_oracle": 0.5592009685230025,
+        "ece_const_unknown": 0.06707021791767553,
+        "constant_wins": true,
+        "oracle_reliability": 0.3227225998297917,
+        "oracle_resolution": 0.014295614269695741,
+        "oracle_auroc": 0.7288085608358611,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.162227602905569,
+        "acc_by_type": {
+          "never-changing": 0.3013698630136986,
+          "slow-changing": 0.11678832116788321,
+          "fast-changing": 0.05384615384615385
+        },
+        "ece_oracle": 0.564043583535109,
+        "ece_const_unknown": 0.062227602905569,
+        "constant_wins": true,
+        "oracle_reliability": 0.33113392297387884,
+        "oracle_resolution": 0.011226539451667855,
+        "oracle_auroc": 0.7051376067638685,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.15048543689320387,
+        "acc_by_type": {
+          "never-changing": 0.3013698630136986,
+          "slow-changing": 0.10218978102189781,
+          "fast-changing": 0.031007751937984496
+        },
+        "ece_oracle": 0.5764563106796117,
+        "ece_const_unknown": 0.05048543689320387,
+        "constant_wins": true,
+        "oracle_reliability": 0.34360427649189623,
+        "oracle_resolution": 0.013312778706996615,
+        "oracle_auroc": 0.738110599078341,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.14527845036319612,
+        "acc_by_type": {
+          "never-changing": 0.3013698630136986,
+          "slow-changing": 0.10218978102189781,
+          "fast-changing": 0.015384615384615385
+        },
+        "ece_oracle": 0.5809927360774819,
+        "ece_const_unknown": 0.04527845036319611,
+        "constant_wins": true,
+        "oracle_reliability": 0.34739515771835,
+        "oracle_resolution": 0.014539934905294847,
+        "oracle_auroc": 0.7586874409820585,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.15012106537530268,
+        "acc_by_type": {
+          "never-changing": 0.3013698630136986,
+          "slow-changing": 0.0948905109489051,
+          "fast-changing": 0.038461538461538464
+        },
+        "ece_oracle": 0.5761501210653753,
+        "ece_const_unknown": 0.05012106537530267,
+        "constant_wins": true,
+        "oracle_reliability": 0.3444035310102813,
+        "oracle_resolution": 0.013023371075005893,
+        "oracle_auroc": 0.7326302729528535,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.14769975786924938,
+        "acc_by_type": {
+          "never-changing": 0.3013698630136986,
+          "slow-changing": 0.10218978102189781,
+          "fast-changing": 0.023076923076923078
+        },
+        "ece_oracle": 0.5785714285714286,
+        "ece_const_unknown": 0.047699757869249376,
+        "constant_wins": true,
+        "oracle_reliability": 0.3453091081746733,
+        "oracle_resolution": 0.013923671782362868,
+        "oracle_auroc": 0.7485795454545454,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  },
+  "adapter_tsct_seed1": {
+    "contains": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.16707021791767554,
+        "acc_by_type": {
+          "never-changing": 0.2876712328767123,
+          "slow-changing": 0.145985401459854,
+          "fast-changing": 0.05384615384615385
+        },
+        "ece_oracle": 0.5592009685230024,
+        "ece_const_unknown": 0.06707021791767553,
+        "constant_wins": true,
+        "oracle_reliability": 0.3254995711548234,
+        "oracle_resolution": 0.009324401575357051,
+        "oracle_auroc": 0.687752780586451,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.15776699029126215,
+        "acc_by_type": {
+          "never-changing": 0.2876712328767123,
+          "slow-changing": 0.12408759124087591,
+          "fast-changing": 0.046511627906976744
+        },
+        "ece_oracle": 0.5691747572815534,
+        "ece_const_unknown": 0.057766990291262144,
+        "constant_wins": true,
+        "oracle_reliability": 0.3367008509693172,
+        "oracle_resolution": 0.010232757840841333,
+        "oracle_auroc": 0.7036133894923521,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.15254237288135594,
+        "acc_by_type": {
+          "never-changing": 0.2876712328767123,
+          "slow-changing": 0.13138686131386862,
+          "fast-changing": 0.023076923076923078
+        },
+        "ece_oracle": 0.573728813559322,
+        "ece_const_unknown": 0.05254237288135594,
+        "constant_wins": true,
+        "oracle_reliability": 0.33939197591695475,
+        "oracle_resolution": 0.011879458988321786,
+        "oracle_auroc": 0.7285034013605443,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.15738498789346247,
+        "acc_by_type": {
+          "never-changing": 0.2945205479452055,
+          "slow-changing": 0.13138686131386862,
+          "fast-changing": 0.03076923076923077
+        },
+        "ece_oracle": 0.5688861985472156,
+        "ece_const_unknown": 0.05738498789346247,
+        "constant_wins": true,
+        "oracle_reliability": 0.334152358325352,
+        "oracle_resolution": 0.011918643523717515,
+        "oracle_auroc": 0.7223916887709991,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.162227602905569,
+        "acc_by_type": {
+          "never-changing": 0.2945205479452055,
+          "slow-changing": 0.13138686131386862,
+          "fast-changing": 0.046153846153846156
+        },
+        "ece_oracle": 0.564043583535109,
+        "ece_const_unknown": 0.062227602905569,
+        "constant_wins": true,
+        "oracle_reliability": 0.33016651366154126,
+        "oracle_resolution": 0.01074339164054098,
+        "oracle_auroc": 0.7047925114312829,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ],
+    "exact": [
+      {
+        "n": 413,
+        "key_date": "2024-02-26",
+        "key_age_years": 2.5872689938398357,
+        "accuracy": 0.1549636803874092,
+        "acc_by_type": {
+          "never-changing": 0.2671232876712329,
+          "slow-changing": 0.13138686131386862,
+          "fast-changing": 0.05384615384615385
+        },
+        "ece_oracle": 0.5713075060532687,
+        "ece_const_unknown": 0.0549636803874092,
+        "constant_wins": true,
+        "oracle_reliability": 0.341191754963077,
+        "oracle_resolution": 0.007849925556795655,
+        "oracle_auroc": 0.6823065902578797,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 412,
+        "key_date": "2024-10-07",
+        "key_age_years": 1.9739904175222451,
+        "accuracy": 0.14563106796116504,
+        "acc_by_type": {
+          "never-changing": 0.2671232876712329,
+          "slow-changing": 0.10948905109489052,
+          "fast-changing": 0.046511627906976744
+        },
+        "ece_oracle": 0.5813106796116505,
+        "ece_const_unknown": 0.045631067961165034,
+        "constant_wins": true,
+        "oracle_reliability": 0.35264372270156147,
+        "oracle_resolution": 0.008741139988770383,
+        "oracle_auroc": 0.6993607954545454,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-02-03",
+        "key_age_years": 1.648186173853525,
+        "accuracy": 0.13801452784503632,
+        "acc_by_type": {
+          "never-changing": 0.2671232876712329,
+          "slow-changing": 0.11678832116788321,
+          "fast-changing": 0.015384615384615385
+        },
+        "ece_oracle": 0.5882566585956417,
+        "ece_const_unknown": 0.03801452784503631,
+        "constant_wins": true,
+        "oracle_reliability": 0.3573115994882166,
+        "oracle_resolution": 0.010775696129458535,
+        "oracle_auroc": 0.736324659964518,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2025-08-11",
+        "key_age_years": 1.1307323750855578,
+        "accuracy": 0.14043583535108958,
+        "acc_by_type": {
+          "never-changing": 0.273972602739726,
+          "slow-changing": 0.11678832116788321,
+          "fast-changing": 0.015384615384615385
+        },
+        "ece_oracle": 0.5858353510895884,
+        "ece_const_unknown": 0.04043583535108958,
+        "constant_wins": true,
+        "oracle_reliability": 0.35402127476766204,
+        "oracle_resolution": 0.011411641715935124,
+        "oracle_auroc": 0.7393880524526469,
+        "freshqa_crossover_fast_acc": 1.0
+      },
+      {
+        "n": 413,
+        "key_date": "2026-04-21",
+        "key_age_years": 0.4380561259411362,
+        "accuracy": 0.14527845036319612,
+        "acc_by_type": {
+          "never-changing": 0.273972602739726,
+          "slow-changing": 0.11678832116788321,
+          "fast-changing": 0.03076923076923077
+        },
+        "ece_oracle": 0.5809927360774819,
+        "ece_const_unknown": 0.04527845036319611,
+        "constant_wins": true,
+        "oracle_reliability": 0.34988642656501723,
+        "oracle_resolution": 0.0102515427350129,
+        "oracle_auroc": 0.7193578847969783,
+        "freshqa_crossover_fast_acc": 1.0
+      }
+    ]
+  }
+}

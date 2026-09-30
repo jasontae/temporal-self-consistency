@@ -1,0 +1,66 @@
+{
+ "released_key_identity": [
+  {
+   "policy": "TSCT seed 0, emitted hedge",
+   "accuracy": 0.027332965212589728,
+   "mean_conf": 0.4779679734953065,
+   "m_minus_a": 0.4506350082827168,
+   "ece_pipeline": 0.4506350082827168
+  },
+  {
+   "policy": "volatility-label oracle (gold hedge)",
+   "accuracy": 0.027332965212589728,
+   "mean_conf": 0.4777471010491442,
+   "m_minus_a": 0.4504141358365545,
+   "ece_pipeline": 0.45041413583655443
+  },
+  {
+   "policy": "constant [TEMPORAL_HEDGE]",
+   "accuracy": 0.027332965212589728,
+   "mean_conf": 0.45000000000000007,
+   "m_minus_a": 0.42266703478741036,
+   "ece_pipeline": 0.42266703478741036
+  },
+  {
+   "policy": "constant [UNKNOWN]",
+   "accuracy": 0.027332965212589728,
+   "mean_conf": 0.10000000000000002,
+   "m_minus_a": 0.0726670347874103,
+   "ece_pipeline": 0.07266703478741027
+  },
+  {
+   "policy": "SFT (cross-entropy) seed 0, emitted hedge",
+   "accuracy": 0.02263942573163998,
+   "mean_conf": 0.47780231916068483,
+   "m_minus_a": 0.45516289342904487,
+   "ece_pipeline": 0.45516289342904476
+  }
+ ],
+ "m_oracle_released": 0.4777471010491442,
+ "repaired_key": {
+  "constant: 0.10 - a (trained-arm accuracy)": {
+   "value": 0.0974,
+   "printed": 0.0974
+  },
+  "implied mean oracle confidence on the 1,953 items: ECE_oracle + a": {
+   "value": 0.4814,
+   "printed": null
+  },
+  "implied share of [COND_CONFIDENT] items: (m - 0.45) / 0.30": {
+   "value": 0.10466666666666662,
+   "printed": null
+  },
+  "ratio oracle/constant, printed": {
+   "value": 4.915811088295688,
+   "printed": null
+  },
+  "ratio limit as a -> 0 on the released mix: m_oracle / 0.10": {
+   "value": 4.777471010491442,
+   "printed": null
+  },
+  "ratio on released key: (m - a)/(0.10 - a)": {
+   "value": 6.195971128598957,
+   "printed": null
+  }
+ }
+}

@@ -1,0 +1,48 @@
+[mlx] loaded 8008 raw examples
+
+[mlx] === condition: fixed ===
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 63764.76it/s]
+[mlx] hedge ids (no resize): [151665, 151666, 151667, 151668]
+[mlx] adapted output projection: lm_head (untied)
+Trainable parameters: 0.168% (12.780M/7615.617M)
+[mlx] 8008 examples after tokenisation (max_len=128)
+[mlx] hedge-head check: logit spread=0.000000 contrast_grad_norm=1166.620605
+[mlx] fixed pre-train (n=8008) acc=0.4412 majority=0.4994 dist={'[CONFIDENT]': 1.0, '[COND_CONFIDENT]': 0.0, '[TEMPORAL_HEDGE]': 0.0, '[UNKNOWN]': 0.0}
+[mlx] fixed step 0 ce=11.1591 total=11.1591 grad=2.6270954608917236 conf_frac=1.000 (1s)
+[mlx] fixed step 200 ce=2.3338 total=2.3338 grad=15.147564888000488 conf_frac=0.250 (145s)
+[mlx] fixed step 400 ce=2.9534 total=2.9534 grad=2.1080358028411865 conf_frac=1.000 (291s)
+[mlx] fixed step 600 ce=2.0015 total=2.0015 grad=2.1366705894470215 conf_frac=0.500 (439s)
+[mlx] fixed step 800 ce=1.0001 total=1.0001 grad=18.205120086669922 conf_frac=0.750 (588s)
+[mlx] fixed step 1000 ce=2.6906 total=2.6906 grad=18.68905258178711 conf_frac=0.000 (736s)
+[mlx] fixed step 1200 ce=0.8996 total=0.8996 grad=0.00033628992969170213 conf_frac=0.000 (886s)
+[mlx] fixed step 1400 ce=2.0904 total=2.0904 grad=12.285634994506836 conf_frac=0.750 (1033s)
+[mlx] fixed step 1600 ce=3.0362 total=3.0362 grad=2.497243642807007 conf_frac=0.500 (1196s)
+[mlx] fixed step 1800 ce=2.3473 total=2.3473 grad=8.245912551879883 conf_frac=0.500 (1355s)
+[mlx] fixed step 2000 ce=1.3384 total=1.3384 grad=0.03436116874217987 conf_frac=0.250 (1517s)
+[mlx] fixed step 2200 ce=0.7937 total=0.7937 grad=10.0493803024292 conf_frac=0.250 (1696s)
+[mlx] fixed step 2400 ce=0.7955 total=0.7955 grad=2.959806203842163 conf_frac=0.750 (1838s)
+[mlx] fixed step 2600 ce=0.9962 total=0.9962 grad=4.05543327331543 conf_frac=0.750 (1978s)
+[mlx] fixed step 2800 ce=0.4990 total=0.4990 grad=1.033972144126892 conf_frac=0.250 (2119s)
+[mlx] fixed step 3000 ce=1.3735 total=1.3735 grad=4.540838241577148 conf_frac=0.250 (2260s)
+[mlx] fixed step 3200 ce=0.9070 total=0.9070 grad=0.0005931907799094915 conf_frac=0.000 (2403s)
+[mlx] fixed step 3400 ce=1.3019 total=1.3019 grad=0.20090672373771667 conf_frac=0.250 (2545s)
+[mlx] fixed step 3600 ce=1.0368 total=1.0368 grad=0.07382103055715561 conf_frac=0.250 (2691s)
+[mlx] fixed step 3800 ce=1.2076 total=1.2076 grad=4.394442558288574 conf_frac=0.750 (2836s)
+[mlx] fixed step 4000 ce=0.9689 total=0.9689 grad=1.3110928535461426 conf_frac=0.500 (2980s)
+[mlx] fixed step 4200 ce=0.6920 total=0.6920 grad=0.708121657371521 conf_frac=1.000 (3124s)
+[mlx] fixed step 4400 ce=0.9782 total=0.9782 grad=6.812623500823975 conf_frac=0.500 (3270s)
+[mlx] fixed step 4600 ce=0.5734 total=0.5734 grad=3.1220734119415283 conf_frac=0.750 (3418s)
+[mlx] fixed step 4800 ce=0.0436 total=0.0436 grad=0.18891370296478271 conf_frac=0.250 (3564s)
+[mlx] fixed step 5000 ce=0.5495 total=0.5495 grad=7.9263997077941895 conf_frac=0.500 (3710s)
+[mlx] fixed step 5200 ce=0.4578 total=0.4578 grad=6.37754487991333 conf_frac=0.750 (3856s)
+[mlx] fixed step 5400 ce=0.9184 total=0.9184 grad=0.004202163778245449 conf_frac=0.250 (4006s)
+[mlx] fixed step 5600 ce=0.5998 total=0.5998 grad=1.770050048828125 conf_frac=0.750 (4153s)
+[mlx] fixed step 5800 ce=0.5108 total=0.5108 grad=6.173588275909424 conf_frac=1.000 (4299s)
+[mlx] fixed step 6000 ce=0.6868 total=0.6868 grad=0.058139484375715256 conf_frac=0.500 (4450s)
+[mlx] fixed post-train (n=8008) acc=0.9344 majority=0.4994 dist={'[CONFIDENT]': 0.5066183816183816, '[COND_CONFIDENT]': 0.05944055944055944, '[TEMPORAL_HEDGE]': 0.43394105894105894, '[UNKNOWN]': 0.0}
+[mlx] fixed accuracy lift over majority-class baseline: +0.4351 (discriminating)
+[mlx] fixed finished: 6006 steps in 4453.1s
+[mlx] saved adapter -> data/prep/tcl_mlx_7b/sft_only_seed1/adapter_fixed
+
+[mlx] wrote data/prep/tcl_mlx_7b/sft_only_seed1/loss_log.csv
+[mlx] wrote data/prep/tcl_mlx_7b/sft_only_seed1/run_meta.json

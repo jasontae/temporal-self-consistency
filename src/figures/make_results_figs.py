@@ -8,14 +8,17 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator
 from matplotlib.lines import Line2D
 
-TK = "/private/tmp/claude-501/-Users-atae/77395a14-31c7-47ff-9160-46cffd570e2b/scratchpad/tsct_context/eval_toolkit"
+# Paths: repo-relative defaults, each overridable with an environment variable.
+from pathlib import Path
+REPO = Path(__file__).resolve().parents[2]
+TK = os.environ.get("TSCT_EVAL_TOOLKIT", str(REPO / "src" / "evaluation"))  # eval_pipeline, hedge_quality_rubric
 sys.path.insert(0, TK)
 from eval_pipeline import compute_ece, compute_accuracy_metrics, HEDGE_TO_CONFIDENCE
 from hedge_quality_rubric import GOLD_HEDGE_FOR_VOLATILITY
 
-V6 = "/Users/atae/Downloads/david_v6/predictions_v6"
-ABL = "/Users/atae/Downloads/tsct_ablation_results/predictions/with_year"
-FIG = "/Users/atae/Downloads/tsct_ablation_results/figures_results"
+V6 = os.environ.get("TSCT_V6_DIR", str(REPO / "data" / "prep" / "llama3_hedge_sft" / "predictions_v6"))  # v6 predictions (HF DavidS64/llama3-hedge-sft)
+ABL = os.environ.get("TSCT_ABLATION_DIR", str(REPO / "data" / "prep" / "llama3_hedge_sft" / "ablations"))
+FIG = os.environ.get("TSCT_FIG_DIR", str(REPO / "figures" / "results"))
 os.makedirs(FIG, exist_ok=True)
 
 T_DARK, T_MID, T_LMID, T_LIGHT = "#015d67", "#3b747c", "#618c93", "#85a4a9"

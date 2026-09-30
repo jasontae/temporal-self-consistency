@@ -1,0 +1,59 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 90742.15it/s]
+[gen] 3622 examples | source=temporal-delta:test | arm=base | adapter=None
+[gen] 100/3622  EM=0.000 hedge_acc=0.000 fallback=1.000 (96s, 0.96s/ex)
+[gen] 200/3622  EM=0.000 hedge_acc=0.000 fallback=1.000 (192s, 0.96s/ex)
+[gen] 300/3622  EM=0.000 hedge_acc=0.000 fallback=1.000 (289s, 0.96s/ex)
+[gen] 400/3622  EM=0.000 hedge_acc=0.000 fallback=1.000 (389s, 0.97s/ex)
+[gen] 500/3622  EM=0.000 hedge_acc=0.000 fallback=1.000 (489s, 0.98s/ex)
+[gen] 600/3622  EM=0.000 hedge_acc=0.000 fallback=1.000 (589s, 0.98s/ex)
+[gen] 700/3622  EM=0.000 hedge_acc=0.000 fallback=1.000 (688s, 0.98s/ex)
+/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/loky-38490-x1n5glu5'}
+  warnings.warn(
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 17339.80it/s]
+[gen] 3622 examples | source=temporal-delta:test | arm=base | adapter=None
+[gen] 100/3622  EM=0.100 hedge_acc=0.000 fallback=1.000 (16s, 0.16s/ex)
+[gen] 200/3622  EM=0.075 hedge_acc=0.000 fallback=1.000 (32s, 0.16s/ex)
+[gen] 300/3622  EM=0.127 hedge_acc=0.000 fallback=1.000 (50s, 0.17s/ex)
+[gen] 400/3622  EM=0.107 hedge_acc=0.000 fallback=1.000 (68s, 0.17s/ex)
+[gen] 500/3622  EM=0.094 hedge_acc=0.000 fallback=1.000 (89s, 0.18s/ex)
+[gen] 600/3622  EM=0.078 hedge_acc=0.000 fallback=1.000 (115s, 0.19s/ex)
+[gen] 700/3622  EM=0.073 hedge_acc=0.000 fallback=1.000 (135s, 0.19s/ex)
+[gen] 800/3622  EM=0.065 hedge_acc=0.000 fallback=1.000 (156s, 0.20s/ex)
+[gen] 900/3622  EM=0.058 hedge_acc=0.000 fallback=1.000 (178s, 0.20s/ex)
+[gen] 1000/3622  EM=0.052 hedge_acc=0.000 fallback=1.000 (199s, 0.20s/ex)
+[gen] 1100/3622  EM=0.047 hedge_acc=0.000 fallback=1.000 (223s, 0.20s/ex)
+[gen] 1200/3622  EM=0.043 hedge_acc=0.000 fallback=1.000 (244s, 0.20s/ex)
+[gen] 1300/3622  EM=0.041 hedge_acc=0.000 fallback=1.000 (265s, 0.20s/ex)
+[gen] 1400/3622  EM=0.038 hedge_acc=0.000 fallback=1.000 (285s, 0.20s/ex)
+[gen] 1500/3622  EM=0.035 hedge_acc=0.000 fallback=1.000 (305s, 0.20s/ex)
+[gen] 1600/3622  EM=0.034 hedge_acc=0.000 fallback=1.000 (326s, 0.20s/ex)
+[gen] 1700/3622  EM=0.035 hedge_acc=0.000 fallback=1.000 (343s, 0.20s/ex)
+[gen] 1800/3622  EM=0.036 hedge_acc=0.000 fallback=1.000 (359s, 0.20s/ex)
+[gen] 1900/3622  EM=0.034 hedge_acc=0.000 fallback=1.000 (376s, 0.20s/ex)
+[gen] 2000/3622  EM=0.034 hedge_acc=0.000 fallback=1.000 (392s, 0.20s/ex)
+[gen] 2100/3622  EM=0.033 hedge_acc=0.000 fallback=1.000 (408s, 0.19s/ex)
+[gen] 2200/3622  EM=0.031 hedge_acc=0.000 fallback=1.000 (425s, 0.19s/ex)
+[gen] 2300/3622  EM=0.030 hedge_acc=0.000 fallback=1.000 (441s, 0.19s/ex)
+[gen] 2400/3622  EM=0.033 hedge_acc=0.000 fallback=1.000 (458s, 0.19s/ex)
+[gen] 2500/3622  EM=0.035 hedge_acc=0.000 fallback=1.000 (476s, 0.19s/ex)
+[gen] 2600/3622  EM=0.038 hedge_acc=0.000 fallback=1.000 (493s, 0.19s/ex)
+[gen] 2700/3622  EM=0.038 hedge_acc=0.000 fallback=1.000 (510s, 0.19s/ex)
+[gen] 2800/3622  EM=0.039 hedge_acc=0.000 fallback=1.000 (526s, 0.19s/ex)
+[gen] 2900/3622  EM=0.040 hedge_acc=0.000 fallback=1.000 (543s, 0.19s/ex)
+[gen] 3000/3622  EM=0.039 hedge_acc=0.000 fallback=1.000 (561s, 0.19s/ex)
+[gen] 3100/3622  EM=0.038 hedge_acc=0.000 fallback=1.000 (580s, 0.19s/ex)
+[gen] 3200/3622  EM=0.037 hedge_acc=0.000 fallback=1.000 (599s, 0.19s/ex)
+[gen] 3300/3622  EM=0.037 hedge_acc=0.000 fallback=1.000 (615s, 0.19s/ex)
+[gen] 3400/3622  EM=0.038 hedge_acc=0.000 fallback=1.000 (629s, 0.19s/ex)
+[gen] 3500/3622  EM=0.039 hedge_acc=0.000 fallback=1.000 (646s, 0.18s/ex)
+[gen] 3600/3622  EM=0.039 hedge_acc=0.000 fallback=1.000 (662s, 0.18s/ex)
+
+[gen] wrote data/prep/predictions_7b/base_test.jsonl
+[gen] n=3622  EM=0.0392  hedge_acc=0.0000  fallback_rate=1.0000  wall=666s
+[gen] WARNING: 100.0% of hedges came from the fallback path, not free generation -- the model is largely not emitting hedge tokens on its own. Treat hedge metrics from this file as teacher-forced-ish, not generative.
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 15787.84it/s]
+[gen] 49 examples | source=stress:stable | arm=base | adapter=None
+
+[gen] wrote data/prep/predictions_7b/base_stable.jsonl
+[gen] n=49  EM=0.7551  hedge_acc=1.0000  fallback_rate=1.0000  wall=6s
+[gen] WARNING: 100.0% of hedges came from the fallback path, not free generation -- the model is largely not emitting hedge tokens on its own. Treat hedge metrics from this file as teacher-forced-ish, not generative.

@@ -1,0 +1,41 @@
+{
+  "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "framework": "mlx",
+  "lora": {
+    "rank": 8,
+    "scale": 20.0,
+    "layers": 16,
+    "lm_head_adapted": true
+  },
+  "epochs": 3,
+  "learning_rate": 5e-05,
+  "lambda_over": 0.5,
+  "lambda_under": 0.5,
+  "lambda_hedge": 0.3,
+  "arm": "tsct",
+  "batch_size": 4,
+  "seed": 2,
+  "n_raw_examples": 8008,
+  "grad_check_every": 5,
+  "conditions": {
+    "fixed": {
+      "n_steps": 6006,
+      "wall_seconds": 5244.939280986786,
+      "n_examples": 8008,
+      "pre_train_hedge_dist": {
+        "[CONFIDENT]": 1.0,
+        "[COND_CONFIDENT]": 0.0,
+        "[TEMPORAL_HEDGE]": 0.0,
+        "[UNKNOWN]": 0.0
+      },
+      "post_train_hedge_dist": {
+        "[CONFIDENT]": 0.4846403596403596,
+        "[COND_CONFIDENT]": 0.06343656343656344,
+        "[TEMPORAL_HEDGE]": 0.4519230769230769,
+        "[UNKNOWN]": 0.0
+      },
+      "hedge_head_logit_spread_at_init": 0.0,
+      "hedge_head_grad_norm_at_init": 1048.2750244140625
+    }
+  }
+}

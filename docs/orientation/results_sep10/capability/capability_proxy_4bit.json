@@ -1,0 +1,269 @@
+{
+ "source": "altj-sep10-revisions @ 9829f89, data/prep/predictions_7b/{matched4b,disjoint4b}_*.jsonl",
+ "sets": {
+  "matched4b": {
+   "per_model": {
+    "g3_4b": {
+     "truth": 0.7188501245995016,
+     "regime": 0.6197935208259167,
+     "regime_paired_win": 0.6698113207547169
+    },
+    "qwen3_4b_th": {
+     "truth": 0.7539159843360627,
+     "regime": 0.6009255962976148,
+     "regime_paired_win": 0.5754716981132075
+    },
+    "tsct": {
+     "truth": 0.7678889284442862,
+     "regime": 0.6395514417942328,
+     "regime_paired_win": 0.6320754716981132
+    },
+    "qwen3_4b_it": {
+     "truth": 0.7714489142043431,
+     "regime": 0.524118903524386,
+     "regime_paired_win": 0.4716981132075472
+    },
+    "qwen25_7b": {
+     "truth": 0.794499822000712,
+     "regime": 0.6335884656461375,
+     "regime_paired_win": 0.6415094339622641
+    },
+    "gptoss_20b": {
+     "truth": 0.7216981132075472,
+     "regime": 0.5733357066571734,
+     "regime_paired_win": 0.5849056603773585
+    },
+    "qwen36_35b": {
+     "truth": 0.8468316126735493,
+     "regime": 0.5533997864008544,
+     "regime_paired_win": 0.5754716981132075
+    },
+    "qwen35_27b": {
+     "truth": 0.8452296190815237,
+     "regime": 0.5206479174083304,
+     "regime_paired_win": 0.5
+    },
+    "qwen36_27b_stock": {
+     "truth": 0.8549305802776789,
+     "regime": 0.5097009611961553,
+     "regime_paired_win": 0.5188679245283019
+    }
+   },
+   "check_slope_truth": -0.5708104182078466,
+   "a_reported": -0.571,
+   "check_ok": true,
+   "fits": {
+    "truth AUROC (in-instrument) | regime": {
+     "n": 9,
+     "slope": -0.5708104182078466,
+     "spearman": -0.6,
+     "perm_p": 0.098451278659612,
+     "lofo_spearman": {
+      "gemma": -0.6190476190476191,
+      "gpt-oss": -0.6428571428571429
+     }
+    },
+    "truth AUROC (in-instrument) | regime_paired_win": {
+     "n": 9,
+     "slope": -0.64130468067954,
+     "spearman": -0.54393781569122,
+     "perm_p": 0.16957671957671958,
+     "lofo_spearman": {
+      "gemma": -0.34731161595484505,
+      "gpt-oss": -0.4910267673844361
+     }
+    },
+    "log10 total parameters (B) | regime": {
+     "n": 9,
+     "slope": -0.06865090400807422,
+     "spearman": -0.43041423101055826,
+     "perm_p": 0.1345899470899471,
+     "lofo_spearman": {
+      "gemma": -0.47280542884465016,
+      "gpt-oss": -0.3152036192297668
+     }
+    },
+    "log10 total parameters (B) | regime_paired_win": {
+     "n": 9,
+     "slope": -0.04962340516118437,
+     "spearman": -0.1398355299497534,
+     "perm_p": 0.4359347442680776,
+     "lofo_spearman": {
+      "gemma": -0.06707815888258854,
+      "gpt-oss": -0.06707815888258854
+     }
+    },
+    "log10 active parameters (B) | regime": {
+     "n": 9,
+     "slope": -0.05670831873698615,
+     "spearman": -0.14347141033685276,
+     "perm_p": 0.2849426807760141,
+     "lofo_spearman": {
+      "gemma": -0.2788339708571014,
+      "gpt-oss": -0.21821789023599236
+     }
+    },
+    "log10 active parameters (B) | regime_paired_win": {
+     "n": 9,
+     "slope": -0.06594937396162151,
+     "spearman": -0.07203648512563053,
+     "perm_p": 0.3396164021164021,
+     "lofo_spearman": {
+      "gemma": -0.15245036109679214,
+      "gpt-oss": -0.06707815888258854
+     }
+    },
+    "published MMLU-Pro (7 of 9; settings differ across cards) | regime": {
+     "n": 7,
+     "slope": -0.002459132390737209,
+     "spearman": -0.8571428571428573,
+     "perm_p": 0.03571428571428571,
+     "lofo_spearman": {
+      "gemma": -0.8285714285714287
+     }
+    },
+    "published MMLU-Pro (7 of 9; settings differ across cards) | regime_paired_win": {
+     "n": 7,
+     "slope": -0.0032802859140857454,
+     "spearman": -0.594618725379069,
+     "perm_p": 0.0623015873015873,
+     "lofo_spearman": {
+      "gemma": -0.3478626213914691
+     }
+    }
+   }
+  },
+  "disjoint4b": {
+   "per_model": {
+    "g3_4b": {
+     "truth": 0.7703809184763261,
+     "regime": 0.6197935208259167,
+     "regime_paired_win": 0.6698113207547169
+    },
+    "qwen3_4b_th": {
+     "truth": 0.763438946244215,
+     "regime": 0.6009255962976148,
+     "regime_paired_win": 0.5754716981132075
+    },
+    "tsct": {
+     "truth": 0.7942328230687077,
+     "regime": 0.6395514417942328,
+     "regime_paired_win": 0.6320754716981132
+    },
+    "qwen3_4b_it": {
+     "truth": 0.781683873264507,
+     "regime": 0.524118903524386,
+     "regime_paired_win": 0.4716981132075472
+    },
+    "qwen25_7b": {
+     "truth": 0.8180847276610893,
+     "regime": 0.6335884656461375,
+     "regime_paired_win": 0.6415094339622641
+    },
+    "gptoss_20b": {
+     "truth": 0.6650053399786401,
+     "regime": 0.5733357066571734,
+     "regime_paired_win": 0.5849056603773585
+    },
+    "qwen36_35b": {
+     "truth": 0.8655215379138483,
+     "regime": 0.5533997864008544,
+     "regime_paired_win": 0.5754716981132075
+    },
+    "qwen35_27b": {
+     "truth": 0.8519935920256319,
+     "regime": 0.5206479174083304,
+     "regime_paired_win": 0.5
+    },
+    "qwen36_27b_stock": {
+     "truth": 0.8561765752936988,
+     "regime": 0.5097009611961553,
+     "regime_paired_win": 0.5188679245283019
+    }
+   },
+   "check_slope_truth": -0.26764219475008444,
+   "a_reported": -0.268,
+   "check_ok": true,
+   "fits": {
+    "truth AUROC (in-instrument) | regime": {
+     "n": 9,
+     "slope": -0.26764219475008444,
+     "spearman": -0.39999999999999997,
+     "perm_p": 0.40396549823633154,
+     "lofo_spearman": {
+      "gemma": -0.4285714285714286,
+      "gpt-oss": -0.4285714285714286
+     }
+    },
+    "truth AUROC (in-instrument) | regime_paired_win": {
+     "n": 9,
+     "slope": -0.2707926729140734,
+     "spearman": -0.2928895930645031,
+     "perm_p": 0.5274305555555555,
+     "lofo_spearman": {
+      "gemma": -0.16766767666785626,
+      "gpt-oss": -0.2515015150017844
+     }
+    },
+    "log10 total parameters (B) | regime": {
+     "n": 9,
+     "slope": -0.06865090400807422,
+     "spearman": -0.43041423101055826,
+     "perm_p": 0.1345899470899471,
+     "lofo_spearman": {
+      "gemma": -0.47280542884465016,
+      "gpt-oss": -0.3152036192297668
+     }
+    },
+    "log10 total parameters (B) | regime_paired_win": {
+     "n": 9,
+     "slope": -0.04962340516118437,
+     "spearman": -0.1398355299497534,
+     "perm_p": 0.4359347442680776,
+     "lofo_spearman": {
+      "gemma": -0.06707815888258854,
+      "gpt-oss": -0.06707815888258854
+     }
+    },
+    "log10 active parameters (B) | regime": {
+     "n": 9,
+     "slope": -0.05670831873698615,
+     "spearman": -0.14347141033685276,
+     "perm_p": 0.2849426807760141,
+     "lofo_spearman": {
+      "gemma": -0.2788339708571014,
+      "gpt-oss": -0.21821789023599236
+     }
+    },
+    "log10 active parameters (B) | regime_paired_win": {
+     "n": 9,
+     "slope": -0.06594937396162151,
+     "spearman": -0.07203648512563053,
+     "perm_p": 0.3396164021164021,
+     "lofo_spearman": {
+      "gemma": -0.15245036109679214,
+      "gpt-oss": -0.06707815888258854
+     }
+    },
+    "published MMLU-Pro (7 of 9; settings differ across cards) | regime": {
+     "n": 7,
+     "slope": -0.002459132390737209,
+     "spearman": -0.8571428571428573,
+     "perm_p": 0.03571428571428571,
+     "lofo_spearman": {
+      "gemma": -0.8285714285714287
+     }
+    },
+    "published MMLU-Pro (7 of 9; settings differ across cards) | regime_paired_win": {
+     "n": 7,
+     "slope": -0.0032802859140857454,
+     "spearman": -0.594618725379069,
+     "perm_p": 0.0623015873015873,
+     "lofo_spearman": {
+      "gemma": -0.3478626213914691
+     }
+    }
+   }
+  }
+ }
+}

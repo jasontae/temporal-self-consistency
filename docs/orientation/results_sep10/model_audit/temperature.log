@@ -1,0 +1,6 @@
+{"name": "gemma4_26b", "T1": 10.944, "best_T": 2, "best": 7.5, "logit_std": 4.06, "logit_max": 14.19}
+{"name": "g4_31b", "T1": 4.727, "best_T": 1.5, "best": 3.745, "logit_std": 3.74, "logit_max": 24.31}
+{"name": "g4_e4b", "T1": 4.71, "best_T": 1.5, "best": 3.892, "logit_std": 4.95, "logit_max": 25.78}
+{"name": "g3_4b", "T1": 2.675, "best_T": 1, "best": 2.675, "logit_std": 3.36, "logit_max": 21.11}
+{"name": "qwen35_27b", "T1": 2.31, "best_T": 1, "best": 2.31, "logit_std": 2.11, "logit_max": 19.18}
+{"name": "gptoss_20b", "T1": 2.948, "best_T": 1, "best": 2.948, "logit_std": 2.55, "logit_max": 13.7}

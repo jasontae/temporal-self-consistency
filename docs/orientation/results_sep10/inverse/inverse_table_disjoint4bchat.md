@@ -1,0 +1,26 @@
+| model | family | quant | truth AUROC [95% CI] | regime AUROC [95% CI] | regime paired win | sign p | staleness [95% CI] |
+|---|---|---|---|---|---|---|---|
+| gpt-oss-20B | gpt-oss | 6.5-bit | 0.693 [0.642, 0.747] | 0.547 [0.476, 0.613] | 0.491 | 0.9227 | 0.511 [0.450, 0.571] |
+| Qwen2.5-7B | qwen | 4-bit | 0.708 [0.652, 0.761] | 0.716 [0.662, 0.769] | 0.755 | 0.0000 | 0.449 [0.396, 0.499] |
+| Qwen3-4B-Thinking | qwen | 8-bit | 0.729 [0.675, 0.784] | 0.494 [0.432, 0.555] | 0.472 | 0.6274 | 0.444 [0.386, 0.497] |
+| Qwen3-4B-Instruct | qwen | 8-bit | 0.737 [0.682, 0.793] | 0.599 [0.531, 0.666] | 0.566 | 0.2065 | 0.461 [0.407, 0.513] |
+| gemma-3-4B | gemma | 4-bit | 0.748 [0.693, 0.803] | 0.484 [0.421, 0.548] | 0.491 | 0.9227 | 0.472 [0.416, 0.531] |
+| trained model (Qwen2.5-7B + TSCT) | qwen | 4-bit | 0.758 [0.703, 0.813] | 0.563 [0.502, 0.625] | 0.566 | 0.2065 | 0.387 [0.330, 0.440] |
+| Qwen3.6-27B | qwen | 4-bit | 0.795 [0.741, 0.843] | 0.510 [0.448, 0.573] | 0.528 | 0.6274 | 0.493 [0.437, 0.548] |
+| Qwen3.5-27B | qwen | 4-bit | 0.824 [0.776, 0.869] | 0.520 [0.465, 0.580] | 0.538 | 0.4968 | 0.448 [0.400, 0.494] |
+| Qwen3.6-35B-A3B | qwen | nvfp4 | 0.850 [0.802, 0.896] | 0.561 [0.501, 0.619] | 0.538 | 0.4968 | 0.476 [0.425, 0.525] |
+
+**Model level (n = 9 admitted).** OLS slope -0.423; classical SE 0.481, p = 0.4082 (t, 7 df); family-clustered CR1 SE 0.248 (3 clusters), p = 0.230 (t, 2 df). Pearson r = -0.316 (p = 0.4082); Spearman rho = -0.167 (p = 0.6682); permutation p = 0.4215 (exact). Entity-bootstrap 95% CI for the slope [-0.870, 0.134].
+
+Leave-one-model-out slopes: -0.763 to 0.005. Leave-one-family-out: without gemma: slope -0.470, rho -0.190 (n=8); without gpt-oss: slope -0.581, rho -0.214 (n=8).
+
+**Split-half control** (truth on one half of entities, regime on the other, 2000 splits): median slope -0.423, 95% of splits in [-0.964, 0.136], 94.0% negative; median Spearman -0.250.
+
+**Crossed random-effects model** (REML; random intercepts entity, model, family; b1 tested on t with n_models - 2 df):
+
+| outcome | b1 (per unit truth AUROC) | SE | t | p | variances entity / model / family / residual |
+|---|---|---|---|---|---|
+| paired win 1[T > V] | -0.420 | 0.586 | -0.72 | 0.4972 (7 df) | 0.0719 / 0.0055 / 0.0016 / 0.1717 |
+| pmi difference, z within model | -2.088 | 1.825 | -1.14 | 0.2904 (7 df) | 0.5165 / 0.0631 / 0.0138 / 0.6618 |
+
+Staleness: mean over admitted models 0.460, entity-bootstrap 95% CI [0.424, 0.494].

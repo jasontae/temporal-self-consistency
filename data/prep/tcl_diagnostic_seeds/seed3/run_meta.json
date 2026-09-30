@@ -1,0 +1,44 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "n_examples": 104,
+  "epochs": 3,
+  "learning_rate": 5e-05,
+  "lambda_over": 0.5,
+  "lambda_under": 0.5,
+  "lambda_hedge": 0.3,
+  "batch_size": 4,
+  "conditions": {
+    "broken": {
+      "n_steps": 78,
+      "wall_seconds": 26.496978044509888,
+      "pre_train_hedge_dist": {
+        "[CONFIDENT]": 0.7211538461538461,
+        "[COND_CONFIDENT]": 0.09615384615384616,
+        "[TEMPORAL_HEDGE]": 0.04807692307692308,
+        "[UNKNOWN]": 0.1346153846153846
+      },
+      "post_train_hedge_dist": {
+        "[CONFIDENT]": 0.375,
+        "[COND_CONFIDENT]": 0.0,
+        "[TEMPORAL_HEDGE]": 0.625,
+        "[UNKNOWN]": 0.0
+      }
+    },
+    "fixed": {
+      "n_steps": 78,
+      "wall_seconds": 54.37428903579712,
+      "pre_train_hedge_dist": {
+        "[CONFIDENT]": 0.7211538461538461,
+        "[COND_CONFIDENT]": 0.09615384615384616,
+        "[TEMPORAL_HEDGE]": 0.04807692307692308,
+        "[UNKNOWN]": 0.1346153846153846
+      },
+      "post_train_hedge_dist": {
+        "[CONFIDENT]": 1.0,
+        "[COND_CONFIDENT]": 0.0,
+        "[TEMPORAL_HEDGE]": 0.0,
+        "[UNKNOWN]": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+=== start 2026-09-28T07:55:27Z
+=== matched_qwen38_27b.jsonl start 2026-09-28T07:55:27Z
+[gen] /Users/edward/.oMLX/models/Qwen3.8-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.8-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (38s)
+[matched] 200/424 (74s)
+[matched] 300/424 (107s)
+[matched] 400/424 (140s)
+[matched] Qwen3.8-27B-4bit: wrote 424 rows to data/prep/predictions_7b/matched_qwen38_27b.jsonl
+=== matched_qwen38_27b.jsonl wall 153s
+=== disjoint_qwen38_27b.jsonl start 2026-09-28T07:58:00Z
+[gen] /Users/edward/.oMLX/models/Qwen3.8-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.8-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (39s)
+[matched] 200/424 (78s)
+[matched] 300/424 (117s)
+[matched] 400/424 (157s)
+[matched] Qwen3.8-27B-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint_qwen38_27b.jsonl
+=== disjoint_qwen38_27b.jsonl wall 172s
+=== disjoint_qwen35_27b.jsonl start 2026-09-28T08:00:52Z
+[gen] /Users/edward/.oMLX/models/Qwen3.5-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.5-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (39s)
+[matched] 200/424 (79s)
+[matched] 300/424 (119s)
+[matched] 400/424 (161s)
+[matched] Qwen3.5-27B-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint_qwen35_27b.jsonl
+=== disjoint_qwen35_27b.jsonl wall 175s
+=== disjoint_qwen36_27b_stock.jsonl start 2026-09-28T08:03:47Z
+[gen] /Users/edward/.oMLX/models/Qwen3.6-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (39s)
+[matched] 200/424 (77s)
+[matched] 300/424 (116s)
+=== RESTART: rebuilt disjoint set after resolving 3 founder sitelinks 2026-09-28T08:05:59Z
+=== start 2026-09-28T08:06:23Z
+=== matched_qwen38_27b.jsonl exists, skipping
+=== disjoint_qwen38_27b.jsonl start 2026-09-28T08:06:23Z
+[gen] /Users/edward/.oMLX/models/Qwen3.8-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.8-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (38s)
+[matched] 200/424 (77s)
+[matched] 300/424 (115s)
+[matched] 400/424 (154s)
+[matched] Qwen3.8-27B-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint_qwen38_27b.jsonl
+=== disjoint_qwen38_27b.jsonl wall 170s
+=== disjoint_qwen35_27b.jsonl start 2026-09-28T08:09:13Z
+[gen] /Users/edward/.oMLX/models/Qwen3.5-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.5-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (38s)
+[matched] 200/424 (77s)
+[matched] 300/424 (115s)
+[matched] 400/424 (154s)
+[matched] Qwen3.5-27B-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint_qwen35_27b.jsonl
+=== disjoint_qwen35_27b.jsonl wall 169s
+=== disjoint_qwen36_27b_stock.jsonl start 2026-09-28T08:12:02Z
+[gen] /Users/edward/.oMLX/models/Qwen3.6-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (38s)
+[matched] 200/424 (77s)
+[matched] 300/424 (115s)
+[matched] 400/424 (154s)
+[matched] Qwen3.6-27B-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint_qwen36_27b_stock.jsonl
+=== disjoint_qwen36_27b_stock.jsonl wall 168s
+=== disjoint_g3_4b.jsonl start 2026-09-28T08:14:50Z
+[matched] gemma-3-4b-it-4bit: bos_token_id=2 (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (13s)
+[matched] 300/424 (20s)
+[matched] 400/424 (27s)
+[matched] gemma-3-4b-it-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint_g3_4b.jsonl
+=== disjoint_g3_4b.jsonl wall 33s
+=== disjoint_qwen3_4b_it.jsonl start 2026-09-28T08:15:23Z
+[matched] Qwen3-4B-Instruct-2507-MLX-8bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (8s)
+[matched] 200/424 (16s)
+[matched] 300/424 (24s)
+[matched] 400/424 (32s)
+[matched] Qwen3-4B-Instruct-2507-MLX-8bit: wrote 424 rows to data/prep/predictions_7b/disjoint_qwen3_4b_it.jsonl
+=== disjoint_qwen3_4b_it.jsonl wall 37s
+=== disjoint_qwen3_4b_th.jsonl start 2026-09-28T08:16:00Z
+[matched] Qwen3-4B-Thinking-2507-MLX-8bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (8s)
+[matched] 200/424 (16s)
+[matched] 300/424 (24s)
+[matched] 400/424 (32s)
+[matched] Qwen3-4B-Thinking-2507-MLX-8bit: wrote 424 rows to data/prep/predictions_7b/disjoint_qwen3_4b_th.jsonl
+=== disjoint_qwen3_4b_th.jsonl wall 38s
+=== disjoint_gptoss_20b.jsonl start 2026-09-28T08:16:38Z
+[matched] openai-gpt-oss-20b-MLX-6.5bit: bos_token_id=None (--bos off)
+[matched] 100/424 (18s)
+[matched] 200/424 (34s)
+[matched] 300/424 (51s)
+[matched] 400/424 (67s)
+[matched] openai-gpt-oss-20b-MLX-6.5bit: wrote 424 rows to data/prep/predictions_7b/disjoint_gptoss_20b.jsonl
+=== disjoint_gptoss_20b.jsonl wall 77s
+=== disjoint_qwen36_35b.jsonl start 2026-09-28T08:17:55Z
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-nvfp4: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-35B-A3B-nvfp4: bos_token_id=None (--bos auto)
+[matched] 100/424 (10s)
+[matched] 200/424 (18s)
+[matched] 300/424 (26s)
+[matched] 400/424 (34s)
+[matched] Qwen3.6-35B-A3B-nvfp4: wrote 424 rows to data/prep/predictions_7b/disjoint_qwen36_35b.jsonl
+=== disjoint_qwen36_35b.jsonl wall 44s
+=== disjoint_g4_e4b.jsonl start 2026-09-28T08:18:39Z
+[gen] mlx_lm could not load (ValueError); retrying via mlx_vlm
+/opt/homebrew/lib/python3.14/site-packages/transformers/audio_utils.py:549: UserWarning: At least one mel filter has all zero values. The value for `num_mel_filters` (128) may be set too high. Or, the value for `num_frequency_bins` (257) may be set too low.
+  warnings.warn(
+[gen] /Users/edward/.oMLX/models/gemma-4-E4B-it-MLX-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] gemma-4-E4B-it-MLX-4bit: bos_token_id=2 (--bos auto)
+[matched] 100/424 (9s)
+[matched] 200/424 (18s)
+[matched] 300/424 (28s)
+[matched] 400/424 (37s)
+[matched] gemma-4-E4B-it-MLX-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint_g4_e4b.jsonl
+=== disjoint_g4_e4b.jsonl wall 44s
+=== disjoint_gemma4_26b.jsonl start 2026-09-28T08:19:23Z
+[gen] /Users/edward/.oMLX/models/gemma-4-26b-a4b-it-MLX-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] gemma-4-26b-a4b-it-MLX-4bit: bos_token_id=2 (--bos auto)
+[matched] 100/424 (11s)
+[matched] 200/424 (22s)
+[matched] 300/424 (33s)
+[matched] 400/424 (43s)
+[matched] gemma-4-26b-a4b-it-MLX-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint_gemma4_26b.jsonl
+=== disjoint_gemma4_26b.jsonl wall 51s
+=== disjoint_g4_31b.jsonl start 2026-09-28T08:20:14Z
+[gen] /Users/edward/.oMLX/models/gemma-4-31B-it-MLX-8bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] gemma-4-31B-it-MLX-8bit: bos_token_id=2 (--bos auto)
+[matched] 100/424 (76s)
+[matched] 200/424 (136s)
+[matched] 300/424 (197s)
+[matched] 400/424 (258s)
+[matched] gemma-4-31B-it-MLX-8bit: wrote 424 rows to data/prep/predictions_7b/disjoint_g4_31b.jsonl
+=== disjoint_g4_31b.jsonl wall 283s
+=== LOCAL SCORING DONE 2026-09-28T08:24:57Z

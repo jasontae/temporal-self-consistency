@@ -1,0 +1,71 @@
+=== qwen3_4b_it ===
+[eg] 400 questions (200 evergreen)
+[eg] 50/400 (32s)
+[eg] 100/400 (65s)
+[eg] 150/400 (97s)
+[eg] 200/400 (128s)
+[eg] 250/400 (160s)
+[eg] 300/400 (192s)
+[eg] 350/400 (223s)
+[eg] 400/400 (254s)
+[eg] Qwen3-4B-Instruct-2507-MLX-8bit: wrote 400 rows to data/prep/predictions_7b/eg_qwen3_4b_it.jsonl
+=== qwen25_7b ===
+[eg] 400 questions (200 evergreen)
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 180615.96it/s]
+[eg] 50/400 (32s)
+[eg] 100/400 (65s)
+[eg] 150/400 (97s)
+[eg] 200/400 (129s)
+[eg] 250/400 (161s)
+[eg] 300/400 (193s)
+[eg] 350/400 (225s)
+[eg] 400/400 (256s)
+[eg] Qwen2.5-7B-Instruct-4bit: wrote 400 rows to data/prep/predictions_7b/eg_qwen25_7b.jsonl
+=== qwen35_27b ===
+[eg] 400 questions (200 evergreen)
+[gen] /Users/edward/.oMLX/models/Qwen3.5-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[eg] 50/400 (113s)
+[eg] 100/400 (223s)
+[eg] 150/400 (330s)
+[eg] 200/400 (437s)
+[eg] 250/400 (545s)
+[eg] 300/400 (656s)
+[eg] 350/400 (766s)
+[eg] 400/400 (876s)
+[eg] Qwen3.5-27B-4bit: wrote 400 rows to data/prep/predictions_7b/eg_qwen35_27b.jsonl
+=== qwen36_27b ===
+[eg] 400 questions (200 evergreen)
+[gen] /Users/edward/.oMLX/models/Qwen3.6-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[eg] 50/400 (114s)
+[eg] 100/400 (223s)
+[eg] 150/400 (331s)
+[eg] 200/400 (438s)
+[eg] 250/400 (547s)
+[eg] 300/400 (655s)
+[eg] 350/400 (763s)
+[eg] 400/400 (875s)
+[eg] Qwen3.6-27B-4bit: wrote 400 rows to data/prep/predictions_7b/eg_qwen36_27b.jsonl
+=== qwen36_35b ===
+[eg] 400 questions (200 evergreen)
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-nvfp4: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[eg] 50/400 (29s)
+[eg] 100/400 (52s)
+[eg] 150/400 (76s)
+[eg] 200/400 (100s)
+[eg] 250/400 (124s)
+[eg] 300/400 (148s)
+[eg] 350/400 (171s)
+[eg] 400/400 (195s)
+[eg] Qwen3.6-35B-A3B-nvfp4: wrote 400 rows to data/prep/predictions_7b/eg_qwen36_35b.jsonl
+=== gptoss_20b ===
+[eg] 400 questions (200 evergreen)
+[eg] 50/400 (36s)
+[eg] 100/400 (69s)
+[eg] 150/400 (103s)
+[eg] 200/400 (137s)
+[eg] 250/400 (170s)
+[eg] 300/400 (204s)
+[eg] 350/400 (239s)
+[eg] 400/400 (273s)
+[eg] openai-gpt-oss-20b-MLX-6.5bit: wrote 400 rows to data/prep/predictions_7b/eg_gptoss_20b.jsonl
+=== EVERGREEN LADDER DONE ===

@@ -1,0 +1,26 @@
+{
+  "snapshots": [
+    "2024-02-26",
+    "2024-10-07",
+    "2025-02-03",
+    "2025-08-11",
+    "2026-04-21"
+  ],
+  "aged": "2024-02-26",
+  "current": "2026-04-21",
+  "n_built": 413,
+  "dropped": {
+    "false_premise": 149,
+    "question not in aged snapshot, or no answer": 38
+  },
+  "by_fact_type": {
+    "never-changing": 146,
+    "slow-changing": 137,
+    "fast-changing": 130
+  },
+  "changed_by_fact_type": {
+    "never-changing": 1,
+    "slow-changing": 43,
+    "fast-changing": 116
+  }
+}

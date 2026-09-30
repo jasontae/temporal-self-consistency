@@ -1,0 +1,105 @@
+{
+  "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "framework": "mlx",
+  "lora": {
+    "rank": 8,
+    "scale": 20.0,
+    "layers": 16,
+    "lm_head_adapted": true
+  },
+  "epochs": 3,
+  "learning_rate": 5e-05,
+  "lambda_over": 0.0,
+  "lambda_under": 0.0,
+  "lambda_hedge": 0.0,
+  "arm": "sft_only",
+  "batch_size": 4,
+  "seed": 3,
+  "n_raw_examples": 8008,
+  "n_per_volatility": 4000,
+  "grad_check_every": 5,
+  "conditions": {
+    "fixed": {
+      "n_steps": 6006,
+      "wall_seconds": 5039.07750082016,
+      "n_examples": 8008,
+      "pre_train": {
+        "dist": {
+          "[CONFIDENT]": 1.0,
+          "[COND_CONFIDENT]": 0.0,
+          "[TEMPORAL_HEDGE]": 0.0,
+          "[UNKNOWN]": 0.0
+        },
+        "accuracy": 0.44043456543456544,
+        "majority_class_rate": 0.4993756243756244,
+        "confusion": {
+          "[CONFIDENT]": {
+            "[CONFIDENT]": 3527,
+            "[COND_CONFIDENT]": 0,
+            "[TEMPORAL_HEDGE]": 0,
+            "[UNKNOWN]": 0
+          },
+          "[COND_CONFIDENT]": {
+            "[CONFIDENT]": 481,
+            "[COND_CONFIDENT]": 0,
+            "[TEMPORAL_HEDGE]": 0,
+            "[UNKNOWN]": 0
+          },
+          "[TEMPORAL_HEDGE]": {
+            "[CONFIDENT]": 3999,
+            "[COND_CONFIDENT]": 0,
+            "[TEMPORAL_HEDGE]": 0,
+            "[UNKNOWN]": 0
+          },
+          "[UNKNOWN]": {
+            "[CONFIDENT]": 1,
+            "[COND_CONFIDENT]": 0,
+            "[TEMPORAL_HEDGE]": 0,
+            "[UNKNOWN]": 0
+          }
+        },
+        "n": 8008
+      },
+      "post_train": {
+        "dist": {
+          "[CONFIDENT]": 0.45604395604395603,
+          "[COND_CONFIDENT]": 0.059940059940059943,
+          "[TEMPORAL_HEDGE]": 0.484015984015984,
+          "[UNKNOWN]": 0.0
+        },
+        "accuracy": 0.9475524475524476,
+        "majority_class_rate": 0.4993756243756244,
+        "confusion": {
+          "[CONFIDENT]": {
+            "[CONFIDENT]": 3380,
+            "[COND_CONFIDENT]": 0,
+            "[TEMPORAL_HEDGE]": 147,
+            "[UNKNOWN]": 0
+          },
+          "[COND_CONFIDENT]": {
+            "[CONFIDENT]": 2,
+            "[COND_CONFIDENT]": 479,
+            "[TEMPORAL_HEDGE]": 0,
+            "[UNKNOWN]": 0
+          },
+          "[TEMPORAL_HEDGE]": {
+            "[CONFIDENT]": 270,
+            "[COND_CONFIDENT]": 0,
+            "[TEMPORAL_HEDGE]": 3729,
+            "[UNKNOWN]": 0
+          },
+          "[UNKNOWN]": {
+            "[CONFIDENT]": 0,
+            "[COND_CONFIDENT]": 1,
+            "[TEMPORAL_HEDGE]": 0,
+            "[UNKNOWN]": 0
+          }
+        },
+        "n": 8008
+      },
+      "accuracy_lift_over_majority": 0.4481768231768232,
+      "hedge_head_logit_spread_at_init": 0.0,
+      "hedge_head_grad_norm_at_init": 1959.31884765625
+    }
+  }
+}

@@ -1,0 +1,8 @@
+files 10; identical outputs: []
+temporal_delta: local tsct - local sft: auroc_conf_correct: n=5 mean -0.0003 sd 0.0173 CI [-0.0219, +0.0212] sign-consistent False
+temporal_delta: local tsct - local sft: resolution: n=5 mean -0.0000 sd 0.0000 CI [-0.0000, +0.0000] sign-consistent False
+temporal_delta: local tsct - local sft: aurc: n=5 mean +0.0010 sd 0.0041 CI [-0.0042, +0.0061] sign-consistent False
+temporal_delta: local tsct - local sft: selective_risk_at_50: n=5 mean +0.0011 sd 0.0026 CI [-0.0021, +0.0043] sign-consistent False
+temporal_delta: local tsct - local sft: ece_by_level: n=5 mean -0.0001 sd 0.0026 CI [-0.0033, +0.0031] sign-consistent False
+temporal_delta: local tsct - local sft: reliability: n=5 mean -0.0003 sd 0.0027 CI [-0.0036, +0.0030] sign-consistent False
+temporal_delta: local tsct - local sft: accuracy: n=5 mean -0.0004 sd 0.0030 CI [-0.0041, +0.0033] sign-consistent False

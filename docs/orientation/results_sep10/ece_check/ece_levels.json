@@ -1,0 +1,158 @@
+{
+  "table1": [
+    {
+      "correctness_from": "tsct_test",
+      "policy": "trained model",
+      "n": 3622,
+      "accuracy": 0.027332965212589728,
+      "ece_binned_10": 0.450635,
+      "ece_by_level": 0.450635,
+      "abs_diff": 1e-08,
+      "all_bins_overconfident": true,
+      "brier": 0.236338,
+      "reliability": 0.209783,
+      "resolution": 3.1e-05,
+      "uncertainty": 0.026586,
+      "paper": [
+        0.4506,
+        0.219,
+        0.001
+      ]
+    },
+    {
+      "correctness_from": "tsct_test",
+      "policy": "oracle",
+      "n": 3622,
+      "accuracy": 0.027332965212589728,
+      "ece_binned_10": 0.450414,
+      "ece_by_level": 0.450414,
+      "abs_diff": 1.4e-07,
+      "all_bins_overconfident": true,
+      "brier": 0.236045,
+      "reliability": 0.20949,
+      "resolution": 3.1e-05,
+      "uncertainty": 0.026586,
+      "paper": [
+        0.4504,
+        0.218,
+        0.002
+      ]
+    },
+    {
+      "correctness_from": "tsct_test",
+      "policy": "constant [TEMPORAL_HEDGE]",
+      "n": 3622,
+      "accuracy": 0.027332965212589728,
+      "ece_binned_10": 0.422667,
+      "ece_by_level": 0.422667,
+      "abs_diff": 3e-08,
+      "all_bins_overconfident": true,
+      "brier": 0.205233,
+      "reliability": 0.178647,
+      "resolution": 0.0,
+      "uncertainty": 0.026586,
+      "paper": [
+        0.4227,
+        0.187,
+        0.0
+      ]
+    },
+    {
+      "correctness_from": "tsct_test",
+      "policy": "constant [UNKNOWN]",
+      "n": 3622,
+      "accuracy": 0.027332965212589728,
+      "ece_binned_10": 0.072667,
+      "ece_by_level": 0.072667,
+      "abs_diff": 3e-08,
+      "all_bins_overconfident": true,
+      "brier": 0.031866,
+      "reliability": 0.00528,
+      "resolution": 0.0,
+      "uncertainty": 0.026586,
+      "paper": [
+        0.0727,
+        0.031,
+        0.0
+      ]
+    },
+    {
+      "correctness_from": "sft_test",
+      "policy": "cross-entropy baseline",
+      "n": 3622,
+      "accuracy": 0.02263942573163998,
+      "ece_binned_10": 0.455163,
+      "ece_by_level": 0.455163,
+      "abs_diff": 1.1e-07,
+      "all_bins_overconfident": true,
+      "brier": 0.236829,
+      "reliability": 0.214703,
+      "resolution": 0.0,
+      "uncertainty": 0.022127,
+      "paper": [
+        0.4552,
+        0.224,
+        0.001
+      ]
+    },
+    {
+      "correctness_from": "sft_test",
+      "policy": "oracle",
+      "n": 3622,
+      "accuracy": 0.02263942573163998,
+      "ece_binned_10": 0.455108,
+      "ece_by_level": 0.455108,
+      "abs_diff": 3.2e-07,
+      "all_bins_overconfident": true,
+      "brier": 0.236735,
+      "reliability": 0.214609,
+      "resolution": 0.0,
+      "uncertainty": 0.022127,
+      "paper": null
+    },
+    {
+      "correctness_from": "sft_test",
+      "policy": "constant [TEMPORAL_HEDGE]",
+      "n": 3622,
+      "accuracy": 0.02263942573163998,
+      "ece_binned_10": 0.427361,
+      "ece_by_level": 0.427361,
+      "abs_diff": 4.3e-07,
+      "all_bins_overconfident": true,
+      "brier": 0.204764,
+      "reliability": 0.182637,
+      "resolution": 0.0,
+      "uncertainty": 0.022127,
+      "paper": null
+    },
+    {
+      "correctness_from": "sft_test",
+      "policy": "constant [UNKNOWN]",
+      "n": 3622,
+      "accuracy": 0.02263942573163998,
+      "ece_binned_10": 0.077361,
+      "ece_by_level": 0.077361,
+      "abs_diff": 4.3e-07,
+      "all_bins_overconfident": true,
+      "brier": 0.028112,
+      "reliability": 0.005985,
+      "resolution": 0.0,
+      "uncertainty": 0.022127,
+      "paper": null
+    }
+  ],
+  "counterexample": {
+    "policy": "base model correctness, constant [UNKNOWN]",
+    "accuracy": 0.03920485919381557,
+    "ece_binned_10": 0.062893,
+    "ece_by_level": 0.060795
+  },
+  "table2_bound": {
+    "n": 1953,
+    "max_accuracy": 0.0046,
+    "max_correct": 9,
+    "bin_size": 195,
+    "max_bin_accuracy": 0.0462,
+    "binned_equals_by_level": true
+  }
+}

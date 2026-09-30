@@ -1,0 +1,34 @@
+{"name": "g4_31b_it_8bit", "loader": "mlx_lm", "acc_raw": 0.9722222222222222, "acc_pmi": 0.8333333333333334, "nll": 4.727, "gen_correct": 0, "bos": 2, "no_bos": {"acc_raw": 0.6944444444444444, "acc_pmi": 0.6111111111111112, "n": 36}, "secs": 111}
+=== g4_31b_it_8bit audit wall 115s
+[gen] /Users/edward/.oMLX/models/gemma-4-31B-it-MLX-8bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+{"name": "g4_31b_it_8bit", "n_tokens": 20, "max_abs_gap": 0.23408126831054688, "mean_nll_full": 4.692128733584755, "mean_nll_prefix": 4.704891505994294}
+=== g4_31b_it_8bit positions wall 25s
+[gen] /Users/edward/.oMLX/models/gemma-4-31B-it-MLX-8bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+{"name": "g4_31b_it_8bit", "T1": 4.727, "best_T": 1.5, "best": 3.745, "logit_std": 3.74, "logit_max": 24.31}
+=== g4_31b_it_8bit temperature wall 23s
+[gen] /Users/edward/.oMLX/models/gemma-4-31B-it-MLX-8bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+{"name": "g4_31b_it_8bit", "bos": 2, "standard": {"truth_raw": 0.7515129939480242, "truth_pmi": 0.6692773228907084, "regime_raw": 0.6986472054111783, "regime_pmi": 0.553933784264863, "staleness_raw": 0.5048949804200783, "staleness_pmi": 0.535688857244571, "first_token_nll_name_frame_sd": 4.337589957961922}, "skip_first": {"truth_raw": 0.7530259878960485, "truth_pmi": 0.6635813456746174, "regime_raw": 0.6970452118191527, "regime_pmi": 0.5347098611605554, "staleness_raw": 0.5046279814880741, "staleness_pmi": 0.5366678533285867, "first_token_nll_name_frame_sd": 4.337589957961922}}
+=== g4_31b_it_8bit first_token wall 248s
+{"name": "g4_31b_it_4bit", "loader": "mlx_lm", "acc_raw": 0.9722222222222222, "acc_pmi": 0.7777777777777778, "nll": 3.959, "gen_correct": 0, "bos": 2, "no_bos": {"acc_raw": 0.6944444444444444, "acc_pmi": 0.6111111111111112, "n": 36}, "secs": 57}
+=== g4_31b_it_4bit audit wall 60s
+[gen] /Users/edward/.oMLX/models/gemma-4-31b-it-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+{"name": "g4_31b_it_4bit", "n_tokens": 20, "max_abs_gap": 0.6342830657958984, "mean_nll_full": 4.400827708997224, "mean_nll_prefix": 4.356937508834036}
+=== g4_31b_it_4bit positions wall 11s
+[gen] /Users/edward/.oMLX/models/gemma-4-31b-it-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+{"name": "g4_31b_it_4bit", "T1": 3.959, "best_T": 1.5, "best": 3.125, "logit_std": 4.04, "logit_max": 26.32}
+=== g4_31b_it_4bit temperature wall 6s
+[gen] /Users/edward/.oMLX/models/gemma-4-31b-it-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+{"name": "g4_31b_it_4bit", "bos": 2, "standard": {"truth_raw": 0.7518689925240299, "truth_pmi": 0.6640263438946244, "regime_raw": 0.7447490210039159, "regime_pmi": 0.6395514417942328, "staleness_raw": 0.5058739765040939, "staleness_pmi": 0.5161089355642577, "first_token_nll_name_frame_sd": 4.364932413065667}, "skip_first": {"truth_raw": 0.7527589889640441, "truth_pmi": 0.6592203631185475, "regime_raw": 0.7437700249199003, "regime_pmi": 0.6249555001779993, "staleness_raw": 0.5057849768600926, "staleness_pmi": 0.5158419366322534, "first_token_nll_name_frame_sd": 4.364932413065667}}
+=== g4_31b_it_4bit first_token wall 191s
+{"name": "g4_31b_pt_4bit", "loader": "mlx_lm", "acc_raw": 0.9444444444444444, "acc_pmi": 0.8611111111111112, "nll": 2.189, "gen_correct": 0, "bos": 2, "no_bos": {"acc_raw": 0.9444444444444444, "acc_pmi": 0.8611111111111112, "n": 36}, "secs": 60}
+=== g4_31b_pt_4bit audit wall 63s
+[gen] /Users/edward/.oMLX/models/gemma-4-31b-pt-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+{"name": "g4_31b_pt_4bit", "n_tokens": 20, "max_abs_gap": 0.22667884826660156, "mean_nll_full": 2.6057354776482833, "mean_nll_prefix": 2.6202770032380758}
+=== g4_31b_pt_4bit positions wall 12s
+[gen] /Users/edward/.oMLX/models/gemma-4-31b-pt-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+{"name": "g4_31b_pt_4bit", "T1": 2.189, "best_T": 1, "best": 2.189, "logit_std": 4.47, "logit_max": 27.0}
+=== g4_31b_pt_4bit temperature wall 7s
+[gen] /Users/edward/.oMLX/models/gemma-4-31b-pt-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+{"name": "g4_31b_pt_4bit", "bos": 2, "standard": {"truth_raw": 0.841936632253471, "truth_pmi": 0.8313456746173016, "regime_raw": 0.6617123531505874, "regime_pmi": 0.6506763972944108, "staleness_raw": 0.43894624421502315, "staleness_pmi": 0.42702029191883234, "first_token_nll_name_frame_sd": 1.7125617835087041}, "skip_first": {"truth_raw": 0.8407796368814525, "truth_pmi": 0.8454966180135279, "regime_raw": 0.6608223567105732, "regime_pmi": 0.6493414026343894, "staleness_raw": 0.43894624421502315, "staleness_pmi": 0.419188323246707, "first_token_nll_name_frame_sd": 1.7125617835087041}}
+=== g4_31b_pt_4bit first_token wall 193s
+=== 31B DONE 2026-09-29T02:11:33Z

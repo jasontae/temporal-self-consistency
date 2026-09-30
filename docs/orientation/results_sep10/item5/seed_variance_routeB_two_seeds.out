@@ -1,0 +1,4 @@
+files 4; identical outputs: []
+temporal_delta: local tsct - local sft: ece_by_level: n=2 mean -0.0012 sd 0.0047 CI [-0.0435, +0.0411] sign-consistent False
+temporal_delta: local tsct - local sft: resolution: n=2 mean +0.0000 sd 0.0000 CI [-0.0003, +0.0003] sign-consistent False
+temporal_delta: local tsct - local sft: accuracy: n=2 mean +0.0008 sd 0.0055 CI [-0.0483, +0.0499] sign-consistent False

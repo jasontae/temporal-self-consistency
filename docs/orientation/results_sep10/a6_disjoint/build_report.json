@@ -1,0 +1,15 @@
+{
+  "pool_size_after_filters": 19951,
+  "entities": 106,
+  "claims": 424,
+  "persons_appearing_more_than_once": [],
+  "false_founders_that_are_true_founders_elsewhere": 0,
+  "true_founders_without_sitelinks": [],
+  "sitelinks_true_median": 10,
+  "sitelinks_false_median": 10,
+  "ks_true_vs_false_sitelinks": {
+    "stat": 0.16037735849056603,
+    "p": 0.13102940318465695
+  },
+  "mean_abs_log_sitelink_gap": 0.1369577907924358
+}

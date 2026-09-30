@@ -1,0 +1,7 @@
+{
+ "oracle (gold hedge)": 0.5303417369838034,
+ "trained model (TSCT seed 0, emitted hedge)": 0.5300363842799267,
+ "constant [TEMPORAL_HEDGE]": 0.5,
+ "constant [UNKNOWN]": 0.5,
+ "cross-entropy baseline (SFT seed 0, emitted hedge)": 0.502580267328097
+}

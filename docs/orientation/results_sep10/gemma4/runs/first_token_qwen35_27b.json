@@ -1,0 +1,22 @@
+{
+  "name": "qwen35_27b",
+  "bos": null,
+  "standard": {
+    "truth_raw": 0.8089177643289427,
+    "truth_pmi": 0.8452296190815237,
+    "regime_raw": 0.5905126379494482,
+    "regime_pmi": 0.5206479174083304,
+    "staleness_raw": 0.4257742969028124,
+    "staleness_pmi": 0.41509433962264153,
+    "first_token_nll_name_frame_sd": 2.690437876801163
+  },
+  "skip_first": {
+    "truth_raw": 0.8345496618013528,
+    "truth_pmi": 0.8661445354218583,
+    "regime_raw": 0.595318618725525,
+    "regime_pmi": 0.5515307938768245,
+    "staleness_raw": 0.4165183339266643,
+    "staleness_pmi": 0.40592737629049486,
+    "first_token_nll_name_frame_sd": 2.690437876801163
+  }
+}

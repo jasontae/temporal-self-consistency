@@ -1,0 +1,22 @@
+{
+  "name": "g4_31b_it_4bit",
+  "bos": 2,
+  "standard": {
+    "truth_raw": 0.7518689925240299,
+    "truth_pmi": 0.6640263438946244,
+    "regime_raw": 0.7447490210039159,
+    "regime_pmi": 0.6395514417942328,
+    "staleness_raw": 0.5058739765040939,
+    "staleness_pmi": 0.5161089355642577,
+    "first_token_nll_name_frame_sd": 4.364932413065667
+  },
+  "skip_first": {
+    "truth_raw": 0.7527589889640441,
+    "truth_pmi": 0.6592203631185475,
+    "regime_raw": 0.7437700249199003,
+    "regime_pmi": 0.6249555001779993,
+    "staleness_raw": 0.5057849768600926,
+    "staleness_pmi": 0.5158419366322534,
+    "first_token_nll_name_frame_sd": 4.364932413065667
+  }
+}

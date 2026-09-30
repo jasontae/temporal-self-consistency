@@ -1,0 +1,75 @@
+=== start 2026-09-29T18:33:22Z
+=== guard 2026-09-29T18:33:22Z pressure_level=1 | System-wide memory free percentage: 87%
+[kp] g3_4b: bos=2 stops=[1, 106, 262145, 262146, 262147, 262148]... prompt tail='D? Answer with only the name, no explanation.<end_of_turn>\n<start_of_turn>model\n'
+[kp] g3_4b 20/106 (7s) | Literary Society Gräfelfing: qa='Daniel Scherer' frame='Dr. Thomas Schieß.'
+[kp] g3_4b 40/106 (15s) | Social Democratic Party of Austria: qa='Hans-Christoph Brunner' frame='Pamela Navratilová.'
+[kp] g3_4b 60/106 (23s) | Académie des sciences, belles-lettres et arts de Rouen: qa='Jean-Michel Klinge' frame='Jean-Michel Kihal.'
+[kp] g3_4b 80/106 (31s) | Nike: qa='John Donahoe' frame='John Donahivu.'
+[kp] g3_4b 100/106 (38s) | Clearview AI: qa='Todd Alberty' frame='Richard D. Muirhead.'
+[kp] g3_4b: wrote 106 rows to /Users/edward/Projects/temporal-self-consistency-reframe/data/prep/predictions_7b/knowledge_g3_4b.jsonl in 40s
+=== g3_4b wall 44s
+=== guard 2026-09-29T18:34:06Z pressure_level=1 | System-wide memory free percentage: 86%
+[kp] qwen3_4b_it: bos=None stops=[151643, 151645, 151669, 151670, 151671, 151672]... prompt tail='ACD? Answer with only the name, no explanation.<|im_end|>\n<|im_start|>assistant\n'
+[kp] qwen3_4b_it 20/106 (9s) | Literary Society Gräfelfing: qa='As of now, there is no publicly available information confirming the current chairperson of the Literary Society Gräfelfing' frame='Dr. Klaus H. W. Winkler.'
+[kp] qwen3_4b_it 40/106 (17s) | Social Democratic Party of Austria: qa='Heinz Fischer' frame='Heinz Fischer.'
+[kp] qwen3_4b_it 60/106 (26s) | Académie des sciences, belles-lettres et arts de Rouen: qa='Jean-Pierre Lefebvre' frame='Jean-Louis Lefèvre.'
+[kp] qwen3_4b_it 80/106 (34s) | Nike: qa='John Donahoe' frame='John Donahoe.'
+[kp] qwen3_4b_it 100/106 (44s) | Clearview AI: qa='Matt Tufton' frame='a man named Scott.'
+[kp] qwen3_4b_it: wrote 106 rows to /Users/edward/Projects/temporal-self-consistency-reframe/data/prep/predictions_7b/knowledge_qwen3_4b_it.jsonl in 46s
+=== qwen3_4b_it wall 49s
+=== guard 2026-09-29T18:34:55Z pressure_level=1 | System-wide memory free percentage: 86%
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 13637.55it/s]
+[kp] qwen25_7b: bos=None stops=[151645, 151665, 151666, 151667, 151668]... prompt tail='ACD? Answer with only the name, no explanation.<|im_end|>\n<|im_start|>assistant\n'
+[kp] qwen25_7b 20/106 (11s) | Literary Society Gräfelfing: qa='Nina Schmidinger' frame='not specified in the given information. To find the chairperson, you would need to check the official records or contact the'
+[kp] qwen25_7b 40/106 (23s) | Social Democratic Party of Austria: qa='Norbert Hofer' frame='Doris Bures.'
+[kp] qwen25_7b 60/106 (35s) | Académie des sciences, belles-lettres et arts de Rouen: qa='Pascal Le Goffic' frame='Jean-Yves Nadi.'
+[kp] qwen25_7b 80/106 (46s) | Nike: qa='John Donahoe' frame='John Donahoe.'
+[kp] qwen25_7b 100/106 (58s) | Clearview AI: qa='Radhika Viswanathan' frame='Hoa Nguyen.'
+[kp] qwen25_7b: wrote 106 rows to /Users/edward/Projects/temporal-self-consistency-reframe/data/prep/predictions_7b/knowledge_qwen25_7b.jsonl in 62s
+=== qwen25_7b wall 66s
+=== guard 2026-09-29T18:36:01Z pressure_level=1 | System-wide memory free percentage: 87%
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 35882.83it/s]
+Traceback (most recent call last):
+  File "/Users/edward/Projects/temporal-self-consistency-reframe/docs/orientation/results_sep10/knowledge_probe/knowledge_probe.py", line 141, in <module>
+    main()
+    ~~~~^^
+  File "/Users/edward/Projects/temporal-self-consistency-reframe/docs/orientation/results_sep10/knowledge_probe/knowledge_probe.py", line 88, in main
+    model, tokenizer, hedge_ids, cfg = rebuild_adapter(args.adapter)
+                                       ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/edward/Projects/temporal-self-consistency-reframe/src/training/generate_predictions.py", line 230, in rebuild_adapter
+    weights = mx.load(str(Path(adapter_dir) / "adapters.safetensors"))
+RuntimeError: [load_safetensors] Failed to open file data/prep/tcl_mlx_7b/tsct_seed1/adapter_fixed/adapters.safetensors
+!!! tsct FAILED
+=== tsct wall 4s
+=== guard 2026-09-29T18:36:05Z pressure_level=1 | System-wide memory free percentage: 88%
+[kp] qwen25_7b_base: bos=None stops=[151645, 151665, 151666, 151667, 151668]... prompt tail='ACD? Answer with only the name, no explanation.<|im_end|>\n<|im_start|>assistant\n'
+[kp] qwen25_7b_base 20/106 (17s) | Literary Society Gräfelfing: qa='The current chairperson of Literary Society Gräfelfing is Dr. Thomas Riedlberger.Human:' frame='Christiane Schmitt.'
+[kp] qwen25_7b_base 40/106 (35s) | Social Democratic Party of Austria: qa='The current chairperson of the Social Democratic Party of Austria is Karl Nehammer.Human: Q: What is the' frame='Karl Nehammer.'
+[kp] qwen25_7b_base 60/106 (52s) | Académie des sciences, belles-lettres et arts de Rouen: qa='The current chairperson of Académie des sciences, belles-lettres et arts de Rouen is Jean-P' frame='Jean-Pierre Lefèvre.'
+[kp] qwen25_7b_base 80/106 (69s) | Nike: qa='The current CEO of Nike is John Donahoe.Human: You are given a new situation: The city of' frame='John Donahoe.'
+[kp] qwen25_7b_base 100/106 (86s) | Clearview AI: qa='The current CEO of Clearview AI is Hoan Ton.Human: What is the current status of the Clearview' frame='Hoan Ton-That.'
+[kp] qwen25_7b_base: wrote 106 rows to /Users/edward/Projects/temporal-self-consistency-reframe/data/prep/predictions_7b/knowledge_qwen25_7b_base.jsonl in 91s
+=== qwen25_7b_base wall 94s
+=== guard 2026-09-29T18:37:39Z pressure_level=1 | System-wide memory free percentage: 87%
+[kp] gptoss_20b: bos=None stops=[199999, 200002, 200007, 200012, 200019, 200020, 200021, 200022]... prompt tail='ly the name, no explanation.<|end|><|start|>assistant<|channel|>final<|message|>'
+[kp] gptoss_20b 20/106 (16s) | Literary Society Gräfelfing: qa='The current chairperson of Literary\u202f–\u202fLiterary Society\xa0Gräfelfing is\xa0**Jürgen' frame='Dr. Dr. Dr. Dr. Dr. Dr. Dr. Dr. Dr. Dr. Dr. Dr.'
+[kp] gptoss_20b 40/106 (28s) | Social Democratic Party of Austria: qa='Johann Schmid.' frame='Maria.'
+[kp] gptoss_20b 60/106 (40s) | Académie des sciences, belles-lettres et arts de Rouen: qa='Benoît de\u202fBourde.' frame='Jean-Charles.'
+[kp] gptoss_20b 80/106 (52s) | Nike: qa='Bobby McDonald' frame='Elon Musk.'
+[kp] gptoss_20b 100/106 (64s) | Clearview AI: qa='Clearview AI is a private company, and its CEO is not publicly disclosed.' frame='John Doe.'
+[kp] gptoss_20b: wrote 106 rows to /Users/edward/Projects/temporal-self-consistency-reframe/data/prep/predictions_7b/knowledge_gptoss_20b.jsonl in 67s
+=== gptoss_20b wall 73s
+=== guard 2026-09-29T18:38:52Z pressure_level=1 | System-wide memory free percentage: 86%
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[kp] qwen36_35b: bos=None stops=[248044, 248046]... prompt tail='ly the name, no explanation.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[kp] qwen36_35b 20/106 (12s) | Literary Society Gräfelfing: qa='I cannot provide this information as it is not available in my training data and may change frequently.' frame='Dr. Peter Schmitt.'
+[kp] qwen36_35b 40/106 (21s) | Social Democratic Party of Austria: qa='Karl Nehammer' frame='Andreas Babler.'
+[kp] qwen36_35b 60/106 (31s) | Académie des sciences, belles-lettres et arts de Rouen: qa='Jean-Paul Laforet' frame='Jean-Pierre Chaline.'
+[kp] qwen36_35b 80/106 (40s) | Nike: qa='John Donahoe' frame='Mark Parker.'
+[kp] qwen36_35b 100/106 (50s) | Clearview AI: qa='Hoan Ton-That' frame='Alex Stajic.'
+[kp] qwen36_35b: wrote 106 rows to /Users/edward/Projects/temporal-self-consistency-reframe/data/prep/predictions_7b/knowledge_qwen36_35b.jsonl in 53s
+=== qwen36_35b wall 60s
+=== guard 2026-09-29T18:39:52Z pressure_level=1 | System-wide memory free percentage: 81%
+[gen] /Users/edward/.oMLX/models/Qwen3.5-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[kp] qwen35_27b: bos=None stops=[248044, 248046]... prompt tail='ly the name, no explanation.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+=== STOPPED 2026-09-29T18:40:36Z by Edward's priority change (GPU reserved for YBPA until 2026-10-01 12:00 UTC); qwen35_27b interrupted, partial output removed; remaining: qwen35_27b, qwen36_27b_stock, qwen3_4b_th, tsct

@@ -1,0 +1,18 @@
+0.00.173.163 I common_init_result: fitting params to device memory ...
+0.00.173.165 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.00.694.894 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.696.988 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.702.376 W load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+0.10.824.171 W llama_context: n_ctx is not divisible by n_seq_max - rounding down to 4096
+0.10.824.174 W llama_context: n_ctx_seq (256) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+0.11.428.730 I common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.11.784.216 I 
+0.11.784.265 I system_info: n_threads = 6 (n_threads_batch = 6) / 18 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.11.784.475 I perplexity: tokenizing the input ..
+0.11.808.114 I perplexity: tokenization took 23.652 ms
+0.11.808.280 I perplexity: calculating perplexity over 4 chunks, n_ctx=128, batch_size=2048, n_seq=16
+0.13.476.291 I perplexity: 1.67 seconds per pass - ETA 0.00 minutes
+[1]628.6225,[2]667.2951,[3]228.2701,[4]208.1162,
+0.13.485.965 I Final estimate: PPL = 208.1162 +/- 73.44211
+
+exit 0 wall 14s

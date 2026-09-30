@@ -1,0 +1,15 @@
+{"name": "gemma4_26b", "bos": 2, "raw_mean_nll": 10.943596037228902, "raw_mean_nll_excl_first3": 10.506744409862318, "chat_mean_nll": 10.275916280417606, "stored_diff": {"max_abs_diff_with_bos": 0.0, "max_abs_diff_no_bos": 4.377091286579768}}
+worst raw tokens: [(-25.718753814697266, ' flows'), (-25.294586181640625, ' water'), (-24.37761878967285, ' before'), (-24.07650375366211, ' river'), (-22.28339195251465, ' sometimes')]
+gemma4_26b wall 8s
+{"name": "g4_e4b", "bos": 2, "raw_mean_nll": 4.709525569279989, "raw_mean_nll_excl_first3": 4.121608934904399, "chat_mean_nll": 4.350381565093994, "stored_diff": {"max_abs_diff_with_bos": 0.0, "max_abs_diff_no_bos": 10.430619674258763}}
+worst raw tokens: [(-20.940248489379883, ' river'), (-17.66594696044922, ' harbour'), (-14.540461540222168, 'The'), (-13.814834594726562, ' old'), (-13.514720916748047, ' farmland')]
+g4_e4b wall 7s
+{"name": "gptoss_20b", "bos": 199998, "raw_mean_nll": 2.9480690161387124, "raw_mean_nll_excl_first3": 2.755600644831072, "chat_mean_nll": 2.9839004834493, "stored_diff": {"max_abs_diff_with_bos": 1.0496000876793499, "max_abs_diff_no_bos": 0.0}}
+worst raw tokens: [(-8.027359962463379, ' Most'), (-7.674549102783203, ' river'), (-7.302788734436035, ' work'), (-7.208907127380371, ' farmland'), (-6.979387283325195, ' rises')]
+gptoss_20b wall 9s
+{"name": "g3_4b", "bos": 2, "raw_mean_nll": 2.675250212351481, "raw_mean_nll_excl_first3": 2.4344427543773985, "chat_mean_nll": 6.946767203013102, "stored_diff": {"max_abs_diff_with_bos": 0.0, "max_abs_diff_no_bos": 0.0}}
+worst raw tokens: [(-13.400848388671875, ' river'), (-10.303054809570312, ' Most'), (-7.378776550292969, ' closed'), (-7.047916412353516, ' harbour'), (-6.987058639526367, ' farmland')]
+g3_4b wall 6s
+{"name": "qwen35_27b", "bos": null, "raw_mean_nll": 2.310320425033569, "raw_mean_nll_excl_first3": 2.1466574585228635, "chat_mean_nll": 2.1828214926797838, "stored_diff": {"max_abs_diff_with_bos": 0.0, "max_abs_diff_no_bos": 0.0}}
+worst raw tokens: [(-10.558618545532227, ' harbour'), (-9.763065338134766, ' river'), (-8.174301147460938, ' far'), (-7.658527374267578, ' old'), (-7.358327865600586, ' spring')]
+qwen35_27b wall 11s

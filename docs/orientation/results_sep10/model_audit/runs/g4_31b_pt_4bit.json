@@ -1,0 +1,309 @@
+{
+  "name": "g4_31b_pt_4bit",
+  "force_vlm": false,
+  "meta": {
+    "path": "/Users/edward/.oMLX/models/gemma-4-31b-pt-4bit",
+    "repo_id": "mlx-community/gemma-4-31b-4bit",
+    "base_model": "google/gemma-4-31b",
+    "converter": "mlx-vlm 0.4.3",
+    "revision_sha": "e236b3eb2f9567ded5875cfa89f1666afa1acbf1",
+    "quantization": {
+      "bits": 4,
+      "group_size": 64,
+      "mode": "affine"
+    },
+    "model_type": "gemma4",
+    "chat_template_file": false,
+    "tokenizer_class": "GemmaTokenizer",
+    "tokenizer_config_bos": "<bos>",
+    "add_bos_token": null
+  },
+  "loader": "mlx_lm",
+  "load_seconds": 3.2,
+  "tokenizer": {
+    "class": "GemmaTokenizer",
+    "len": 262144,
+    "bos_token": "<bos>",
+    "bos_id_scorer_uses": 2,
+    "eos_token": "<eos>",
+    "add_special_tokens_adds": [
+      2
+    ],
+    "first_ids_scored": [
+      2,
+      818,
+      20629,
+      529,
+      39648,
+      563
+    ],
+    "has_chat_template": false
+  },
+  "known_answer": {
+    "acc_raw": 0.9444444444444444,
+    "acc_pmi": 0.8611111111111112,
+    "n": 36
+  },
+  "known_answer_rows": [
+    {
+      "true": "The founder of Microsoft is Bill Gates.",
+      "raw_true": -3.599802017211914,
+      "raw_false": -4.569281816482544,
+      "pmi_true": 1.6873903274536133,
+      "pmi_false": 0.626976728439331
+    },
+    {
+      "true": "The founder of Apple is Steve Jobs.",
+      "raw_true": -3.377253293991089,
+      "raw_false": -4.616101503372192,
+      "pmi_true": 1.8142502307891846,
+      "pmi_false": 0.8093376954396563
+    },
+    {
+      "true": "The founder of Amazon is Jeff Bezos.",
+      "raw_true": -3.3749077320098877,
+      "raw_false": -4.042439222335815,
+      "pmi_true": 2.050531466801961,
+      "pmi_false": 1.244753122329712
+    },
+    {
+      "true": "The founder of Facebook is Mark Zuckerberg.",
+      "raw_true": -3.4228739738464355,
+      "raw_false": -4.167747497558594,
+      "pmi_true": 2.0093398094177246,
+      "pmi_false": 1.0237560272216797
+    },
+    {
+      "true": "The founder of Google is Larry Page.",
+      "raw_true": -3.566301107406616,
+      "raw_false": -4.390006065368652,
+      "pmi_true": 1.6299574375152588,
+      "pmi_false": 1.0422077178955078
+    },
+    {
+      "true": "The founder of the Ford Motor Company is Henry Ford.",
+      "raw_true": -2.7935973080721768,
+      "raw_false": -3.9164770299738105,
+      "pmi_true": 2.7860840884121982,
+      "pmi_false": 1.4387796864365088
+    },
+    {
+      "true": "The founder of the Walt Disney Company is Walt Disney.",
+      "raw_true": -3.0676075328480112,
+      "raw_false": -3.9446965997869317,
+      "pmi_true": 2.287649183562308,
+      "pmi_false": 1.6349847966974433
+    },
+    {
+      "true": "The founder of SpaceX is Elon Musk.",
+      "raw_true": -3.987429141998291,
+      "raw_false": -4.627103567123413,
+      "pmi_true": 1.177872657775879,
+      "pmi_false": 1.089081048965454
+    },
+    {
+      "true": "The founder of Virgin Group is Richard Branson.",
+      "raw_true": -3.571874830457899,
+      "raw_false": -4.320767720540364,
+      "pmi_true": 2.144309785630968,
+      "pmi_false": 0.8445340792338056
+    },
+    {
+      "true": "The founder of Oracle is Larry Ellison.",
+      "raw_true": -3.6521012783050537,
+      "raw_false": -4.809983849525452,
+      "pmi_true": 1.9860165119171143,
+      "pmi_false": 1.0718489090601606
+    },
+    {
+      "true": "The founder of Dell is Michael Dell.",
+      "raw_true": -4.045786380767822,
+      "raw_false": -4.6063103675842285,
+      "pmi_true": 1.83604637781779,
+      "pmi_false": 1.0318074226379395
+    },
+    {
+      "true": "The founder of Nike is Phil Knight.",
+      "raw_true": -3.4586434364318848,
+      "raw_false": -4.6744947168562145,
+      "pmi_true": 2.1121020317077637,
+      "pmi_false": 0.20955469873216437
+    },
+    {
+      "true": "The founder of the Red Cross is Henry Dunant.",
+      "raw_true": -2.639015544544567,
+      "raw_false": -3.3544715881347655,
+      "pmi_true": 2.7393280376087534,
+      "pmi_false": 2.7712452570597335
+    },
+    {
+      "true": "The founder of Wikipedia is Jimmy Wales.",
+      "raw_true": -3.6869423389434814,
+      "raw_false": -3.2868770252574575,
+      "pmi_true": 2.14026681582133,
+      "pmi_false": 0.44991183040117955
+    },
+    {
+      "true": "The author of Hamlet is William Shakespeare.",
+      "raw_true": -3.4077820777893066,
+      "raw_false": -4.464640855789185,
+      "pmi_true": 1.4994136492411299,
+      "pmi_false": 0.7219563325246172
+    },
+    {
+      "true": "The author of Pride and Prejudice is Jane Austen.",
+      "raw_true": -2.7818803787231445,
+      "raw_false": -3.6113021850585936,
+      "pmi_true": 2.736079851786296,
+      "pmi_false": 1.8610091527303059
+    },
+    {
+      "true": "The author of Nineteen Eighty-Four is George Orwell.",
+      "raw_true": -2.6177444458007812,
+      "raw_false": -3.5147248903910318,
+      "pmi_true": 2.5346193313598633,
+      "pmi_false": 2.0032353401184086
+    },
+    {
+      "true": "The author of War and Peace is Leo Tolstoy.",
+      "raw_true": -3.074905014038086,
+      "raw_false": -3.828649139404297,
+      "pmi_true": 2.8407865206400555,
+      "pmi_false": 1.6057952880859374
+    },
+    {
+      "true": "The author of Les Mis\u00e9rables is Victor Hugo.",
+      "raw_true": -3.240464973449707,
+      "raw_false": -4.184115028381347,
+      "pmi_true": 2.1939794540405275,
+      "pmi_false": 1.7315765062967943
+    },
+    {
+      "true": "The author of On the Origin of Species is Charles Darwin.",
+      "raw_true": -2.67069943745931,
+      "raw_false": -3.232052803039551,
+      "pmi_true": 2.4897623062133785,
+      "pmi_false": 2.3395144144694013
+    },
+    {
+      "true": "The author of Don Quixote is Miguel de Cervantes.",
+      "raw_true": -2.497037092844645,
+      "raw_false": -3.124851080087515,
+      "pmi_true": 2.1255318550836475,
+      "pmi_false": 0.9306439701308555
+    },
+    {
+      "true": "The author of the Divine Comedy is Dante Alighieri.",
+      "raw_true": -2.5244035720825195,
+      "raw_false": -3.61315900629217,
+      "pmi_true": 1.531091478135851,
+      "pmi_false": 1.0094099416361226
+    },
+    {
+      "true": "The author of Oliver Twist is Charles Dickens.",
+      "raw_true": -3.3848633236355252,
+      "raw_false": -4.426364898681641,
+      "pmi_true": 1.8017338646782766,
+      "pmi_false": 0.48083082834879587
+    },
+    {
+      "true": "The author of The Adventures of Tom Sawyer is Mark Twain.",
+      "raw_true": -2.5657604535420737,
+      "raw_false": -3.3705331484476724,
+      "pmi_true": 2.9065508842468257,
+      "pmi_false": 1.7818306287129722
+    },
+    {
+      "true": "The composer of the Moonlight Sonata is Ludwig van Beethoven.",
+      "raw_true": -2.953384746204723,
+      "raw_false": -3.445414803244851,
+      "pmi_true": 1.0187805999409068,
+      "pmi_false": 1.4215056679465552
+    },
+    {
+      "true": "The composer of The Magic Flute is Wolfgang Amadeus Mozart.",
+      "raw_true": -2.4596694065974307,
+      "raw_false": -3.884071696888317,
+      "pmi_true": 1.7938933087210374,
+      "pmi_false": 1.6096811913824696
+    },
+    {
+      "true": "The composer of the Brandenburg Concertos is Johann Sebastian Bach.",
+      "raw_true": -2.978618939717611,
+      "raw_false": -4.323874213478782,
+      "pmi_true": 1.8883015314737954,
+      "pmi_false": 1.56292927729619
+    },
+    {
+      "true": "The composer of Aida is Giuseppe Verdi.",
+      "raw_true": -3.5230333540174694,
+      "raw_false": -3.511777704412287,
+      "pmi_true": 1.970719534253317,
+      "pmi_false": 0.741785010906181
+    },
+    {
+      "true": "The painter of the Mona Lisa is Leonardo da Vinci.",
+      "raw_true": -3.0077063820578833,
+      "raw_false": -3.533140702681108,
+      "pmi_true": 1.654124520041726,
+      "pmi_false": 1.2195583318735097
+    },
+    {
+      "true": "The painter of The Starry Night is Vincent van Gogh.",
+      "raw_true": -2.956930637359619,
+      "raw_false": -3.9196603948419746,
+      "pmi_true": 1.7957683971949985,
+      "pmi_false": 1.9907501683090674
+    },
+    {
+      "true": "The painter of Guernica is Pablo Picasso.",
+      "raw_true": -3.7373170852661133,
+      "raw_false": -4.684485626220703,
+      "pmi_true": 2.1730934778849287,
+      "pmi_false": 1.024212010701497
+    },
+    {
+      "true": "The painter of The Last Supper is Leonardo da Vinci.",
+      "raw_true": -3.044629357077859,
+      "raw_false": -4.62440554300944,
+      "pmi_true": 1.6172015450217505,
+      "pmi_false": 1.165940920511881
+    },
+    {
+      "true": "The discoverer of penicillin is Alexander Fleming.",
+      "raw_true": -3.1660435994466147,
+      "raw_false": -4.004032346937391,
+      "pmi_true": 2.6415220896402993,
+      "pmi_false": 1.8290307786729603
+    },
+    {
+      "true": "The discoverer of the theory of general relativity is Albert Einstein.",
+      "raw_true": -2.722342711228591,
+      "raw_false": -3.2993819896991434,
+      "pmi_true": 2.345570979974209,
+      "pmi_false": 2.0785046462174304
+    },
+    {
+      "true": "The inventor of the telephone is Alexander Graham Bell.",
+      "raw_true": -2.845220375061035,
+      "raw_false": -3.5235758887396917,
+      "pmi_true": 1.882508332388742,
+      "pmi_false": 1.9939904742770729
+    },
+    {
+      "true": "The inventor of the World Wide Web is Tim Berners-Lee.",
+      "raw_true": -2.1814868109566823,
+      "raw_false": -3.328657323663885,
+      "pmi_true": 1.5553020447019548,
+      "pmi_false": 2.4985518311009267
+    }
+  ],
+  "known_answer_no_bos": {
+    "acc_raw": 0.9444444444444444,
+    "acc_pmi": 0.8611111111111112,
+    "n": 36
+  },
+  "nll_no_bos": 2.1891926447550456,
+  "nll_paragraph": 2.1891926447550456,
+  "score_seconds": 56.9
+}

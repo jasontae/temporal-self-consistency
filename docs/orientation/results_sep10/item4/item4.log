@@ -1,0 +1,179 @@
+=== start 2026-09-28T10:14:26Z
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 65649.98it/s]
+{"name": "qwen25_7b", "loader": "mlx_lm", "acc_raw": 0.8888888888888888, "acc_pmi": 0.8333333333333334, "nll": 2.457, "gen_correct": 5, "bos": null, "no_bos": null, "secs": 8}
+=== audit qwen25_7b wall 11s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 48087.56it/s]
+{"name": "tsct", "loader": "mlx_lm (rebuild_adapter)", "acc_raw": 0.9166666666666666, "acc_pmi": 0.7222222222222222, "nll": 2.866, "gen_correct": 5, "bos": null, "no_bos": null, "secs": 10}
+=== audit tsct wall 13s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 62914.56it/s]
+[matched] Qwen2.5-7B-Instruct-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (10s)
+[matched] 200/424 (21s)
+[matched] 300/424 (31s)
+[matched] 400/424 (42s)
+[matched] Qwen2.5-7B-Instruct-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint_qwen25_7b.jsonl
+=== disjoint_qwen25_7b.jsonl wall 49s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 21423.80it/s]
+[matched] tsct_seed1: bos_token_id=None (--bos auto)
+[matched] 100/424 (12s)
+[matched] 200/424 (24s)
+[matched] 300/424 (37s)
+[matched] 400/424 (49s)
+[matched] tsct_seed1: wrote 424 rows to data/prep/predictions_7b/disjoint_tsct.jsonl
+=== disjoint_tsct.jsonl wall 58s
+{"name": "qwen3_4b_it_4bit", "loader": "mlx_lm", "acc_raw": 0.9444444444444444, "acc_pmi": 0.8888888888888888, "nll": 2.844, "gen_correct": 5, "bos": null, "no_bos": null, "secs": 5}
+=== audit qwen3_4b_it_4bit wall 7s
+[matched] Qwen3-4B-Instruct-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (6s)
+[matched] 200/424 (12s)
+[matched] 300/424 (18s)
+[matched] 400/424 (24s)
+[matched] Qwen3-4B-Instruct-2507-4bit: wrote 424 rows to data/prep/predictions_7b/matched4b_qwen3_4b_it.jsonl
+=== matched4b_qwen3_4b_it.jsonl wall 29s
+[matched] Qwen3-4B-Instruct-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (13s)
+[matched] 300/424 (21s)
+[matched] 400/424 (28s)
+[matched] Qwen3-4B-Instruct-2507-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint4b_qwen3_4b_it.jsonl
+=== disjoint4b_qwen3_4b_it.jsonl wall 32s
+[matched] Qwen3-4B-Instruct-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (8s)
+[matched] 200/424 (16s)
+[matched] 300/424 (24s)
+[matched] 400/424 (31s)
+[matched] Qwen3-4B-Instruct-2507-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint4bchat_qwen3_4b_it.jsonl
+=== disjoint4bchat_qwen3_4b_it.jsonl wall 37s
+{"name": "qwen3_4b_th_4bit", "loader": "mlx_lm", "acc_raw": 0.9166666666666666, "acc_pmi": 0.8611111111111112, "nll": 3.027, "gen_correct": 5, "bos": null, "no_bos": null, "secs": 17}
+=== audit qwen3_4b_th_4bit wall 20s
+[matched] Qwen3-4B-Thinking-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (6s)
+[matched] 200/424 (13s)
+[matched] 300/424 (18s)
+[matched] 400/424 (24s)
+[matched] Qwen3-4B-Thinking-2507-4bit: wrote 424 rows to data/prep/predictions_7b/matched4b_qwen3_4b_th.jsonl
+=== matched4b_qwen3_4b_th.jsonl wall 27s
+[matched] Qwen3-4B-Thinking-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (7s)
+[matched] 200/424 (13s)
+[matched] 300/424 (20s)
+[matched] 400/424 (26s)
+[matched] Qwen3-4B-Thinking-2507-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint4b_qwen3_4b_th.jsonl
+=== disjoint4b_qwen3_4b_th.jsonl wall 31s
+[matched] Qwen3-4B-Thinking-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (8s)
+[matched] 200/424 (16s)
+[matched] 300/424 (24s)
+[matched] 400/424 (32s)
+[matched] Qwen3-4B-Thinking-2507-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint4bchat_qwen3_4b_th.jsonl
+=== disjoint4bchat_qwen3_4b_th.jsonl wall 38s
+{"name": "qwen36_35b_4bit", "loader": "mlx_lm", "acc_raw": 0.9722222222222222, "acc_pmi": 0.8888888888888888, "nll": 2.317, "gen_correct": 5, "bos": null, "no_bos": null, "secs": 14}
+=== audit qwen36_35b_4bit wall 17s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-35B-A3B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (9s)
+[matched] 200/424 (16s)
+[matched] 300/424 (23s)
+[matched] 400/424 (30s)
+[matched] Qwen3.6-35B-A3B-4bit: wrote 424 rows to data/prep/predictions_7b/matched4b_qwen36_35b.jsonl
+=== matched4b_qwen36_35b.jsonl wall 38s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-35B-A3B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (9s)
+[matched] 200/424 (18s)
+[matched] 300/424 (26s)
+[matched] 400/424 (34s)
+[matched] Qwen3.6-35B-A3B-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint4b_qwen36_35b.jsonl
+=== disjoint4b_qwen36_35b.jsonl wall 43s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-35B-A3B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (15s)
+[matched] 200/424 (28s)
+[matched] 300/424 (41s)
+[matched] 400/424 (54s)
+[matched] Qwen3.6-35B-A3B-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint4bchat_qwen36_35b.jsonl
+=== disjoint4bchat_qwen36_35b.jsonl wall 64s
+=== reused matched_g3_4b.jsonl as matched4b_g3_4b.jsonl (already 4-bit affine g64)
+=== reused disjoint_g3_4b.jsonl as disjoint4b_g3_4b.jsonl (already 4-bit affine g64)
+=== reused matched_qwen35_27b.jsonl as matched4b_qwen35_27b.jsonl (already 4-bit affine g64)
+=== reused disjoint_qwen35_27b.jsonl as disjoint4b_qwen35_27b.jsonl (already 4-bit affine g64)
+=== reused matched_qwen36_27b_stock.jsonl as matched4b_qwen36_27b_stock.jsonl (already 4-bit affine g64)
+=== reused disjoint_qwen36_27b_stock.jsonl as disjoint4b_qwen36_27b_stock.jsonl (already 4-bit affine g64)
+=== reused matched_qwen38_27b.jsonl as matched4b_qwen38_27b.jsonl (already 4-bit affine g64)
+=== reused disjoint_qwen38_27b.jsonl as disjoint4b_qwen38_27b.jsonl (already 4-bit affine g64)
+=== reused matched_qwen25_7b.jsonl as matched4b_qwen25_7b.jsonl (already 4-bit affine g64)
+=== reused disjoint_qwen25_7b.jsonl as disjoint4b_qwen25_7b.jsonl (already 4-bit affine g64)
+=== reused matched_tsct.jsonl as matched4b_tsct.jsonl (already 4-bit affine g64)
+=== reused disjoint_tsct.jsonl as disjoint4b_tsct.jsonl (already 4-bit affine g64)
+[matched] gemma-3-4b-it-4bit: bos_token_id=2 (--bos auto)
+[matched] 100/424 (8s)
+[matched] 200/424 (16s)
+[matched] 300/424 (23s)
+[matched] 400/424 (31s)
+[matched] gemma-3-4b-it-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint4bchat_g3_4b.jsonl
+=== disjoint4bchat_g3_4b.jsonl wall 38s
+[gen] /Users/edward/.oMLX/models/Qwen3.5-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.5-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (44s)
+[matched] 200/424 (87s)
+[matched] 300/424 (129s)
+[matched] 400/424 (171s)
+[matched] Qwen3.5-27B-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint4bchat_qwen35_27b.jsonl
+=== disjoint4bchat_qwen35_27b.jsonl wall 187s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (45s)
+[matched] 200/424 (87s)
+[matched] 300/424 (130s)
+[matched] 400/424 (172s)
+[matched] Qwen3.6-27B-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint4bchat_qwen36_27b_stock.jsonl
+=== disjoint4bchat_qwen36_27b_stock.jsonl wall 192s
+[gen] /Users/edward/.oMLX/models/Qwen3.8-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.8-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (44s)
+[matched] 200/424 (87s)
+[matched] 300/424 (128s)
+[matched] 400/424 (171s)
+[matched] Qwen3.8-27B-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint4bchat_qwen38_27b.jsonl
+=== disjoint4bchat_qwen38_27b.jsonl wall 188s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 40546.44it/s]
+[matched] Qwen2.5-7B-Instruct-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (16s)
+[matched] 200/424 (32s)
+[matched] 300/424 (48s)
+[matched] 400/424 (63s)
+[matched] Qwen2.5-7B-Instruct-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint4bchat_qwen25_7b.jsonl
+=== disjoint4bchat_qwen25_7b.jsonl wall 73s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 35713.09it/s]
+[matched] tsct_seed1: bos_token_id=None (--bos auto)
+[matched] 100/424 (18s)
+[matched] 200/424 (36s)
+[matched] 300/424 (55s)
+[matched] 400/424 (74s)
+[matched] tsct_seed1: wrote 424 rows to data/prep/predictions_7b/disjoint4bchat_tsct.jsonl
+=== disjoint4bchat_tsct.jsonl wall 84s
+=== gpt-oss-20b-MXFP4-Q4 complete 2026-09-28T10:35:42Z
+{"name": "gptoss_20b_4bit", "loader": "mlx_lm", "acc_raw": 0.9166666666666666, "acc_pmi": 0.7777777777777778, "nll": 2.893, "gen_correct": 5, "bos": 199998, "no_bos": {"acc_raw": 0.9444444444444444, "acc_pmi": 0.75, "n": 36}, "secs": 50}
+=== audit gptoss_20b_4bit wall 54s
+[matched] gpt-oss-20b-MXFP4-Q4: bos_token_id=None (--bos off)
+[matched] 100/424 (11s)
+[matched] 200/424 (22s)
+[matched] 300/424 (33s)
+[matched] 400/424 (42s)
+[matched] gpt-oss-20b-MXFP4-Q4: wrote 424 rows to data/prep/predictions_7b/matched4b_gptoss_20b.jsonl
+=== matched4b_gptoss_20b.jsonl wall 50s
+[matched] gpt-oss-20b-MXFP4-Q4: bos_token_id=None (--bos off)
+[matched] 100/424 (12s)
+[matched] 200/424 (22s)
+[matched] 300/424 (34s)
+[matched] 400/424 (45s)
+[matched] gpt-oss-20b-MXFP4-Q4: wrote 424 rows to data/prep/predictions_7b/disjoint4b_gptoss_20b.jsonl
+=== disjoint4b_gptoss_20b.jsonl wall 53s
+[matched] gpt-oss-20b-MXFP4-Q4: bos_token_id=None (--bos off)
+[matched] 100/424 (28s)
+[matched] 200/424 (54s)
+[matched] 300/424 (82s)
+[matched] 400/424 (109s)
+[matched] gpt-oss-20b-MXFP4-Q4: wrote 424 rows to data/prep/predictions_7b/disjoint4bchat_gptoss_20b.jsonl
+=== disjoint4bchat_gptoss_20b.jsonl wall 121s
+=== ITEM4 DONE 2026-09-28T10:40:20Z

@@ -1,0 +1,43 @@
+=== qwen25_7b: already scored, skipping ===
+=== tsct: already scored, skipping ===
+=== qwen35_27b: already scored, skipping ===
+=== qwen36_27b_stock: already scored, skipping ===
+=== g3_4b ===
+[matched] gemma-3-4b-it-4bit: bos_token_id=2
+[matched] 100/424 (7s)
+[matched] 200/424 (13s)
+[matched] 300/424 (19s)
+[matched] 400/424 (25s)
+[matched] gemma-3-4b-it-4bit: wrote 424 rows to data/prep/predictions_7b/matched_g3_4b.jsonl
+=== qwen3_4b_it: already scored, skipping ===
+=== qwen3_4b_th: already scored, skipping ===
+=== g4_e4b ===
+[gen] mlx_lm could not load (ValueError); retrying via mlx_vlm
+/opt/homebrew/lib/python3.14/site-packages/transformers/audio_utils.py:549: UserWarning: At least one mel filter has all zero values. The value for `num_mel_filters` (128) may be set too high. Or, the value for `num_frequency_bins` (257) may be set too low.
+  warnings.warn(
+[gen] /Users/edward/.oMLX/models/gemma-4-E4B-it-MLX-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] gemma-4-E4B-it-MLX-4bit: bos_token_id=2
+[matched] 100/424 (9s)
+[matched] 200/424 (18s)
+[matched] 300/424 (26s)
+[matched] 400/424 (34s)
+[matched] gemma-4-E4B-it-MLX-4bit: wrote 424 rows to data/prep/predictions_7b/matched_g4_e4b.jsonl
+=== gptoss_20b: already scored, skipping ===
+=== gemma4_26b ===
+[gen] /Users/edward/.oMLX/models/gemma-4-26b-a4b-it-MLX-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] gemma-4-26b-a4b-it-MLX-4bit: bos_token_id=2
+[matched] 100/424 (11s)
+[matched] 200/424 (21s)
+[matched] 300/424 (31s)
+[matched] 400/424 (40s)
+[matched] gemma-4-26b-a4b-it-MLX-4bit: wrote 424 rows to data/prep/predictions_7b/matched_gemma4_26b.jsonl
+=== g4_31b ===
+[gen] /Users/edward/.oMLX/models/gemma-4-31B-it-MLX-8bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] gemma-4-31B-it-MLX-8bit: bos_token_id=2
+[matched] 100/424 (89s)
+[matched] 200/424 (149s)
+[matched] 300/424 (204s)
+[matched] 400/424 (259s)
+[matched] gemma-4-31B-it-MLX-8bit: wrote 424 rows to data/prep/predictions_7b/matched_g4_31b.jsonl
+=== qwen36_35b: already scored, skipping ===
+=== MATCHED LADDER DONE ===

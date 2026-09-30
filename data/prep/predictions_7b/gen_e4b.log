@@ -1,0 +1,44 @@
+[gen] mlx_lm could not load (ValueError); retrying via mlx_vlm
+/opt/homebrew/lib/python3.14/site-packages/transformers/audio_utils.py:549: UserWarning: At least one mel filter has all zero values. The value for `num_mel_filters` (128) may be set too high. Or, the value for `num_frequency_bins` (257) may be set too low.
+  warnings.warn(
+[gen] /Users/edward/.oMLX/models/gemma-4-E4B-it-MLX-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[gen] 3622 examples | source=temporal-delta:test | arm=base | adapter=None
+[gen] 100/3622  EM=0.080 hedge_acc=0.000 fallback=0.000 (30s, 0.30s/ex)
+[gen] 200/3622  EM=0.040 hedge_acc=0.000 fallback=0.000 (62s, 0.31s/ex)
+[gen] 300/3622  EM=0.070 hedge_acc=0.000 fallback=0.000 (82s, 0.27s/ex)
+[gen] 400/3622  EM=0.052 hedge_acc=0.000 fallback=0.000 (116s, 0.29s/ex)
+[gen] 500/3622  EM=0.044 hedge_acc=0.000 fallback=0.000 (153s, 0.31s/ex)
+[gen] 600/3622  EM=0.037 hedge_acc=0.000 fallback=0.000 (190s, 0.32s/ex)
+[gen] 700/3622  EM=0.034 hedge_acc=0.000 fallback=0.000 (227s, 0.32s/ex)
+[gen] 800/3622  EM=0.030 hedge_acc=0.000 fallback=0.000 (264s, 0.33s/ex)
+[gen] 900/3622  EM=0.027 hedge_acc=0.000 fallback=0.000 (302s, 0.34s/ex)
+[gen] 1000/3622  EM=0.024 hedge_acc=0.000 fallback=0.000 (340s, 0.34s/ex)
+[gen] 1100/3622  EM=0.022 hedge_acc=0.000 fallback=0.000 (378s, 0.34s/ex)
+[gen] 1200/3622  EM=0.020 hedge_acc=0.000 fallback=0.000 (417s, 0.35s/ex)
+[gen] 1300/3622  EM=0.019 hedge_acc=0.000 fallback=0.000 (454s, 0.35s/ex)
+[gen] 1400/3622  EM=0.018 hedge_acc=0.000 fallback=0.000 (494s, 0.35s/ex)
+[gen] 1500/3622  EM=0.017 hedge_acc=0.000 fallback=0.000 (532s, 0.35s/ex)
+[gen] 1600/3622  EM=0.016 hedge_acc=0.000 fallback=0.000 (568s, 0.36s/ex)
+[gen] 1700/3622  EM=0.017 hedge_acc=0.000 fallback=0.000 (605s, 0.36s/ex)
+[gen] 1800/3622  EM=0.016 hedge_acc=0.000 fallback=0.000 (652s, 0.36s/ex)
+[gen] 1900/3622  EM=0.015 hedge_acc=0.000 fallback=0.000 (697s, 0.37s/ex)
+[gen] 2000/3622  EM=0.015 hedge_acc=0.000 fallback=0.000 (748s, 0.37s/ex)
+[gen] 2100/3622  EM=0.014 hedge_acc=0.000 fallback=0.000 (803s, 0.38s/ex)
+[gen] 2200/3622  EM=0.014 hedge_acc=0.000 fallback=0.000 (865s, 0.39s/ex)
+[gen] 2300/3622  EM=0.013 hedge_acc=0.000 fallback=0.000 (926s, 0.40s/ex)
+[gen] 2400/3622  EM=0.016 hedge_acc=0.000 fallback=0.000 (969s, 0.40s/ex)
+[gen] 2500/3622  EM=0.016 hedge_acc=0.000 fallback=0.000 (1015s, 0.41s/ex)
+[gen] 2600/3622  EM=0.017 hedge_acc=0.000 fallback=0.000 (1051s, 0.40s/ex)
+[gen] 2700/3622  EM=0.016 hedge_acc=0.000 fallback=0.000 (1093s, 0.40s/ex)
+[gen] 2800/3622  EM=0.016 hedge_acc=0.000 fallback=0.000 (1140s, 0.41s/ex)
+[gen] 2900/3622  EM=0.017 hedge_acc=0.000 fallback=0.000 (1188s, 0.41s/ex)
+[gen] 3000/3622  EM=0.016 hedge_acc=0.000 fallback=0.000 (1241s, 0.41s/ex)
+[gen] 3100/3622  EM=0.015 hedge_acc=0.000 fallback=0.000 (1297s, 0.42s/ex)
+[gen] 3200/3622  EM=0.015 hedge_acc=0.000 fallback=0.000 (1354s, 0.42s/ex)
+[gen] 3300/3622  EM=0.015 hedge_acc=0.000 fallback=0.000 (1389s, 0.42s/ex)
+[gen] 3400/3622  EM=0.017 hedge_acc=0.000 fallback=0.000 (1410s, 0.41s/ex)
+[gen] 3500/3622  EM=0.017 hedge_acc=0.000 fallback=0.000 (1454s, 0.42s/ex)
+[gen] 3600/3622  EM=0.016 hedge_acc=0.000 fallback=0.000 (1508s, 0.42s/ex)
+
+[gen] wrote data/prep/predictions_7b/g4_e4b_test.jsonl
+[gen] n=3622  EM=0.0160  hedge_acc=0.0000  fallback_rate=0.0000  wall=1520s

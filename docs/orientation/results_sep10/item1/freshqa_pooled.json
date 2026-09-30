@@ -1,0 +1,49 @@
+{
+  "all": {
+    "models": [
+      "fq_g3_4b",
+      "fq_gptoss_20b",
+      "fq_qwen25_7b",
+      "fq_qwen35_27b",
+      "fq_qwen36_27b_stock",
+      "fq_qwen36_35b",
+      "fq_qwen3_4b_it",
+      "fq_qwen3_4b_th",
+      "fq_tsct"
+    ],
+    "n_questions": 159,
+    "mean_auroc": 0.4813891855543689,
+    "ci95": [
+      0.4563762201741317,
+      0.5038441253642392
+    ],
+    "p_boot": 0.115,
+    "mean_paired_win": 0.46331236897274636,
+    "paired_win_ci95": [
+      0.41369671558350807,
+      0.5143256464011181
+    ],
+    "models_below_0.5": 9,
+    "of": 9
+  },
+  "truth >= 0.70": {
+    "models": [
+      "fq_qwen36_27b_stock",
+      "fq_qwen36_35b"
+    ],
+    "n_questions": 159,
+    "mean_auroc": 0.4806771884023575,
+    "ci95": [
+      0.45581612673549304,
+      0.5036415687670582
+    ],
+    "p_boot": 0.1005,
+    "mean_paired_win": 0.4528301886792453,
+    "paired_win_ci95": [
+      0.3867924528301887,
+      0.5188679245283019
+    ],
+    "models_below_0.5": 2,
+    "of": 2
+  }
+}

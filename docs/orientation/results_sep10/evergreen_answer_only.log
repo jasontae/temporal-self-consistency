@@ -1,0 +1,78 @@
+=== start 2026-09-28T08:25:07Z
+=== qwen3_4b_it start 2026-09-28T08:25:07Z
+[eg] 400 questions (200 evergreen)
+[eg] 50/400 (28s)
+[eg] 100/400 (57s)
+[eg] 150/400 (85s)
+[eg] 200/400 (113s)
+[eg] 250/400 (141s)
+[eg] 300/400 (169s)
+[eg] 350/400 (196s)
+[eg] 400/400 (223s)
+[eg] Qwen3-4B-Instruct-2507-MLX-8bit: wrote 400 rows to data/prep/predictions_7b/eg_ao_qwen3_4b_it.jsonl
+=== qwen3_4b_it wall 227s
+=== qwen35_27b start 2026-09-28T08:28:54Z
+[eg] 400 questions (200 evergreen)
+[gen] /Users/edward/.oMLX/models/Qwen3.5-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[eg] 50/400 (103s)
+[eg] 100/400 (205s)
+[eg] 150/400 (306s)
+[eg] 200/400 (408s)
+[eg] 250/400 (510s)
+[eg] 300/400 (612s)
+[eg] 350/400 (714s)
+[eg] 400/400 (816s)
+[eg] Qwen3.5-27B-4bit: wrote 400 rows to data/prep/predictions_7b/eg_ao_qwen35_27b.jsonl
+=== qwen35_27b wall 820s
+=== qwen36_27b start 2026-09-28T08:42:34Z
+[eg] 400 questions (200 evergreen)
+[gen] /Users/edward/.oMLX/models/Qwen3.6-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[eg] 50/400 (102s)
+[eg] 100/400 (204s)
+[eg] 150/400 (306s)
+[eg] 200/400 (406s)
+[eg] 250/400 (508s)
+[eg] 300/400 (609s)
+[eg] 350/400 (709s)
+[eg] 400/400 (809s)
+[eg] Qwen3.6-27B-4bit: wrote 400 rows to data/prep/predictions_7b/eg_ao_qwen36_27b.jsonl
+=== qwen36_27b wall 815s
+=== qwen38_27b start 2026-09-28T08:56:09Z
+[eg] 400 questions (200 evergreen)
+[gen] /Users/edward/.oMLX/models/Qwen3.8-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[eg] 50/400 (104s)
+[eg] 100/400 (204s)
+[eg] 150/400 (306s)
+[eg] 200/400 (407s)
+[eg] 250/400 (509s)
+[eg] 300/400 (613s)
+[eg] 350/400 (715s)
+[eg] 400/400 (815s)
+[eg] Qwen3.8-27B-4bit: wrote 400 rows to data/prep/predictions_7b/eg_ao_qwen38_27b.jsonl
+=== qwen38_27b wall 823s
+=== qwen36_35b start 2026-09-28T09:09:52Z
+[eg] 400 questions (200 evergreen)
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-nvfp4: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[eg] 50/400 (25s)
+[eg] 100/400 (48s)
+[eg] 150/400 (71s)
+[eg] 200/400 (95s)
+[eg] 250/400 (117s)
+[eg] 300/400 (140s)
+[eg] 350/400 (163s)
+[eg] 400/400 (186s)
+[eg] Qwen3.6-35B-A3B-nvfp4: wrote 400 rows to data/prep/predictions_7b/eg_ao_qwen36_35b.jsonl
+=== qwen36_35b wall 194s
+=== gptoss_20b start 2026-09-28T09:13:06Z
+[eg] 400 questions (200 evergreen)
+[eg] 50/400 (33s)
+[eg] 100/400 (64s)
+[eg] 150/400 (94s)
+[eg] 200/400 (124s)
+[eg] 250/400 (153s)
+[eg] 300/400 (181s)
+[eg] 350/400 (209s)
+[eg] 400/400 (236s)
+[eg] openai-gpt-oss-20b-MLX-6.5bit: wrote 400 rows to data/prep/predictions_7b/eg_ao_gptoss_20b.jsonl
+=== gptoss_20b wall 245s
+=== EVERGREEN AO DONE 2026-09-28T09:17:11Z

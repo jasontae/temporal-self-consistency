@@ -1,0 +1,28 @@
+## EverGreenQA uncertainty, replicated and re-read
+   scores oriented so HIGHER predicts EVERGREEN (negated PPL / entropy)
+   within-form stratifies on the past-tense marker, which alone scores
+   AUROC 0.6640 on these questions with no model consulted.
+
+   model             n |  r(PPL)  r(ent) | AUROC PPL AUROC ent | within PPL within ent
+   gptoss_20b      400 |  -0.175  -0.181 |    0.3964    0.3973 |     0.4147     0.4172
+   qwen35_27b      400 |  +0.181  +0.158 |    0.6083    0.5966 |     0.5847     0.5677
+   qwen36_27b      400 |  +0.114  +0.077 |    0.5711    0.5522 |     0.5471     0.5260
+   qwen36_35b      400 |  +0.190  +0.121 |    0.5839    0.5567 |     0.5658     0.5399
+   qwen38_27b      400 |  +0.223  +0.167 |    0.6295    0.6010 |     0.5986     0.5707
+   qwen3_4b_it     400 |  +0.147  +0.144 |    0.5857    0.5803 |     0.5806     0.5736
+
+## the size trend, which is the disputed claim
+   Pletenev et al.: larger models correlate MORE strongly.
+
+    params model           |r| PPL    AUROC  within-form
+        4B qwen3_4b_it       0.147   0.5857       0.5806
+       20B gptoss_20b        0.175   0.3964       0.4147
+       27B qwen35_27b        0.181   0.6083       0.5847
+       27B qwen36_27b        0.114   0.5711       0.5471
+       27B qwen38_27b        0.223   0.6295       0.5986
+       35B qwen36_35b        0.190   0.5839       0.5658
+
+   mean within-form AUROC, <=10B: 0.5806  (1 models)
+   mean within-form AUROC, >=20B: 0.5422  (5 models)
+   difference (large - small):    -0.0384
+   positive supports their trend; negative supports B11-Y.

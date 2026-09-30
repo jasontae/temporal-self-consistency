@@ -1,0 +1,231 @@
+[gen] 3622 examples | source=temporal-delta:test | arm=base | adapter=None
+[gen] 100/3622  EM=0.130 hedge_acc=0.990 fallback=1.000 (9s, 0.09s/ex)
+[gen] 200/3622  EM=0.080 hedge_acc=0.985 fallback=1.000 (17s, 0.09s/ex)
+[gen] 300/3622  EM=0.113 hedge_acc=0.980 fallback=1.000 (26s, 0.09s/ex)
+[gen] 400/3622  EM=0.095 hedge_acc=0.975 fallback=1.000 (35s, 0.09s/ex)
+[gen] 500/3622  EM=0.078 hedge_acc=0.976 fallback=1.000 (45s, 0.09s/ex)
+[gen] 600/3622  EM=0.065 hedge_acc=0.980 fallback=1.000 (55s, 0.09s/ex)
+[gen] 700/3622  EM=0.061 hedge_acc=0.980 fallback=1.000 (64s, 0.09s/ex)
+[gen] 800/3622  EM=0.054 hedge_acc=0.978 fallback=1.000 (73s, 0.09s/ex)
+[gen] 900/3622  EM=0.048 hedge_acc=0.978 fallback=1.000 (82s, 0.09s/ex)
+[gen] 1000/3622  EM=0.043 hedge_acc=0.977 fallback=1.000 (92s, 0.09s/ex)
+[gen] 1100/3622  EM=0.039 hedge_acc=0.976 fallback=1.000 (102s, 0.09s/ex)
+[gen] 1200/3622  EM=0.036 hedge_acc=0.975 fallback=1.000 (113s, 0.09s/ex)
+[gen] 1300/3622  EM=0.035 hedge_acc=0.975 fallback=1.000 (124s, 0.10s/ex)
+[gen] 1400/3622  EM=0.032 hedge_acc=0.976 fallback=1.000 (135s, 0.10s/ex)
+[gen] 1500/3622  EM=0.030 hedge_acc=0.975 fallback=1.000 (145s, 0.10s/ex)
+[gen] 1600/3622  EM=0.029 hedge_acc=0.974 fallback=1.000 (155s, 0.10s/ex)
+[gen] 1700/3622  EM=0.029 hedge_acc=0.965 fallback=1.000 (166s, 0.10s/ex)
+[gen] 1800/3622  EM=0.029 hedge_acc=0.964 fallback=1.000 (177s, 0.10s/ex)
+[gen] 1900/3622  EM=0.028 hedge_acc=0.966 fallback=1.000 (188s, 0.10s/ex)
+[gen] 2000/3622  EM=0.028 hedge_acc=0.967 fallback=1.000 (200s, 0.10s/ex)
+[gen] 2100/3622  EM=0.027 hedge_acc=0.968 fallback=1.000 (212s, 0.10s/ex)
+[gen] 2200/3622  EM=0.025 hedge_acc=0.969 fallback=1.000 (224s, 0.10s/ex)
+[gen] 2300/3622  EM=0.025 hedge_acc=0.970 fallback=1.000 (235s, 0.10s/ex)
+[gen] 2400/3622  EM=0.028 hedge_acc=0.971 fallback=1.000 (246s, 0.10s/ex)
+[gen] 2500/3622  EM=0.031 hedge_acc=0.971 fallback=1.000 (258s, 0.10s/ex)
+[gen] 2600/3622  EM=0.035 hedge_acc=0.972 fallback=1.000 (269s, 0.10s/ex)
+[gen] 2700/3622  EM=0.034 hedge_acc=0.973 fallback=1.000 (280s, 0.10s/ex)
+[gen] 2800/3622  EM=0.037 hedge_acc=0.974 fallback=1.000 (290s, 0.10s/ex)
+[gen] 2900/3622  EM=0.037 hedge_acc=0.973 fallback=1.000 (301s, 0.10s/ex)
+[gen] 3000/3622  EM=0.036 hedge_acc=0.974 fallback=1.000 (311s, 0.10s/ex)
+[gen] 3100/3622  EM=0.035 hedge_acc=0.974 fallback=1.000 (321s, 0.10s/ex)
+[gen] 3200/3622  EM=0.034 hedge_acc=0.973 fallback=1.000 (332s, 0.10s/ex)
+[gen] 3300/3622  EM=0.035 hedge_acc=0.961 fallback=1.000 (343s, 0.10s/ex)
+[gen] 3400/3622  EM=0.035 hedge_acc=0.933 fallback=1.000 (353s, 0.10s/ex)
+[gen] 3500/3622  EM=0.035 hedge_acc=0.921 fallback=1.000 (363s, 0.10s/ex)
+[gen] 3600/3622  EM=0.034 hedge_acc=0.896 fallback=1.000 (372s, 0.10s/ex)
+
+[gen] wrote data/prep/predictions_7b/g3_4b_test.jsonl
+[gen] n=3622  EM=0.0340  hedge_acc=0.8904  fallback_rate=1.0000  wall=375s
+[gen] WARNING: 100.0% of hedges came from the fallback path, not free generation -- the model is largely not emitting hedge tokens on its own. Treat hedge metrics from this file as teacher-forced-ish, not generative.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/edward/Projects/temporal-self-consistency/src/training/generate_predictions.py", line 380, in <module>
+    main()
+    ~~~~^^
+  File "/Users/edward/Projects/temporal-self-consistency/src/training/generate_predictions.py", line 311, in main
+    model, tokenizer, hedge_ids, cfg = load_base_only(args.base)
+                                       ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/edward/Projects/temporal-self-consistency/src/training/generate_predictions.py", line 117, in load_base_only
+    model, tokenizer = load(model_id)
+                       ~~~~^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/mlx_lm/utils.py", line 491, in load
+    model, config = load_model(model_path, lazy, model_config=model_config)
+                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/mlx_lm/utils.py", line 415, in load_model
+    model.load_weights(list(weights.items()), strict=strict)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/mlx/nn/layers/base.py", line 185, in load_weights
+    raise ValueError(
+        f"Received {num_extra} parameters not in model: \n{extras}."
+    )
+ValueError: Received 126 parameters not in model: 
+language_model.model.layers.24.self_attn.k_norm.weight,
+language_model.model.layers.24.self_attn.k_proj.biases,
+language_model.model.layers.24.self_attn.k_proj.scales,
+language_model.model.layers.24.self_attn.k_proj.weight,
+language_model.model.layers.24.self_attn.v_proj.biases,
+language_model.model.layers.24.self_attn.v_proj.scales,
+language_model.model.layers.24.self_attn.v_proj.weight,
+language_model.model.layers.25.self_attn.k_norm.weight,
+language_model.model.layers.25.self_attn.k_proj.biases,
+language_model.model.layers.25.self_attn.k_proj.scales,
+language_model.model.layers.25.self_attn.k_proj.weight,
+language_model.model.layers.25.self_attn.v_proj.biases,
+language_model.model.layers.25.self_attn.v_proj.scales,
+language_model.model.layers.25.self_attn.v_proj.weight,
+language_model.model.layers.26.self_attn.k_norm.weight,
+language_model.model.layers.26.self_attn.k_proj.biases,
+language_model.model.layers.26.self_attn.k_proj.scales,
+language_model.model.layers.26.self_attn.k_proj.weight,
+language_model.model.layers.26.self_attn.v_proj.biases,
+language_model.model.layers.26.self_attn.v_proj.scales,
+language_model.model.layers.26.self_attn.v_proj.weight,
+language_model.model.layers.27.self_attn.k_norm.weight,
+language_model.model.layers.27.self_attn.k_proj.biases,
+language_model.model.layers.27.self_attn.k_proj.scales,
+language_model.model.layers.27.self_attn.k_proj.weight,
+language_model.model.layers.27.self_attn.v_proj.biases,
+language_model.model.layers.27.self_attn.v_proj.scales,
+language_model.model.layers.27.self_attn.v_proj.weight,
+language_model.model.layers.28.self_attn.k_norm.weight,
+language_model.model.layers.28.self_attn.k_proj.biases,
+language_model.model.layers.28.self_attn.k_proj.scales,
+language_model.model.layers.28.self_attn.k_proj.weight,
+language_model.model.layers.28.self_attn.v_proj.biases,
+language_model.model.layers.28.self_attn.v_proj.scales,
+language_model.model.layers.28.self_attn.v_proj.weight,
+language_model.model.layers.29.self_attn.k_norm.weight,
+language_model.model.layers.29.self_attn.k_proj.biases,
+language_model.model.layers.29.self_attn.k_proj.scales,
+language_model.model.layers.29.self_attn.k_proj.weight,
+language_model.model.layers.29.self_attn.v_proj.biases,
+language_model.model.layers.29.self_attn.v_proj.scales,
+language_model.model.layers.29.self_attn.v_proj.weight,
+language_model.model.layers.30.self_attn.k_norm.weight,
+language_model.model.layers.30.self_attn.k_proj.biases,
+language_model.model.layers.30.self_attn.k_proj.scales,
+language_model.model.layers.30.self_attn.k_proj.weight,
+language_model.model.layers.30.self_attn.v_proj.biases,
+language_model.model.layers.30.self_attn.v_proj.scales,
+language_model.model.layers.30.self_attn.v_proj.weight,
+language_model.model.layers.31.self_attn.k_norm.weight,
+language_model.model.layers.31.self_attn.k_proj.biases,
+language_model.model.layers.31.self_attn.k_proj.scales,
+language_model.model.layers.31.self_attn.k_proj.weight,
+language_model.model.layers.31.self_attn.v_proj.biases,
+language_model.model.layers.31.self_attn.v_proj.scales,
+language_model.model.layers.31.self_attn.v_proj.weight,
+language_model.model.layers.32.self_attn.k_norm.weight,
+language_model.model.layers.32.self_attn.k_proj.biases,
+language_model.model.layers.32.self_attn.k_proj.scales,
+language_model.model.layers.32.self_attn.k_proj.weight,
+language_model.model.layers.32.self_attn.v_proj.biases,
+language_model.model.layers.32.self_attn.v_proj.scales,
+language_model.model.layers.32.self_attn.v_proj.weight,
+language_model.model.layers.33.self_attn.k_norm.weight,
+language_model.model.layers.33.self_attn.k_proj.biases,
+language_model.model.layers.33.self_attn.k_proj.scales,
+language_model.model.layers.33.self_attn.k_proj.weight,
+language_model.model.layers.33.self_attn.v_proj.biases,
+language_model.model.layers.33.self_attn.v_proj.scales,
+language_model.model.layers.33.self_attn.v_proj.weight,
+language_model.model.layers.34.self_attn.k_norm.weight,
+language_model.model.layers.34.self_attn.k_proj.biases,
+language_model.model.layers.34.self_attn.k_proj.scales,
+language_model.model.layers.34.self_attn.k_proj.weight,
+language_model.model.layers.34.self_attn.v_proj.biases,
+language_model.model.layers.34.self_attn.v_proj.scales,
+language_model.model.layers.34.self_attn.v_proj.weight,
+language_model.model.layers.35.self_attn.k_norm.weight,
+language_model.model.layers.35.self_attn.k_proj.biases,
+language_model.model.layers.35.self_attn.k_proj.scales,
+language_model.model.layers.35.self_attn.k_proj.weight,
+language_model.model.layers.35.self_attn.v_proj.biases,
+language_model.model.layers.35.self_attn.v_proj.scales,
+language_model.model.layers.35.self_attn.v_proj.weight,
+language_model.model.layers.36.self_attn.k_norm.weight,
+language_model.model.layers.36.self_attn.k_proj.biases,
+language_model.model.layers.36.self_attn.k_proj.scales,
+language_model.model.layers.36.self_attn.k_proj.weight,
+language_model.model.layers.36.self_attn.v_proj.biases,
+language_model.model.layers.36.self_attn.v_proj.scales,
+language_model.model.layers.36.self_attn.v_proj.weight,
+language_model.model.layers.37.self_attn.k_norm.weight,
+language_model.model.layers.37.self_attn.k_proj.biases,
+language_model.model.layers.37.self_attn.k_proj.scales,
+language_model.model.layers.37.self_attn.k_proj.weight,
+language_model.model.layers.37.self_attn.v_proj.biases,
+language_model.model.layers.37.self_attn.v_proj.scales,
+language_model.model.layers.37.self_attn.v_proj.weight,
+language_model.model.layers.38.self_attn.k_norm.weight,
+language_model.model.layers.38.self_attn.k_proj.biases,
+language_model.model.layers.38.self_attn.k_proj.scales,
+language_model.model.layers.38.self_attn.k_proj.weight,
+language_model.model.layers.38.self_attn.v_proj.biases,
+language_model.model.layers.38.self_attn.v_proj.scales,
+language_model.model.layers.38.self_attn.v_proj.weight,
+language_model.model.layers.39.self_attn.k_norm.weight,
+language_model.model.layers.39.self_attn.k_proj.biases,
+language_model.model.layers.39.self_attn.k_proj.scales,
+language_model.model.layers.39.self_attn.k_proj.weight,
+language_model.model.layers.39.self_attn.v_proj.biases,
+language_model.model.layers.39.self_attn.v_proj.scales,
+language_model.model.layers.39.self_attn.v_proj.weight,
+language_model.model.layers.40.self_attn.k_norm.weight,
+language_model.model.layers.40.self_attn.k_proj.biases,
+language_model.model.layers.40.self_attn.k_proj.scales,
+language_model.model.layers.40.self_attn.k_proj.weight,
+language_model.model.layers.40.self_attn.v_proj.biases,
+language_model.model.layers.40.self_attn.v_proj.scales,
+language_model.model.layers.40.self_attn.v_proj.weight,
+language_model.model.layers.41.self_attn.k_norm.weight,
+language_model.model.layers.41.self_attn.k_proj.biases,
+language_model.model.layers.41.self_attn.k_proj.scales,
+language_model.model.layers.41.self_attn.k_proj.weight,
+language_model.model.layers.41.self_attn.v_proj.biases,
+language_model.model.layers.41.self_attn.v_proj.scales,
+language_model.model.layers.41.self_attn.v_proj.weight.
+[gen] /Users/edward/.oMLX/models/gemma-4-31B-it-MLX-8bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[gen] 3622 examples | source=temporal-delta:test | arm=base | adapter=None
+[gen] 100/3622  EM=0.080 hedge_acc=0.000 fallback=0.000 (198s, 1.98s/ex)
+[gen] 200/3622  EM=0.065 hedge_acc=0.000 fallback=0.000 (369s, 1.84s/ex)
+[gen] 300/3622  EM=0.073 hedge_acc=0.000 fallback=0.000 (502s, 1.67s/ex)
+[gen] 400/3622  EM=0.080 hedge_acc=0.000 fallback=0.000 (689s, 1.72s/ex)
+[gen] 500/3622  EM=0.074 hedge_acc=0.000 fallback=0.000 (885s, 1.77s/ex)
+[gen] 600/3622  EM=0.062 hedge_acc=0.000 fallback=0.000 (1125s, 1.87s/ex)
+[gen] 700/3622  EM=0.059 hedge_acc=0.000 fallback=0.000 (1311s, 1.87s/ex)
+[gen] 800/3622  EM=0.051 hedge_acc=0.000 fallback=0.000 (1523s, 1.90s/ex)
+[gen] 900/3622  EM=0.046 hedge_acc=0.000 fallback=0.000 (1733s, 1.93s/ex)
+[gen] 1000/3622  EM=0.041 hedge_acc=0.000 fallback=0.000 (1955s, 1.95s/ex)
+[gen] 1100/3622  EM=0.038 hedge_acc=0.000 fallback=0.000 (2180s, 1.98s/ex)
+[gen] 1200/3622  EM=0.036 hedge_acc=0.000 fallback=0.000 (2391s, 1.99s/ex)
+[gen] 1300/3622  EM=0.035 hedge_acc=0.000 fallback=0.000 (2576s, 1.98s/ex)
+[gen] 1400/3622  EM=0.034 hedge_acc=0.000 fallback=0.000 (2746s, 1.96s/ex)
+[gen] 1500/3622  EM=0.033 hedge_acc=0.000 fallback=0.000 (2946s, 1.96s/ex)
+[gen] 1600/3622  EM=0.032 hedge_acc=0.000 fallback=0.000 (3137s, 1.96s/ex)
+[gen] 1700/3622  EM=0.036 hedge_acc=0.000 fallback=0.000 (3303s, 1.94s/ex)
+[gen] 1800/3622  EM=0.036 hedge_acc=0.000 fallback=0.000 (3458s, 1.92s/ex)
+[gen] 1900/3622  EM=0.038 hedge_acc=0.000 fallback=0.000 (3625s, 1.91s/ex)
+[gen] 2000/3622  EM=0.039 hedge_acc=0.000 fallback=0.000 (3800s, 1.90s/ex)
+[gen] 2100/3622  EM=0.037 hedge_acc=0.000 fallback=0.000 (4034s, 1.92s/ex)
+[gen] 2200/3622  EM=0.035 hedge_acc=0.000 fallback=0.000 (4237s, 1.93s/ex)
+[gen] 2300/3622  EM=0.034 hedge_acc=0.000 fallback=0.000 (4444s, 1.93s/ex)
+[gen] 2400/3622  EM=0.035 hedge_acc=0.000 fallback=0.000 (4600s, 1.92s/ex)
+[gen] 2500/3622  EM=0.036 hedge_acc=0.000 fallback=0.000 (4716s, 1.89s/ex)
+[gen] 2600/3622  EM=0.037 hedge_acc=0.000 fallback=0.000 (4829s, 1.86s/ex)
+[gen] 2700/3622  EM=0.036 hedge_acc=0.000 fallback=0.000 (4964s, 1.84s/ex)
+[gen] 2800/3622  EM=0.036 hedge_acc=0.000 fallback=0.000 (5082s, 1.82s/ex)
+[gen] 2900/3622  EM=0.036 hedge_acc=0.000 fallback=0.000 (5205s, 1.79s/ex)
+[gen] 3000/3622  EM=0.035 hedge_acc=0.000 fallback=0.000 (5404s, 1.80s/ex)
+[gen] 3100/3622  EM=0.034 hedge_acc=0.000 fallback=0.000 (5618s, 1.81s/ex)
+[gen] 3200/3622  EM=0.034 hedge_acc=0.000 fallback=0.000 (5814s, 1.82s/ex)
+[gen] 3300/3622  EM=0.034 hedge_acc=0.000 fallback=0.000 (5948s, 1.80s/ex)
+[gen] 3400/3622  EM=0.036 hedge_acc=0.000 fallback=0.000 (6057s, 1.78s/ex)
+[gen] 3500/3622  EM=0.036 hedge_acc=0.000 fallback=0.000 (6171s, 1.76s/ex)
+[gen] 3600/3622  EM=0.035 hedge_acc=0.000 fallback=0.000 (6278s, 1.74s/ex)
+
+[gen] wrote data/prep/predictions_7b/g4_31b_test.jsonl
+[gen] n=3622  EM=0.0348  hedge_acc=0.0000  fallback_rate=0.0000  wall=6298s
