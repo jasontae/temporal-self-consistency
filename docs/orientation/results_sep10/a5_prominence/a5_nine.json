@@ -1,0 +1,94 @@
+{
+  "models": [
+    "g3_4b",
+    "qwen3_4b_th",
+    "tsct",
+    "qwen3_4b_it",
+    "qwen25_7b",
+    "gptoss_20b",
+    "qwen36_35b",
+    "qwen35_27b",
+    "qwen36_27b_stock"
+  ],
+  "n_entities": 98,
+  "audit_date": "2026-08-11",
+  "dsl_mean": -0.16639203706054195,
+  "dsl_share_current_more_prominent": 0.29591836734693877,
+  "years_median": 2.6091718001368926,
+  "lmm": {
+    "paired win 1[current > stale]": {
+      "intercept": 0.4342230757372875,
+      "null": 0.5,
+      "se_intercept": 0.033665357445793714,
+      "p_intercept": 0.05359978899080034,
+      "slope_dsl": -0.027359689485215923,
+      "se_slope": 0.03788583469192837,
+      "p_slope": 0.4719326172833527,
+      "variances_entity_model_resid": [
+        0.06579126165773494,
+        0.001963671661823869,
+        0.18000912337228098
+      ]
+    },
+    "pmi difference, z within model": {
+      "intercept": -0.16041893593365725,
+      "null": 0.0,
+      "se_intercept": 0.07182306662898323,
+      "p_intercept": 0.027811702350184684,
+      "slope_dsl": 0.045282069380102236,
+      "se_slope": 0.0846618445675741,
+      "p_slope": 0.5939719859175783,
+      "variances_entity_model_resid": [
+        0.36346048269001546,
+        0.005296259189987586,
+        0.5846372741771817
+      ]
+    }
+  },
+  "strata": {
+    "<= 2 years": {
+      "n_entities": 25,
+      "mean_staleness_auroc": 0.4401777777777778,
+      "ci95": [
+        0.33955555555555555,
+        0.5424
+      ]
+    },
+    "> 2 years": {
+      "n_entities": 73,
+      "mean_staleness_auroc": 0.4513041846500282,
+      "ci95": [
+        0.41086976918746476,
+        0.48969214570171593
+      ]
+    },
+    "tertile 1 (<= 2.4 y)": {
+      "n_entities": 35,
+      "mean_staleness_auroc": 0.4472562358276644,
+      "ci95": [
+        0.37079138321995464,
+        0.5189115646258503
+      ]
+    },
+    "tertile 2": {
+      "n_entities": 31,
+      "mean_staleness_auroc": 0.4710371141172389,
+      "ci95": [
+        0.4135738235634177,
+        0.5268846109376807
+      ]
+    },
+    "tertile 3 (> 3.0 y)": {
+      "n_entities": 32,
+      "mean_staleness_auroc": 0.4328342013888889,
+      "ci95": [
+        0.3624131944444444,
+        0.5001112196180555
+      ]
+    }
+  },
+  "spearman_years_vs_mean_win": {
+    "rho": 0.005223652285869446,
+    "p": 0.9592869763447919
+  }
+}

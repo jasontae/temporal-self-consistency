@@ -1,0 +1,22 @@
+{
+  "name": "gemma4_26b",
+  "bos": 2,
+  "standard": {
+    "truth_raw": 0.6260234959060164,
+    "truth_pmi": 0.5840156639373443,
+    "regime_raw": 0.48122107511569956,
+    "regime_pmi": 0.37264150943396224,
+    "staleness_raw": 0.5139729441082236,
+    "staleness_pmi": 0.5477928088287647,
+    "first_token_nll_name_frame_sd": 2.7925542237748666
+  },
+  "skip_first": {
+    "truth_raw": 0.6275364898540405,
+    "truth_pmi": 0.5800996796012816,
+    "regime_raw": 0.48202207191171237,
+    "regime_pmi": 0.37735849056603776,
+    "staleness_raw": 0.5149519401922392,
+    "staleness_pmi": 0.5449448202207191,
+    "first_token_nll_name_frame_sd": 2.7925542237748666
+  }
+}

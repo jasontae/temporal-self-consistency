@@ -1,0 +1,4 @@
+{"name": "g4_31b_it_8bit", "n_tokens": 601, "ctx": 128, "chunks": 4, "ppl": 201.0504239745683, "mean_nll": 5.303555742142692}
+mlx it-8bit wall 30s
+{"name": "g4_31b_pt_4bit", "n_tokens": 601, "ctx": 128, "chunks": 4, "ppl": 5.014558214050179, "mean_nll": 1.61234532462226}
+mlx pt-4bit wall 7s

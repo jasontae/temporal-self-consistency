@@ -1,0 +1,296 @@
+=== start 2026-09-28T10:40:48Z
+!!! item5_seeds FAILED
+=== item5_seeds wall 235s
+=== ITEM5 DONE 2026-09-28T10:44:43Z
+[matched] gemma-3-4b-it-4bit: bos_token_id=2 (--bos auto)
+[matched] 100/608 (6s)
+[matched] 200/608 (13s)
+[matched] 300/608 (19s)
+[matched] 400/608 (25s)
+[matched] 500/608 (30s)
+[matched] 600/608 (35s)
+[matched] gemma-3-4b-it-4bit: wrote 608 rows to data/prep/predictions_7b/fq_g3_4b.jsonl
+=== fq_logprob g3_4b wall 40s
+[gen] 413 examples | source=freshqa | arm=base | adapter=None
+[gen] 100/413  EM=0.000 hedge_acc=0.220 fallback=1.000 (56s, 0.56s/ex)
+=== NOTE 2026-09-28T10:46:35Z: item5 seed-2 run aborted by the agent: --n-per-volatility 2000 gave 4,008 examples vs the Aug seeds' 8,008. Rescheduled with 4000 in run_queue_d3b.sh
+[gen] 200/413  EM=0.000 hedge_acc=0.265 fallback=1.000 (110s, 0.55s/ex)
+[gen] 300/413  EM=0.000 hedge_acc=0.290 fallback=1.000 (194s, 0.65s/ex)
+[gen] 400/413  EM=0.000 hedge_acc=0.310 fallback=1.000 (261s, 0.65s/ex)
+
+[gen] wrote data/prep/predictions_7b/fqgen_g3_4b.jsonl
+[gen] n=413  EM=0.0000  hedge_acc=0.3123  fallback_rate=1.0000  wall=268s
+[gen] WARNING: 100.0% of hedges came from the fallback path, not free generation -- the model is largely not emitting hedge tokens on its own. Treat hedge metrics from this file as teacher-forced-ish, not generative.
+=== fq_gen g3_4b wall 274s
+[matched] Qwen3-4B-Thinking-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/608 (6s)
+[matched] 200/608 (13s)
+[matched] 300/608 (19s)
+[matched] 400/608 (24s)
+[matched] 500/608 (29s)
+[matched] 600/608 (34s)
+[matched] Qwen3-4B-Thinking-2507-4bit: wrote 608 rows to data/prep/predictions_7b/fq_qwen3_4b_th.jsonl
+=== fq_logprob qwen3_4b_th wall 39s
+[gen] 413 examples | source=freshqa | arm=base | adapter=None
+[gen] 100/413  EM=0.000 hedge_acc=0.000 fallback=1.000 (57s, 0.57s/ex)
+[gen] 200/413  EM=0.000 hedge_acc=0.440 fallback=1.000 (113s, 0.57s/ex)
+[gen] 300/413  EM=0.000 hedge_acc=0.407 fallback=1.000 (180s, 0.60s/ex)
+[gen] 400/413  EM=0.000 hedge_acc=0.365 fallback=1.000 (236s, 0.59s/ex)
+
+[gen] wrote data/prep/predictions_7b/fqgen_qwen3_4b_th.jsonl
+[gen] n=413  EM=0.0000  hedge_acc=0.3535  fallback_rate=1.0000  wall=244s
+[gen] WARNING: 100.0% of hedges came from the fallback path, not free generation -- the model is largely not emitting hedge tokens on its own. Treat hedge metrics from this file as teacher-forced-ish, not generative.
+=== fq_gen qwen3_4b_th wall 246s
+[matched] Qwen3-4B-Instruct-2507-4bit: bos_token_id=None (--bos auto)
+[matched] 100/608 (6s)
+[matched] 200/608 (12s)
+[matched] 300/608 (18s)
+[matched] 400/608 (24s)
+[matched] 500/608 (29s)
+[matched] 600/608 (34s)
+[matched] Qwen3-4B-Instruct-2507-4bit: wrote 608 rows to data/prep/predictions_7b/fq_qwen3_4b_it.jsonl
+=== fq_logprob qwen3_4b_it wall 37s
+[gen] 413 examples | source=freshqa | arm=base | adapter=None
+[gen] 100/413  EM=0.000 hedge_acc=0.000 fallback=1.000 (55s, 0.55s/ex)
+[gen] 200/413  EM=0.000 hedge_acc=0.440 fallback=1.000 (105s, 0.52s/ex)
+[gen] 300/413  EM=0.000 hedge_acc=0.407 fallback=1.000 (158s, 0.53s/ex)
+[gen] 400/413  EM=0.000 hedge_acc=0.365 fallback=1.000 (211s, 0.53s/ex)
+
+[gen] wrote data/prep/predictions_7b/fqgen_qwen3_4b_it.jsonl
+[gen] n=413  EM=0.0000  hedge_acc=0.3535  fallback_rate=1.0000  wall=218s
+[gen] WARNING: 100.0% of hedges came from the fallback path, not free generation -- the model is largely not emitting hedge tokens on its own. Treat hedge metrics from this file as teacher-forced-ish, not generative.
+=== fq_gen qwen3_4b_it wall 221s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 33584.28it/s]
+[matched] Qwen2.5-7B-Instruct-4bit: bos_token_id=None (--bos auto)
+[matched] 100/608 (9s)
+[matched] 200/608 (19s)
+[matched] 300/608 (28s)
+[matched] 400/608 (36s)
+[matched] 500/608 (43s)
+[matched] 600/608 (50s)
+[matched] Qwen2.5-7B-Instruct-4bit: wrote 608 rows to data/prep/predictions_7b/fq_qwen25_7b.jsonl
+=== fq_logprob qwen25_7b wall 56s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 33704.23it/s]
+[gen] 413 examples | source=freshqa | arm=base | adapter=None
+[gen] 100/413  EM=0.000 hedge_acc=0.000 fallback=1.000 (85s, 0.85s/ex)
+[gen] 200/413  EM=0.000 hedge_acc=0.440 fallback=1.000 (168s, 0.84s/ex)
+[gen] 300/413  EM=0.000 hedge_acc=0.407 fallback=1.000 (252s, 0.84s/ex)
+[gen] 400/413  EM=0.000 hedge_acc=0.365 fallback=1.000 (335s, 0.84s/ex)
+
+[gen] wrote data/prep/predictions_7b/fqgen_qwen25_7b.jsonl
+[gen] n=413  EM=0.0000  hedge_acc=0.3535  fallback_rate=1.0000  wall=346s
+[gen] WARNING: 100.0% of hedges came from the fallback path, not free generation -- the model is largely not emitting hedge tokens on its own. Treat hedge metrics from this file as teacher-forced-ish, not generative.
+=== fq_gen qwen25_7b wall 352s
+[matched] gpt-oss-20b-MXFP4-Q4: bos_token_id=None (--bos off)
+[matched] 100/608 (13s)
+[matched] 200/608 (25s)
+[matched] 300/608 (37s)
+[matched] 400/608 (48s)
+[matched] 500/608 (58s)
+[matched] 600/608 (69s)
+[matched] gpt-oss-20b-MXFP4-Q4: wrote 608 rows to data/prep/predictions_7b/fq_gptoss_20b.jsonl
+=== fq_logprob gptoss_20b wall 77s
+[gen] 413 examples | source=freshqa | arm=base | adapter=None
+[gen] 100/413  EM=0.000 hedge_acc=0.000 fallback=1.000 (63s, 0.63s/ex)
+[gen] 200/413  EM=0.000 hedge_acc=0.025 fallback=1.000 (126s, 0.63s/ex)
+[gen] 300/413  EM=0.000 hedge_acc=0.023 fallback=1.000 (189s, 0.63s/ex)
+[gen] 400/413  EM=0.000 hedge_acc=0.022 fallback=1.000 (253s, 0.63s/ex)
+
+[gen] wrote data/prep/predictions_7b/fqgen_gptoss_20b.jsonl
+[gen] n=413  EM=0.0000  hedge_acc=0.0218  fallback_rate=1.0000  wall=261s
+[gen] WARNING: 100.0% of hedges came from the fallback path, not free generation -- the model is largely not emitting hedge tokens on its own. Treat hedge metrics from this file as teacher-forced-ish, not generative.
+=== fq_gen gptoss_20b wall 267s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-35B-A3B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/608 (11s)
+[matched] 200/608 (20s)
+[matched] 300/608 (28s)
+[matched] 400/608 (36s)
+[matched] 500/608 (43s)
+[matched] 600/608 (50s)
+[matched] Qwen3.6-35B-A3B-4bit: wrote 608 rows to data/prep/predictions_7b/fq_qwen36_35b.jsonl
+=== fq_logprob qwen36_35b wall 61s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-35B-A3B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[gen] 413 examples | source=freshqa | arm=base | adapter=None
+[gen] 100/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (66s, 0.66s/ex)
+[gen] 200/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (132s, 0.66s/ex)
+[gen] 300/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (197s, 0.66s/ex)
+[gen] 400/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (261s, 0.65s/ex)
+
+[gen] wrote data/prep/predictions_7b/fqgen_qwen36_35b.jsonl
+[gen] n=413  EM=0.0000  hedge_acc=0.0000  fallback_rate=0.0000  wall=269s
+=== fq_gen qwen36_35b wall 276s
+[gen] /Users/edward/.oMLX/models/Qwen3.5-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.5-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/608 (36s)
+[matched] 200/608 (71s)
+[matched] 300/608 (104s)
+[matched] 400/608 (134s)
+[matched] 500/608 (161s)
+[matched] 600/608 (188s)
+[matched] Qwen3.5-27B-4bit: wrote 608 rows to data/prep/predictions_7b/fq_qwen35_27b.jsonl
+=== fq_logprob qwen35_27b wall 197s
+[gen] /Users/edward/.oMLX/models/Qwen3.5-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[gen] 413 examples | source=freshqa | arm=base | adapter=None
+[gen] 100/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (299s, 2.99s/ex)
+[gen] 200/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (596s, 2.98s/ex)
+[gen] 300/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (893s, 2.98s/ex)
+[gen] 400/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (1191s, 2.98s/ex)
+
+[gen] wrote data/prep/predictions_7b/fqgen_qwen35_27b.jsonl
+[gen] n=413  EM=0.0000  hedge_acc=0.0000  fallback_rate=0.0000  wall=1227s
+=== fq_gen qwen35_27b wall 1234s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[matched] Qwen3.6-27B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/608 (36s)
+[matched] 200/608 (71s)
+[matched] 300/608 (104s)
+[matched] 400/608 (134s)
+[matched] 500/608 (161s)
+[matched] 600/608 (188s)
+[matched] Qwen3.6-27B-4bit: wrote 608 rows to data/prep/predictions_7b/fq_qwen36_27b_stock.jsonl
+=== fq_logprob qwen36_27b_stock wall 196s
+[gen] /Users/edward/.oMLX/models/Qwen3.6-27B-4bit: 0 spare embedding rows -- hedge tokens unavailable, answer metrics only
+[gen] 413 examples | source=freshqa | arm=base | adapter=None
+[gen] 100/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (295s, 2.95s/ex)
+[gen] 200/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (587s, 2.94s/ex)
+[gen] 300/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (891s, 2.97s/ex)
+[gen] 400/413  EM=0.000 hedge_acc=0.000 fallback=0.000 (1205s, 3.01s/ex)
+
+[gen] wrote data/prep/predictions_7b/fqgen_qwen36_27b_stock.jsonl
+[gen] n=413  EM=0.0000  hedge_acc=0.0000  fallback_rate=0.0000  wall=1243s
+=== fq_gen qwen36_27b_stock wall 1249s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 15196.75it/s]
+[matched] tsct_seed1: bos_token_id=None (--bos auto)
+[matched] 100/608 (11s)
+[matched] 200/608 (22s)
+[matched] 300/608 (33s)
+[matched] 400/608 (42s)
+[matched] 500/608 (51s)
+[matched] 600/608 (60s)
+[matched] tsct_seed1: wrote 608 rows to data/prep/predictions_7b/fq_tsct.jsonl
+=== fq_logprob tsct wall 67s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 21744.66it/s]
+[gen] 413 examples | source=freshqa | arm=tsct | adapter=data/prep/tcl_mlx_7b/tsct_seed0_paired/adapter_fixed
+[gen] 100/413  EM=0.090 hedge_acc=0.020 fallback=0.000 (20s, 0.20s/ex)
+[gen] 200/413  EM=0.160 hedge_acc=0.320 fallback=0.000 (41s, 0.21s/ex)
+[gen] 300/413  EM=0.123 hedge_acc=0.323 fallback=0.000 (64s, 0.21s/ex)
+[gen] 400/413  EM=0.115 hedge_acc=0.292 fallback=0.000 (83s, 0.21s/ex)
+
+[gen] wrote data/prep/predictions_7b/freshqa_tsct_seed0_paired.jsonl
+[gen] n=413  EM=0.1114  hedge_acc=0.2833  fallback_rate=0.0000  wall=86s
+=== fq_hedge tsct_seed0_paired wall 90s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 13893.54it/s]
+[gen] 413 examples | source=freshqa | arm=tsct | adapter=data/prep/tcl_mlx_7b/tsct_seed1/adapter_fixed
+[gen] 100/413  EM=0.130 hedge_acc=0.000 fallback=0.000 (20s, 0.20s/ex)
+[gen] 200/413  EM=0.160 hedge_acc=0.420 fallback=0.000 (40s, 0.20s/ex)
+[gen] 300/413  EM=0.123 hedge_acc=0.393 fallback=0.000 (62s, 0.21s/ex)
+[gen] 400/413  EM=0.120 hedge_acc=0.355 fallback=0.000 (83s, 0.21s/ex)
+
+[gen] wrote data/prep/predictions_7b/freshqa_tsct_seed1.jsonl
+[gen] n=413  EM=0.1162  hedge_acc=0.3438  fallback_rate=0.0000  wall=86s
+=== fq_hedge tsct_seed1 wall 97s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 20415.76it/s]
+[gen] 413 examples | source=freshqa | arm=sft_only | adapter=data/prep/tcl_mlx_7b/sft_only_seed0/adapter_fixed
+[gen] 100/413  EM=0.090 hedge_acc=0.010 fallback=0.000 (20s, 0.20s/ex)
+[gen] 200/413  EM=0.145 hedge_acc=0.400 fallback=0.005 (41s, 0.21s/ex)
+[gen] 300/413  EM=0.113 hedge_acc=0.373 fallback=0.003 (62s, 0.21s/ex)
+[gen] 400/413  EM=0.105 hedge_acc=0.338 fallback=0.003 (82s, 0.21s/ex)
+
+[gen] wrote data/prep/predictions_7b/freshqa_sft_only_seed0.jsonl
+[gen] n=413  EM=0.1017  hedge_acc=0.3269  fallback_rate=0.0024  wall=85s
+=== fq_hedge sft_only_seed0 wall 91s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 74455.10it/s]
+[gen] 413 examples | source=freshqa | arm=sft_only | adapter=data/prep/tcl_mlx_7b/sft_only_seed1/adapter_fixed
+[gen] 100/413  EM=0.080 hedge_acc=0.060 fallback=0.000 (20s, 0.20s/ex)
+[gen] 200/413  EM=0.155 hedge_acc=0.445 fallback=0.005 (42s, 0.21s/ex)
+[gen] 300/413  EM=0.127 hedge_acc=0.413 fallback=0.003 (63s, 0.21s/ex)
+[gen] 400/413  EM=0.115 hedge_acc=0.365 fallback=0.003 (84s, 0.21s/ex)
+
+[gen] wrote data/prep/predictions_7b/freshqa_sft_only_seed1.jsonl
+[gen] n=413  EM=0.1114  hedge_acc=0.3535  fallback_rate=0.0024  wall=87s
+=== fq_hedge sft_only_seed1 wall 94s
+=== ITEM1 DONE 2026-09-28T12:12:24Z
+{"name": "qwen25_7b_base", "loader": "mlx_lm", "acc_raw": 0.8888888888888888, "acc_pmi": 0.8055555555555556, "nll": 2.502, "gen_correct": 0, "bos": null, "no_bos": null, "secs": 6}
+=== audit qwen25_7b_base wall 9s
+[matched] Qwen2.5-7B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (10s)
+[matched] 200/424 (19s)
+[matched] 300/424 (27s)
+[matched] 400/424 (36s)
+[matched] Qwen2.5-7B-4bit: wrote 424 rows to data/prep/predictions_7b/matched_qwen25_7b_base.jsonl
+=== matched base wall 41s
+[matched] Qwen2.5-7B-4bit: bos_token_id=None (--bos auto)
+[matched] 100/424 (10s)
+[matched] 200/424 (20s)
+[matched] 300/424 (30s)
+[matched] 400/424 (40s)
+[matched] Qwen2.5-7B-4bit: wrote 424 rows to data/prep/predictions_7b/disjoint_qwen25_7b_base.jsonl
+=== disjoint base wall 45s
+=== BASEINSTRUCT DONE 2026-09-28T12:13:59Z
+=== date_probe wall 1971s
+=== QUEUE D3 DONE 2026-09-28T12:46:50Z
+=== d3b start 2026-09-28T12:47:38Z
+=== item5_seeds wall 46575s
+=== ITEM5 DONE 2026-09-29T01:43:53Z
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 37824.38it/s]
+[gen] 413 examples | source=freshqa | arm=tsct | adapter=data/prep/tcl_mlx_7b/tsct_seed2_r2/adapter_fixed
+[gen] 100/413  EM=0.090 hedge_acc=0.100 fallback=0.000 (20s, 0.20s/ex)
+[gen] 200/413  EM=0.150 hedge_acc=0.430 fallback=0.000 (41s, 0.20s/ex)
+[gen] 300/413  EM=0.113 hedge_acc=0.397 fallback=0.000 (62s, 0.21s/ex)
+[gen] 400/413  EM=0.107 hedge_acc=0.345 fallback=0.000 (81s, 0.20s/ex)
+
+[gen] wrote data/prep/predictions_7b/freshqa_tsct_seed2_r2.jsonl
+[gen] n=413  EM=0.1041  hedge_acc=0.3341  fallback_rate=0.0000  wall=84s
+=== fq_hedge tsct_seed2_r2 wall 89s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 34600.12it/s]
+[gen] 413 examples | source=freshqa | arm=tsct | adapter=data/prep/tcl_mlx_7b/tsct_seed3_r2/adapter_fixed
+[gen] 100/413  EM=0.100 hedge_acc=0.090 fallback=0.000 (20s, 0.20s/ex)
+[gen] 200/413  EM=0.155 hedge_acc=0.390 fallback=0.000 (40s, 0.20s/ex)
+[gen] 300/413  EM=0.117 hedge_acc=0.367 fallback=0.000 (61s, 0.20s/ex)
+[gen] 400/413  EM=0.110 hedge_acc=0.333 fallback=0.000 (80s, 0.20s/ex)
+
+[gen] wrote data/prep/predictions_7b/freshqa_tsct_seed3_r2.jsonl
+[gen] n=413  EM=0.1065  hedge_acc=0.3220  fallback_rate=0.0000  wall=83s
+=== fq_hedge tsct_seed3_r2 wall 87s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 22836.50it/s]
+[gen] 413 examples | source=freshqa | arm=tsct | adapter=data/prep/tcl_mlx_7b/tsct_seed4_r2/adapter_fixed
+[gen] 100/413  EM=0.070 hedge_acc=0.050 fallback=0.000 (19s, 0.19s/ex)
+[gen] 200/413  EM=0.135 hedge_acc=0.385 fallback=0.000 (39s, 0.20s/ex)
+[gen] 300/413  EM=0.107 hedge_acc=0.380 fallback=0.000 (60s, 0.20s/ex)
+[gen] 400/413  EM=0.098 hedge_acc=0.335 fallback=0.000 (81s, 0.20s/ex)
+
+[gen] wrote data/prep/predictions_7b/freshqa_tsct_seed4_r2.jsonl
+[gen] n=413  EM=0.0944  hedge_acc=0.3269  fallback_rate=0.0000  wall=83s
+=== fq_hedge tsct_seed4_r2 wall 87s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 55924.05it/s]
+[gen] 413 examples | source=freshqa | arm=sft_only | adapter=data/prep/tcl_mlx_7b/sft_only_seed2_r2/adapter_fixed
+[gen] 100/413  EM=0.080 hedge_acc=0.000 fallback=0.000 (19s, 0.19s/ex)
+[gen] 200/413  EM=0.165 hedge_acc=0.340 fallback=0.000 (39s, 0.19s/ex)
+[gen] 300/413  EM=0.120 hedge_acc=0.333 fallback=0.000 (60s, 0.20s/ex)
+[gen] 400/413  EM=0.110 hedge_acc=0.300 fallback=0.000 (80s, 0.20s/ex)
+
+[gen] wrote data/prep/predictions_7b/freshqa_sft_only_seed2_r2.jsonl
+[gen] n=413  EM=0.1065  hedge_acc=0.2906  fallback_rate=0.0000  wall=83s
+=== fq_hedge sft_only_seed2_r2 wall 86s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 40942.23it/s]
+[gen] 413 examples | source=freshqa | arm=sft_only | adapter=data/prep/tcl_mlx_7b/sft_only_seed3_r2/adapter_fixed
+[gen] 100/413  EM=0.090 hedge_acc=0.030 fallback=0.010 (19s, 0.19s/ex)
+[gen] 200/413  EM=0.155 hedge_acc=0.430 fallback=0.005 (39s, 0.20s/ex)
+[gen] 300/413  EM=0.117 hedge_acc=0.397 fallback=0.003 (60s, 0.20s/ex)
+[gen] 400/413  EM=0.110 hedge_acc=0.360 fallback=0.003 (80s, 0.20s/ex)
+
+[gen] wrote data/prep/predictions_7b/freshqa_sft_only_seed3_r2.jsonl
+[gen] n=413  EM=0.1065  hedge_acc=0.3487  fallback_rate=0.0024  wall=83s
+=== fq_hedge sft_only_seed3_r2 wall 87s
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 35882.83it/s]
+[gen] 413 examples | source=freshqa | arm=sft_only | adapter=data/prep/tcl_mlx_7b/sft_only_seed4_r2/adapter_fixed
+[gen] 100/413  EM=0.080 hedge_acc=0.050 fallback=0.000 (20s, 0.20s/ex)
+[gen] 200/413  EM=0.120 hedge_acc=0.420 fallback=0.000 (40s, 0.20s/ex)
+[gen] 300/413  EM=0.107 hedge_acc=0.393 fallback=0.000 (61s, 0.20s/ex)
+[gen] 400/413  EM=0.100 hedge_acc=0.355 fallback=0.000 (81s, 0.20s/ex)
+
+[gen] wrote data/prep/predictions_7b/freshqa_sft_only_seed4_r2.jsonl
+[gen] n=413  EM=0.0969  hedge_acc=0.3438  fallback_rate=0.0000  wall=84s
+=== fq_hedge sft_only_seed4_r2 wall 88s
+=== QUEUE D3B DONE 2026-09-29T01:52:37Z

@@ -1,0 +1,67 @@
+{
+  "g3_4b": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  },
+  "g4_31b": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  },
+  "g4_e4b": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  },
+  "gemma4_26b": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  },
+  "gptoss_20b": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  },
+  "qwen25_7b": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  },
+  "qwen35_27b": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  },
+  "qwen36_27b_stock": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  },
+  "qwen36_35b": {
+    "n": 318,
+    "max_abs_diff_claim": 0.03324966430664045,
+    "max_abs_diff_name": 0.010224398444680816
+  },
+  "qwen38_27b": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  },
+  "qwen3_4b_it": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  },
+  "qwen3_4b_th": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  },
+  "tsct": {
+    "n": 318,
+    "max_abs_diff_claim": 0.0,
+    "max_abs_diff_name": 0.0
+  }
+}

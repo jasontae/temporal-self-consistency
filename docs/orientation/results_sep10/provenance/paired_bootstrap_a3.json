@@ -1,0 +1,19 @@
+{
+  "n_distinct": 22,
+  "n_volatile": 10,
+  "delta_auroc": 0.06666666666666665,
+  "ci95_percentile": [
+    -0.08333333333333337,
+    0.2142857142857143
+  ],
+  "p_two_sided_sign": 0.3924,
+  "frac_boot_le_0": 0.1962,
+  "n_valid_boot": 10000,
+  "stratified": {
+    "ci95_percentile": [
+      -0.08333333333333326,
+      0.20833333333333337
+    ],
+    "p_two_sided_sign": 0.3832
+  }
+}

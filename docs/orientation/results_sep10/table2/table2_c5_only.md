@@ -1,0 +1,8 @@
+| policy (correctness from) | items | accuracy | ECE binned | ECE by level | Brier | resolution | Sep 2 (acc, ECE, Brier, res) |
+|---|---|---|---|---|---|---|---|
+| cross-entropy baseline (sft_test) | 2693 | 0.0063 | 0.4638 | 0.4639 | 0.2263 | 0.000375 | (0.0046, 0.4768, 0.231, 0.001) |
+| constant [TEMPORAL_HEDGE] (sft_test) | 2693 | 0.0063 | 0.4437 | 0.4437 | 0.2031 | 0.000000 |  |
+| trained model (tsct_test) | 2693 | 0.0052 | 0.4650 | 0.4650 | 0.2270 | 0.000000 | (0.0026, 0.4789, 0.233, 0.001) |
+| volatility-label oracle (tsct_test) | 2693 | 0.0052 | 0.4649 | 0.4649 | 0.2269 | 0.000000 | (None, 0.4788, 0.232, 0.001) |
+| constant [TEMPORAL_HEDGE] (tsct_test) | 2693 | 0.0052 | 0.4448 | 0.4448 | 0.2030 | 0.000000 |  |
+| constant [UNKNOWN] (tsct_test) | 2693 | 0.0052 | 0.0948 | 0.0948 | 0.0142 | 0.000000 | (None, 0.0974, 0.012, 0.0) |

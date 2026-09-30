@@ -1,0 +1,4 @@
+{"name": "gemma4_26b", "n_tokens": 20, "max_abs_gap": 3.796751022338867, "mean_nll_full": 11.489157827276932, "mean_nll_prefix": 11.341271551031815}
+{"name": "g4_e4b", "n_tokens": 20, "max_abs_gap": 0.44379615783691406, "mean_nll_full": 5.822353162263569, "mean_nll_prefix": 5.757153159693668}
+{"name": "g3_4b", "n_tokens": 20, "max_abs_gap": 0.32440757751464844, "mean_nll_full": 2.637679752550627, "mean_nll_prefix": 2.6531240563643608}
+{"name": "qwen35_27b", "n_tokens": 20, "max_abs_gap": 0.09585189819335938, "mean_nll_full": 2.4140214418110095, "mean_nll_prefix": 2.4207693401135897}

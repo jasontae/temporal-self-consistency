@@ -1,0 +1,327 @@
+{
+  "name": "qwen3_4b_th_4bit",
+  "force_vlm": false,
+  "meta": {
+    "path": "/Users/edward/.oMLX/models/Qwen3-4B-Thinking-2507-4bit",
+    "repo_id": "mlx-community/Qwen3-4B-Thinking-2507-4bit",
+    "base_model": "Qwen/Qwen3-4B-Thinking-2507",
+    "converter": "mlx-lm 0.26.2",
+    "revision_sha": "627b019c66f22d4de0a641d289b41497651a55c9",
+    "quantization": {
+      "bits": 4,
+      "group_size": 64
+    },
+    "model_type": "qwen3",
+    "chat_template_file": true,
+    "tokenizer_class": "Qwen2Tokenizer",
+    "tokenizer_config_bos": null,
+    "add_bos_token": false
+  },
+  "loader": "mlx_lm",
+  "load_seconds": 0.6,
+  "tokenizer": {
+    "class": "Qwen2Tokenizer",
+    "len": 151673,
+    "bos_token": null,
+    "bos_id_scorer_uses": null,
+    "eos_token": "<|im_end|>",
+    "add_special_tokens_adds": [],
+    "first_ids_scored": [
+      785,
+      18996,
+      315,
+      33144,
+      374,
+      7155
+    ],
+    "has_chat_template": true
+  },
+  "known_answer": {
+    "acc_raw": 0.9166666666666666,
+    "acc_pmi": 0.8611111111111112,
+    "n": 36
+  },
+  "known_answer_rows": [
+    {
+      "true": "The founder of Microsoft is Bill Gates.",
+      "raw_true": -3.2321289607456754,
+      "raw_false": -4.567675726754325,
+      "pmi_true": 0.8124490192958289,
+      "pmi_false": -0.5448357990809845
+    },
+    {
+      "true": "The founder of Apple is Steve Jobs.",
+      "raw_true": -3.3525124958583286,
+      "raw_false": -4.095294833183289,
+      "pmi_true": 1.0950804301670622,
+      "pmi_false": -0.2422393560409546
+    },
+    {
+      "true": "The founder of Amazon is Jeff Bezos.",
+      "raw_true": -3.346567392349243,
+      "raw_false": -4.2243146896362305,
+      "pmi_true": 0.5064880847930908,
+      "pmi_false": -0.1797367095947262
+    },
+    {
+      "true": "The founder of Facebook is Mark Zuckerberg.",
+      "raw_true": -3.4204255512782504,
+      "raw_false": -4.380419594900949,
+      "pmi_true": 0.9183340617588591,
+      "pmi_false": 0.06717333112444202
+    },
+    {
+      "true": "The founder of Google is Larry Page.",
+      "raw_true": -3.5307790211268832,
+      "raw_false": -4.710437502179827,
+      "pmi_true": 0.49206090654645696,
+      "pmi_false": -0.3716778891427177
+    },
+    {
+      "true": "The founder of the Ford Motor Company is Henry Ford.",
+      "raw_true": -2.9411164283752442,
+      "raw_false": -3.8356817245483397,
+      "pmi_true": 1.9105629920959468,
+      "pmi_false": 0.6432034492492678
+    },
+    {
+      "true": "The founder of the Walt Disney Company is Walt Disney.",
+      "raw_true": -2.7354698181152344,
+      "raw_false": -3.8953499794006348,
+      "pmi_true": 1.743415355682373,
+      "pmi_false": 0.9563294410705563
+    },
+    {
+      "true": "The founder of SpaceX is Elon Musk.",
+      "raw_true": -3.4769065039498463,
+      "raw_false": -4.724350333213806,
+      "pmi_true": 0.7658206167675199,
+      "pmi_false": -0.8432569901148477
+    },
+    {
+      "true": "The founder of Virgin Group is Richard Branson.",
+      "raw_true": -3.257564968532986,
+      "raw_false": -4.864636063575745,
+      "pmi_true": 0.6235283745659723,
+      "pmi_false": -0.6219089428583784
+    },
+    {
+      "true": "The founder of Oracle is Larry Ellison.",
+      "raw_true": -3.974308831351144,
+      "raw_false": -5.199701172964914,
+      "pmi_true": 0.6367497852870398,
+      "pmi_false": -0.7772404261997767
+    },
+    {
+      "true": "The founder of Dell is Michael Dell.",
+      "raw_true": -3.927609443664551,
+      "raw_false": -5.110320908682687,
+      "pmi_true": 0.4948513031005861,
+      "pmi_false": -0.4992622920445031
+    },
+    {
+      "true": "The founder of Nike is Phil Knight.",
+      "raw_true": -3.8037447248186385,
+      "raw_false": -4.7329699993133545,
+      "pmi_true": 1.155193110874721,
+      "pmi_false": -0.24212988217671683
+    },
+    {
+      "true": "The founder of the Red Cross is Henry Dunant.",
+      "raw_true": -2.911075973510742,
+      "raw_false": -2.865465597672896,
+      "pmi_true": 2.8064274152119952,
+      "pmi_false": 0.18670801682905713
+    },
+    {
+      "true": "The founder of Wikipedia is Jimmy Wales.",
+      "raw_true": -4.993085588727679,
+      "raw_false": -3.4782448768615724,
+      "pmi_true": -0.7812228339059013,
+      "pmi_false": -0.5419369697570802
+    },
+    {
+      "true": "The author of Hamlet is William Shakespeare.",
+      "raw_true": -3.255885362625122,
+      "raw_false": -4.058644652366638,
+      "pmi_true": 1.8356873989105225,
+      "pmi_false": 1.0755005121231083
+    },
+    {
+      "true": "The author of Pride and Prejudice is Jane Austen.",
+      "raw_true": -2.2112417221069336,
+      "raw_false": -2.97176202138265,
+      "pmi_true": 2.3766894340515137,
+      "pmi_false": 1.2109535535176597
+    },
+    {
+      "true": "The author of Nineteen Eighty-Four is George Orwell.",
+      "raw_true": -2.402472349313589,
+      "raw_false": -2.8768441336495534,
+      "pmi_true": 2.9850587404691256,
+      "pmi_false": 1.7110870225088939
+    },
+    {
+      "true": "The author of War and Peace is Leo Tolstoy.",
+      "raw_true": -2.479315150867809,
+      "raw_false": -3.670127550760905,
+      "pmi_true": 1.0870853770862925,
+      "pmi_false": 1.0415318806966147
+    },
+    {
+      "true": "The author of Les Mis\u00e9rables is Victor Hugo.",
+      "raw_true": -2.789390468597412,
+      "raw_false": -3.0390800635019937,
+      "pmi_true": 1.9222689628601075,
+      "pmi_false": 0.5273204644521079
+    },
+    {
+      "true": "The author of On the Origin of Species is Charles Darwin.",
+      "raw_true": -2.4850461266257544,
+      "raw_false": -2.991839062083851,
+      "pmi_true": 2.61501052162864,
+      "pmi_false": 1.4973699540802925
+    },
+    {
+      "true": "The author of Don Quixote is Miguel de Cervantes.",
+      "raw_true": -2.203765942500188,
+      "raw_false": -3.1114004453023276,
+      "pmi_true": 0.7248790961045484,
+      "pmi_false": 0.08618299166361476
+    },
+    {
+      "true": "The author of the Divine Comedy is Dante Alighieri.",
+      "raw_true": -2.5986772884022105,
+      "raw_false": -3.410472790400187,
+      "pmi_true": 0.5989061485637319,
+      "pmi_false": -0.4818277517954508
+    },
+    {
+      "true": "The author of Oliver Twist is Charles Dickens.",
+      "raw_true": -3.4599896669387817,
+      "raw_false": -4.996484875679016,
+      "pmi_true": 1.6741554975509647,
+      "pmi_false": 0.09508788585662842
+    },
+    {
+      "true": "The author of The Adventures of Tom Sawyer is Mark Twain.",
+      "raw_true": -2.116548697153727,
+      "raw_false": -3.5233175971291284,
+      "pmi_true": 2.0661668777465825,
+      "pmi_false": 1.8642134926535863
+    },
+    {
+      "true": "The composer of the Moonlight Sonata is Ludwig van Beethoven.",
+      "raw_true": -2.760847250620524,
+      "raw_false": -3.6660937395962803,
+      "pmi_true": -0.05008745193481445,
+      "pmi_false": -0.09433606537905614
+    },
+    {
+      "true": "The composer of The Magic Flute is Wolfgang Amadeus Mozart.",
+      "raw_true": -2.225577794588529,
+      "raw_false": -3.12760853767395,
+      "pmi_true": 0.16651319357065075,
+      "pmi_false": 1.046121222632272
+    },
+    {
+      "true": "The composer of the Brandenburg Concertos is Johann Sebastian Bach.",
+      "raw_true": -2.4113372961680093,
+      "raw_false": -2.926361152103969,
+      "pmi_true": 1.1604203780492148,
+      "pmi_false": 0.1191806112016951
+    },
+    {
+      "true": "The composer of Aida is Giuseppe Verdi.",
+      "raw_true": -3.1522421836853027,
+      "raw_false": -3.6610435139049184,
+      "pmi_true": 1.0214875766209195,
+      "pmi_false": -1.2689525257457386
+    },
+    {
+      "true": "The painter of the Mona Lisa is Leonardo da Vinci.",
+      "raw_true": -2.4586130142211915,
+      "raw_false": -2.9945236552845347,
+      "pmi_true": 1.0013836179460798,
+      "pmi_false": 0.3953556906093252
+    },
+    {
+      "true": "The painter of The Starry Night is Vincent van Gogh.",
+      "raw_true": -2.2759369214375815,
+      "raw_false": -3.4031832695007322,
+      "pmi_true": 1.1139424244562783,
+      "pmi_false": 1.2968228975931808
+    },
+    {
+      "true": "The painter of Guernica is Pablo Picasso.",
+      "raw_true": -3.58603212568495,
+      "raw_false": -4.453307056427002,
+      "pmi_true": 1.1139740414089632,
+      "pmi_false": -0.11352079936436255
+    },
+    {
+      "true": "The painter of The Last Supper is Leonardo da Vinci.",
+      "raw_true": -2.331957990472967,
+      "raw_false": -3.1358586224642666,
+      "pmi_true": 1.1280386416943045,
+      "pmi_false": 0.9788275487495195
+    },
+    {
+      "true": "The discoverer of penicillin is Alexander Fleming.",
+      "raw_true": -2.617346668243408,
+      "raw_false": -2.542656031521884,
+      "pmi_true": 1.7031771659851072,
+      "pmi_false": 1.865826043215665
+    },
+    {
+      "true": "The discoverer of the theory of general relativity is Albert Einstein.",
+      "raw_true": -2.236888812138484,
+      "raw_false": -2.4697704950968427,
+      "pmi_true": 2.2904412049513594,
+      "pmi_false": 1.5957600094023205
+    },
+    {
+      "true": "The inventor of the telephone is Alexander Graham Bell.",
+      "raw_true": -2.908079677157932,
+      "raw_false": -3.4917569160461426,
+      "pmi_true": 0.8831556108262806,
+      "pmi_false": 1.4057526588439941
+    },
+    {
+      "true": "The inventor of the World Wide Web is Tim Berners-Lee.",
+      "raw_true": -2.015374623812162,
+      "raw_false": -3.8245355606079103,
+      "pmi_true": 0.9209332832923303,
+      "pmi_false": 0.3873271942138672
+    }
+  ],
+  "nll_paragraph": 3.0269121964772543,
+  "generation": [
+    {
+      "q": "What is the capital of France?",
+      "text": "Hmm, the user is asking for the capital of France and wants the answer in one word. That's straightforward\u2014Paris is the capital. I should confirm that to be sure. Yes, historically and currently, Paris has been the capital since",
+      "correct": true
+    },
+    {
+      "q": "What is the capital of Japan?",
+      "text": "Okay, the user is asking for the capital of Japan and wants the answer in one word. \n\nHmm, this seems straightforward but I should be careful. Sometimes people confuse Tokyo with other cities like Kyoto (which was the capital for centuries)",
+      "correct": true
+    },
+    {
+      "q": "What is the capital of Italy?",
+      "text": "Okay, the user is asking for the capital of Italy and wants the answer in one word. \n\nHmm, this seems like a straightforward geography question. I recall that Rome is the capital of Italy. Let me double-check to be absolutely sure",
+      "correct": true
+    },
+    {
+      "q": "What is the capital of Egypt?",
+      "text": "Okay, the user is asking for the capital of Egypt and wants the answer in one word. \n\nHmm, this seems straightforward but I should be careful. Sometimes people confuse Cairo with other cities like Alexandria, but no\u2014Cairo is definitely",
+      "correct": true
+    },
+    {
+      "q": "What is the capital of Canada?",
+      "text": "Okay, the user is asking for the capital of Canada and wants the answer in one word. \n\nHmm, this seems like a straightforward geography question. I recall that Ottawa is the capital of Canada. \n\nLet me double-check to be absolutely",
+      "correct": true
+    }
+  ],
+  "score_seconds": 16.7
+}

@@ -1,0 +1,56 @@
+{
+  "disjoint4b_": {
+    "ols_slope": -0.26764219475008444,
+    "exact_permutation_p": 0.40396549823633154,
+    "spearman_rho": -0.39999999999999997,
+    "slope_entity_bootstrap_ci": [
+      -0.6533893336421355,
+      0.09518675830854595
+    ],
+    "n": 9,
+    "lmm_paired_win_b1": -0.2244837393896122,
+    "lmm_paired_win_p": 0.6182042061642213,
+    "split_half_frac_negative": 0.9645,
+    "staleness_mean": 0.4421897867964084,
+    "staleness_ci": [
+      0.40439361575887034,
+      0.4768905007713302
+    ]
+  },
+  "disjoint4bchat_": {
+    "ols_slope": -0.4231904943061074,
+    "exact_permutation_p": 0.4214561287477954,
+    "spearman_rho": -0.16666666666666669,
+    "slope_entity_bootstrap_ci": [
+      -0.8703356799955686,
+      0.1335976148381598
+    ],
+    "n": 9,
+    "lmm_paired_win_b1": -0.41951368281888435,
+    "lmm_paired_win_p": 0.497177930786228,
+    "split_half_frac_negative": 0.94,
+    "staleness_mean": 0.46010838178869506,
+    "staleness_ci": [
+      0.42442471619002414,
+      0.49426125351054145
+    ]
+  },
+  "matched4b_": {
+    "ols_slope": -0.5708104182078466,
+    "exact_permutation_p": 0.098451278659612,
+    "spearman_rho": -0.6,
+    "slope_entity_bootstrap_ci": [
+      -1.079860631399575,
+      -0.04839759159470857
+    ],
+    "n": 9,
+    "lmm_paired_win_b1": -0.6413046806794371,
+    "lmm_paired_win_p": 0.16787099791421684,
+    "split_half_frac_negative": 0.9985,
+    "staleness_mean": 0.4421897867964084,
+    "staleness_ci": [
+      0.40439361575887034,
+      0.4768905007713302
+    ]
+  }
+}

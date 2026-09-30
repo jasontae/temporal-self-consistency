@@ -1,0 +1,442 @@
+{
+ "TSCT seed 0": {
+  "n": 3622,
+  "accuracy": 0.027332965212589728,
+  "policies": {
+   "fixed mapping (emitted hedge)": {
+    "ece_eqfreq10": 0.4506350082827168,
+    "ece_width15": 0.45063500828271685,
+    "brier": 0.23633765875207077,
+    "reliability": 0.20978260299906756,
+    "resolution": 3.08184722738614e-05,
+    "uncertainty": 0.026585874225277088,
+    "auroc": 0.5300363842799268
+   },
+   "oracle, fixed mapping (gold hedge)": {
+    "ece_eqfreq10": 0.45041413583655443,
+    "ece_width15": 0.45041413583655454,
+    "brier": 0.23604500276090568,
+    "reliability": 0.20949013806267966,
+    "resolution": 3.1009527051055286e-05,
+    "uncertainty": 0.026585874225277088,
+    "auroc": 0.5303417369838035
+   },
+   "validation-fit mapping (emitted hedge)": {
+    "ece_eqfreq10": 0.008725400823379506,
+    "ece_width15": 1.5966524728634746e-06,
+    "brier": 0.026568840628209675,
+    "reliability": 2.5492991191010483e-12,
+    "resolution": 0.0,
+    "uncertainty": 0.026585874225277088,
+    "auroc": 0.5128821567935958
+   },
+   "oracle, validation-fit mapping (gold hedge)": {
+    "ece_eqfreq10": 0.008713060724445746,
+    "ece_width15": 9.491906173962616e-06,
+    "brier": 0.026568458517079094,
+    "reliability": 9.009628281530963e-11,
+    "resolution": 0.0,
+    "uncertainty": 0.026585874225277088,
+    "auroc": 0.5131459356551608
+   },
+   "constant, cross-fitted base rate": {
+    "ece_eqfreq10": 0.010711684644161489,
+    "ece_width15": 4.373773799040692e-08,
+    "brier": 0.026586041210034085,
+    "reliability": 1.912989724517485e-15,
+    "resolution": 0.0,
+    "uncertainty": 0.026585874225277088,
+    "auroc": 0.4957881396995788
+   },
+   "constant, cross-run base rate (TSCT seed 1 accuracy 0.0210)": {
+    "ece_eqfreq10": 0.015971937856909167,
+    "ece_width15": 0.006350082827167314,
+    "brier": 0.026626197777188977,
+    "reliability": 4.0323551911885226e-05,
+    "resolution": 0.0,
+    "uncertainty": 0.026585874225277088,
+    "auroc": 0.5
+   },
+   "constant [UNKNOWN] = 0.10 (fixed level)": {
+    "ece_eqfreq10": 0.07266703478741027,
+    "ece_width15": 0.0726670347874103,
+    "brier": 0.031866372170071794,
+    "reliability": 0.005280497944794698,
+    "resolution": 0.0,
+    "uncertainty": 0.026585874225277088,
+    "auroc": 0.5
+   },
+   "constant at test accuracy (oracle reference, not a baseline)": {
+    "ece_eqfreq10": 0.017292324560534266,
+    "ece_width15": 0.0,
+    "brier": 0.026585874225277084,
+    "reliability": 0.0,
+    "resolution": 0.0,
+    "uncertainty": 0.026585874225277088,
+    "auroc": 0.5
+   },
+   "continuous (log-prob, isotonic, cross-fitted)": {
+    "ece_eqfreq10": 0.008638271519345039,
+    "ece_width15": 0.0011705983824654318,
+    "brier": 0.02528232453372229,
+    "reliability": 2.255068655202127e-06,
+    "resolution": 0.0013242887452709973,
+    "uncertainty": 0.026585874225277088,
+    "auroc": 0.8241498149247226
+   }
+  },
+  "brier_vs_crossfit_constant": {
+   "continuous (log-prob, isotonic, cross-fitted)": {
+    "brier_minus_constant": -0.0013037166763117947,
+    "ci95": [
+     -0.0019776705658811657,
+     -0.0006368247276748066
+    ]
+   },
+   "validation-fit mapping (emitted hedge)": {
+    "brier_minus_constant": -1.7200581824410033e-05,
+    "ci95": [
+     -8.803560409945e-05,
+     4.659895028793551e-05
+    ]
+   },
+   "oracle, validation-fit mapping (gold hedge)": {
+    "brier_minus_constant": -1.7582692954990625e-05,
+    "ci95": [
+     -8.652539030675641e-05,
+     4.7524823356388264e-05
+    ]
+   }
+  }
+ },
+ "TSCT seed 1": {
+  "n": 3622,
+  "accuracy": 0.020982882385422418,
+  "policies": {
+   "fixed mapping (emitted hedge)": {
+    "ece_eqfreq10": 0.45717835450027616,
+    "ece_width15": 0.4571783545002762,
+    "brier": 0.23648674765323033,
+    "reliability": 0.2159668995543834,
+    "resolution": 2.275293337499351e-05,
+    "uncertainty": 0.020542601032221948,
+    "auroc": 0.5329132899931724
+   },
+   "oracle, fixed mapping (gold hedge)": {
+    "ece_eqfreq10": 0.45676421866372174,
+    "ece_width15": 0.45676421866372185,
+    "brier": 0.23590695748205417,
+    "reliability": 0.21538679509368402,
+    "resolution": 2.2438643851742098e-05,
+    "uncertainty": 0.020542601032221948,
+    "auroc": 0.5334030931813459
+   },
+   "validation-fit mapping (emitted hedge)": {
+    "ece_eqfreq10": 0.0042631509452124225,
+    "ece_width15": 2.596580930086176e-05,
+    "brier": 0.020541066889362997,
+    "reliability": 6.74223252648719e-10,
+    "resolution": 0.0,
+    "uncertainty": 0.020542601032221948,
+    "auroc": 0.5109185294030338
+   },
+   "oracle, validation-fit mapping (gold hedge)": {
+    "ece_eqfreq10": 0.004281900528131714,
+    "ece_width15": 2.822215192088348e-05,
+    "brier": 0.020541568010565444,
+    "reliability": 7.964898590454272e-10,
+    "resolution": 0.0,
+    "uncertainty": 0.020542601032221948,
+    "auroc": 0.5103749220767655
+   },
+   "constant, cross-fitted base rate": {
+    "ece_eqfreq10": 0.008636642375383379,
+    "ece_width15": 6.846764699294794e-08,
+    "brier": 0.020542767296746634,
+    "reliability": 4.687818684750933e-15,
+    "resolution": 0.0,
+    "uncertainty": 0.020542601032221948,
+    "auroc": 0.4946251521358388
+   },
+   "constant, cross-run base rate (TSCT seed 0 accuracy 0.0273)": {
+    "ece_eqfreq10": 0.014807509541207927,
+    "ece_width15": 0.00635008282716731,
+    "brier": 0.02058292458413383,
+    "reliability": 4.032355191188518e-05,
+    "resolution": 0.0,
+    "uncertainty": 0.020542601032221948,
+    "auroc": 0.5
+   },
+   "constant [UNKNOWN] = 0.10 (fixed level)": {
+    "ece_eqfreq10": 0.0790171176145776,
+    "ece_width15": 0.07901711761457761,
+    "brier": 0.026786305908337936,
+    "reliability": 0.006243704876115991,
+    "resolution": 0.0,
+    "uncertainty": 0.020542601032221948,
+    "auroc": 0.5
+   },
+   "constant at test accuracy (oracle reference, not a baseline)": {
+    "ece_eqfreq10": 0.012488562289292291,
+    "ece_width15": 3.469446951953614e-18,
+    "brier": 0.02054260103222195,
+    "reliability": 1.2037062152420224e-35,
+    "resolution": 0.0,
+    "uncertainty": 0.020542601032221948,
+    "auroc": 0.5
+   },
+   "continuous (log-prob, isotonic, cross-fitted)": {
+    "ece_eqfreq10": 0.004167621934398768,
+    "ece_width15": 0.0019132512435041473,
+    "brier": 0.0199574974468291,
+    "reliability": 0.00016667347172382054,
+    "resolution": 0.0007089078799895073,
+    "uncertainty": 0.020542601032221948,
+    "auroc": 0.8126354380027905
+   }
+  },
+  "brier_vs_crossfit_constant": {
+   "continuous (log-prob, isotonic, cross-fitted)": {
+    "brier_minus_constant": -0.000585269849917535,
+    "ci95": [
+     -0.0011343167952549563,
+     -6.751788097166505e-05
+    ]
+   },
+   "validation-fit mapping (emitted hedge)": {
+    "brier_minus_constant": -1.7004073836375533e-06,
+    "ci95": [
+     -5.635149735798714e-05,
+     4.4246517858641165e-05
+    ]
+   },
+   "oracle, validation-fit mapping (gold hedge)": {
+    "brier_minus_constant": -1.1992861811901956e-06,
+    "ci95": [
+     -5.327496804195652e-05,
+     4.71876081812295e-05
+    ]
+   }
+  }
+ },
+ "SFT seed 1": {
+  "n": 3622,
+  "accuracy": 0.024019878520154612,
+  "policies": {
+   "fixed mapping (emitted hedge)": {
+    "ece_eqfreq10": 0.4550524572059637,
+    "ece_width15": 0.45505245720596366,
+    "brier": 0.23780093870789626,
+    "reliability": 0.2143932456162337,
+    "resolution": 3.5230864369032106e-05,
+    "uncertainty": 0.023442923956031626,
+    "auroc": 0.533651985888244
+   },
+   "oracle, fixed mapping (gold hedge)": {
+    "ece_eqfreq10": 0.45372722252898956,
+    "ece_width15": 0.45372722252898967,
+    "brier": 0.2358793484262839,
+    "reliability": 0.2124686112080931,
+    "resolution": 3.218673784074916e-05,
+    "uncertainty": 0.023442923956031626,
+    "auroc": 0.5350566583751971
+   },
+   "validation-fit mapping (emitted hedge)": {
+    "ece_eqfreq10": 0.0058277438093647035,
+    "ece_width15": 5.1675754994543605e-05,
+    "brier": 0.023436738985532824,
+    "reliability": 2.670383654256098e-09,
+    "resolution": 0.0,
+    "uncertainty": 0.023442923956031626,
+    "auroc": 0.5124567136516608
+   },
+   "oracle, validation-fit mapping (gold hedge)": {
+    "ece_eqfreq10": 0.005173194645427411,
+    "ece_width15": 4.722481848359883e-05,
+    "brier": 0.023440390306775468,
+    "reliability": 2.2301834808088578e-09,
+    "resolution": 0.0,
+    "uncertainty": 0.023442923956031626,
+    "auroc": 0.5104813929668829
+   },
+   "constant, cross-fitted base rate": {
+    "ece_eqfreq10": 0.010781055459001503,
+    "ece_width15": 1.395003643364645e-07,
+    "brier": 0.023443169034686018,
+    "reliability": 1.946035165000634e-14,
+    "resolution": 0.0,
+    "uncertainty": 0.023442923956031626,
+    "auroc": 0.49310344827586206
+   },
+   "constant, cross-run base rate (TSCT seed 0 accuracy 0.0273)": {
+    "ece_eqfreq10": 0.017844505675940116,
+    "ece_width15": 0.003313086692435116,
+    "brier": 0.02345390049946321,
+    "reliability": 1.0976543431590658e-05,
+    "resolution": 0.0,
+    "uncertainty": 0.023442923956031626,
+    "auroc": 0.5
+   },
+   "constant [UNKNOWN] = 0.10 (fixed level)": {
+    "ece_eqfreq10": 0.07598012147984538,
+    "ece_width15": 0.07598012147984541,
+    "brier": 0.02921590281612369,
+    "reliability": 0.005772978860092066,
+    "resolution": 0.0,
+    "uncertainty": 0.023442923956031626,
+    "auroc": 0.5
+   },
+   "constant at test accuracy (oracle reference, not a baseline)": {
+    "ece_eqfreq10": 0.016686480343907302,
+    "ece_width15": 6.938893903907228e-18,
+    "brier": 0.023442923956031623,
+    "reliability": 4.81482486096809e-35,
+    "resolution": 0.0,
+    "uncertainty": 0.023442923956031626,
+    "auroc": 0.5
+   },
+   "continuous (log-prob, isotonic, cross-fitted)": {
+    "ece_eqfreq10": 0.005944643710575518,
+    "ece_width15": 0.004763180072761824,
+    "brier": 0.02226924372540999,
+    "reliability": 0.0002871741973586444,
+    "resolution": 0.0008131262408410887,
+    "uncertainty": 0.023442923956031626,
+    "auroc": 0.8498674990651776
+   }
+  },
+  "brier_vs_crossfit_constant": {
+   "continuous (log-prob, isotonic, cross-fitted)": {
+    "brier_minus_constant": -0.0011739253092760277,
+    "ci95": [
+     -0.0019007251800029097,
+     -0.0005062861167547364
+    ]
+   },
+   "validation-fit mapping (emitted hedge)": {
+    "brier_minus_constant": -6.4300491531936455e-06,
+    "ci95": [
+     -7.465611966196561e-05,
+     5.109029872087779e-05
+    ]
+   },
+   "oracle, validation-fit mapping (gold hedge)": {
+    "brier_minus_constant": -2.7787279105497e-06,
+    "ci95": [
+     -6.630375289643766e-05,
+     5.5301034453573876e-05
+    ]
+   }
+  }
+ },
+ "base Qwen2.5-7B": {
+  "n": 3622,
+  "accuracy": 0.03920485919381557,
+  "policies": {
+   "fixed mapping (emitted hedge)": {
+    "ece_eqfreq10": 0.9107951408061844,
+    "ece_width15": 0.9107951408061843,
+    "brier": 0.867215626725566,
+    "reliability": 0.8295477885161571,
+    "resolution": 0.0,
+    "uncertainty": 0.037667838209408666,
+    "auroc": 0.5
+   },
+   "oracle, fixed mapping (gold hedge)": {
+    "ece_eqfreq10": 0.43854224185532864,
+    "ece_width15": 0.43854224185532875,
+    "brier": 0.2362382661512977,
+    "reliability": 0.19862662382083152,
+    "resolution": 5.619587894244613e-05,
+    "uncertainty": 0.037667838209408666,
+    "auroc": 0.5288287194430954
+   },
+   "validation-fit mapping (emitted hedge)": {
+    "ece_eqfreq10": 0.018862347015509734,
+    "ece_width15": 1.3732992019260815e-07,
+    "brier": 0.03766807572118011,
+    "reliability": 1.8859506980108123e-14,
+    "resolution": 0.0,
+    "uncertainty": 0.037667838209408666,
+    "auroc": 0.49577464788732395
+   },
+   "oracle, validation-fit mapping (gold hedge)": {
+    "ece_eqfreq10": 0.012886707515351915,
+    "ece_width15": 0.0007821709958553875,
+    "brier": 0.037618590668297223,
+    "reliability": 8.547579788812956e-06,
+    "resolution": 7.249342439816331e-07,
+    "uncertainty": 0.037667838209408666,
+    "auroc": 0.5216174923101828
+   },
+   "constant, cross-fitted base rate": {
+    "ece_eqfreq10": 0.018862347015509734,
+    "ece_width15": 1.3732992019260815e-07,
+    "brier": 0.03766807572118011,
+    "reliability": 1.8859506980108123e-14,
+    "resolution": 0.0,
+    "uncertainty": 0.037667838209408666,
+    "auroc": 0.49577464788732395
+   },
+   "constant, cross-run base rate (TSCT seed 1 accuracy 0.0210)": {
+    "ece_eqfreq10": 0.029500375184352567,
+    "ece_width15": 0.018221976808393155,
+    "brier": 0.037999878648214296,
+    "reliability": 0.000332040438805618,
+    "resolution": 0.0,
+    "uncertainty": 0.037667838209408666,
+    "auroc": 0.5
+   },
+   "constant [UNKNOWN] = 0.10 (fixed level)": {
+    "ece_eqfreq10": 0.06289342904472667,
+    "ece_width15": 0.06079514080618445,
+    "brier": 0.04136388735505246,
+    "reliability": 0.0036960491456437938,
+    "resolution": 0.0,
+    "uncertainty": 0.037667838209408666,
+    "auroc": 0.5
+   },
+   "constant at test accuracy (oracle reference, not a baseline)": {
+    "ece_eqfreq10": 0.02939335388589456,
+    "ece_width15": 6.938893903907228e-18,
+    "brier": 0.037667838209408666,
+    "reliability": 4.81482486096809e-35,
+    "resolution": 0.0,
+    "uncertainty": 0.037667838209408666,
+    "auroc": 0.5
+   },
+   "continuous (log-prob, isotonic, cross-fitted)": {
+    "ece_eqfreq10": 0.005428157738352948,
+    "ece_width15": 0.0052921175796853325,
+    "brier": 0.03178500435689844,
+    "reliability": 0.00035588361593457947,
+    "resolution": 0.005798557608382612,
+    "uncertainty": 0.037667838209408666,
+    "auroc": 0.8727831066860936
+   }
+  },
+  "brier_vs_crossfit_constant": {
+   "continuous (log-prob, isotonic, cross-fitted)": {
+    "brier_minus_constant": -0.005883071364281671,
+    "ci95": [
+     -0.008657624320062287,
+     -0.003261486945588997
+    ]
+   },
+   "validation-fit mapping (emitted hedge)": {
+    "brier_minus_constant": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "oracle, validation-fit mapping (gold hedge)": {
+    "brier_minus_constant": -4.948505288288746e-05,
+    "ci95": [
+     -0.00017213051086164503,
+     5.5379242400461594e-05
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,101 @@
+{
+  "train_filter": true,
+  "arms": {
+    "sft_test": {
+      "n_items": 1849,
+      "n_unique_questions": 1785,
+      "accuracy": 0.0048674959437533805,
+      "policies": {
+        "cross-entropy baseline": {
+          "ece_by_level": 0.46930773391022174,
+          "brier": 0.23047187669010283,
+          "reliability": 0.22618627459530308,
+          "resolution": 0.000558201332191237,
+          "uncertainty": 0.004843803426990925,
+          "auroc_conf_correct": 0.68743961352657,
+          "ece_binned_10": 0.469254
+        },
+        "volatility-label oracle": {
+          "ece_by_level": 0.46914548404542994,
+          "brier": 0.23050432666306117,
+          "reliability": 0.2257032478880625,
+          "resolution": 4.272465199231305e-05,
+          "uncertainty": 0.004843803426990925,
+          "auroc_conf_correct": 0.6830917874396135,
+          "ece_binned_10": 0.469145
+        },
+        "constant [TEMPORAL_HEDGE]": {
+          "ece_by_level": 0.4451325040562466,
+          "brier": 0.20298674959437543,
+          "reliability": 0.1981429461673844,
+          "resolution": 0.0,
+          "uncertainty": 0.004843803426990925,
+          "auroc_conf_correct": 0.5,
+          "ece_binned_10": 0.445133
+        },
+        "constant [UNKNOWN]": {
+          "ece_by_level": 0.09513250405624663,
+          "brier": 0.013893996755002708,
+          "reliability": 0.00905019332801178,
+          "resolution": 0.0,
+          "uncertainty": 0.004843803426990925,
+          "auroc_conf_correct": 0.5,
+          "ece_binned_10": 0.095133
+        }
+      },
+      "oracle_over_unknown": 4.931495167708925,
+      "oracle_over_unknown_ci95": [
+        4.805631492618918,
+        5.084471710402468
+      ]
+    },
+    "tsct_test": {
+      "n_items": 1849,
+      "n_unique_questions": 1785,
+      "accuracy": 0.0027041644131963224,
+      "policies": {
+        "trained model": {
+          "ece_by_level": 0.47147106544077877,
+          "brier": 0.2314561925365063,
+          "reliability": 0.22876074806603666,
+          "resolution": 1.4074375532038379e-06,
+          "uncertainty": 0.002696851908022725,
+          "auroc_conf_correct": 0.5598698481561822,
+          "ece_binned_10": 0.471471
+        },
+        "volatility-label oracle": {
+          "ece_by_level": 0.47130881557598703,
+          "brier": 0.23126149269875615,
+          "reliability": 0.22856606976116023,
+          "resolution": 1.4289704268409926e-06,
+          "uncertainty": 0.002696851908022725,
+          "auroc_conf_correct": 0.5601409978308026,
+          "ece_binned_10": 0.471309
+        },
+        "constant [TEMPORAL_HEDGE]": {
+          "ece_by_level": 0.4472958355868037,
+          "brier": 0.2027704164413197,
+          "reliability": 0.20007356453329692,
+          "resolution": 0.0,
+          "uncertainty": 0.002696851908022725,
+          "auroc_conf_correct": 0.5,
+          "ece_binned_10": 0.447296
+        },
+        "constant [UNKNOWN]": {
+          "ece_by_level": 0.09729583558680369,
+          "brier": 0.012163331530557063,
+          "reliability": 0.009466479622534335,
+          "resolution": 0.0,
+          "uncertainty": 0.002696851908022725,
+          "auroc_conf_correct": 0.5,
+          "ece_binned_10": 0.097296
+        }
+      },
+      "oracle_over_unknown": 4.844080044469149,
+      "oracle_over_unknown_ci95": [
+        4.753942359978248,
+        4.958783399658897
+      ]
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+ "tsct_test.jsonl": {
+  "n": 3622,
+  "agree_with_gold_hedge": 3620,
+  "agree_share": 0.9994478188845941,
+  "emitted": {
+   "[TEMPORAL_HEDGE]": 3285,
+   "[COND_CONFIDENT]": 336,
+   "[CONFIDENT]": 1
+  },
+  "gold": {
+   "[TEMPORAL_HEDGE]": 3287,
+   "[COND_CONFIDENT]": 335
+  },
+  "unknown_emitted": 0
+ },
+ "tsctS1_test.jsonl": {
+  "n": 3622,
+  "agree_with_gold_hedge": 3618,
+  "agree_share": 0.9988956377691883,
+  "emitted": {
+   "[TEMPORAL_HEDGE]": 3284,
+   "[COND_CONFIDENT]": 335,
+   "[CONFIDENT]": 3
+  },
+  "gold": {
+   "[TEMPORAL_HEDGE]": 3287,
+   "[COND_CONFIDENT]": 335
+  },
+  "unknown_emitted": 0
+ },
+ "sft_test.jsonl": {
+  "n": 3622,
+  "agree_with_gold_hedge": 3621,
+  "agree_share": 0.999723909442297,
+  "emitted": {
+   "[TEMPORAL_HEDGE]": 3287,
+   "[CONFIDENT]": 1,
+   "[COND_CONFIDENT]": 334
+  },
+  "gold": {
+   "[TEMPORAL_HEDGE]": 3287,
+   "[COND_CONFIDENT]": 335
+  },
+  "unknown_emitted": 0
+ },
+ "sftS1_test.jsonl": {
+  "n": 3622,
+  "agree_with_gold_hedge": 3609,
+  "agree_share": 0.9964108227498619,
+  "emitted": {
+   "[TEMPORAL_HEDGE]": 3279,
+   "[CONFIDENT]": 12,
+   "[COND_CONFIDENT]": 331
+  },
+  "gold": {
+   "[TEMPORAL_HEDGE]": 3287,
+   "[COND_CONFIDENT]": 335
+  },
+  "unknown_emitted": 0
+ },
+ "template_determines_gold_hedge": {
+  "templates": 24,
+  "items": 3622,
+  "items_matching_template_majority": 3622,
+  "by_template": {
+   "Who is the CEO of": {
+    "[TEMPORAL_HEDGE]": 216
+   },
+   "Who is the head of": {
+    "[TEMPORAL_HEDGE]": 1400
+   },
+   "What is the capital of": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is International Boxing": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Elin S\u00fctiste": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Boles\u0142aw Grabowski": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Crime Stoppers": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Ricardo Lagos": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Lakhdar Brahimi": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Movement for": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Steven Ramage": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Anu Viltrop": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Matvej Kuprejchik": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Uladzimir Zhyhar": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Jing Di": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Mouatasem Alrifai": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Bartolom\u00e9 Lenoir": {
+    "[COND_CONFIDENT]": 1
+   },
+   "What is Guy Prieur": {
+    "[COND_CONFIDENT]": 1
+   },
+   "Who is the chairperson of": {
+    "[TEMPORAL_HEDGE]": 708
+   },
+   "Who is the officeholder of": {
+    "[TEMPORAL_HEDGE]": 908
+   },
+   "Who owns": {
+    "[COND_CONFIDENT]": 40
+   },
+   "What is the parent organization of": {
+    "[COND_CONFIDENT]": 125
+   },
+   "Who is the director or manager of": {
+    "[TEMPORAL_HEDGE]": 55
+   },
+   "Who is a board member of": {
+    "[COND_CONFIDENT]": 154
+   }
+  }
+ }
+}

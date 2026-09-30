@@ -1,0 +1,22 @@
+{
+  "name": "g3_4b",
+  "bos": 2,
+  "standard": {
+    "truth_raw": 0.7740299038803845,
+    "truth_pmi": 0.7188501245995016,
+    "regime_raw": 0.6667853328586686,
+    "regime_pmi": 0.6197935208259167,
+    "staleness_raw": 0.41384834460662157,
+    "staleness_pmi": 0.45354218583125666,
+    "first_token_nll_name_frame_sd": 3.516891610608748
+  },
+  "skip_first": {
+    "truth_raw": 0.7733179067283731,
+    "truth_pmi": 0.739498042007832,
+    "regime_raw": 0.663314346742613,
+    "regime_pmi": 0.6149875400498398,
+    "staleness_raw": 0.41447134211463155,
+    "staleness_pmi": 0.44490922036311853,
+    "first_token_nll_name_frame_sd": 3.516891610608748
+  }
+}

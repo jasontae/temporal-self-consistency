@@ -1,0 +1,46 @@
+=== g3_4b start 2026-09-28T07:23:44Z
+{"name": "g3_4b", "loader": "mlx_lm", "acc_raw": 0.9166666666666666, "acc_pmi": 0.7777777777777778, "nll": 2.675, "gen_correct": 5, "bos": 2, "no_bos": {"acc_raw": 0.9166666666666666, "acc_pmi": 0.7777777777777778, "n": 36}, "secs": 9}
+=== g3_4b wall 12s
+=== g4_e4b start 2026-09-28T07:23:56Z
+/opt/homebrew/lib/python3.14/site-packages/transformers/audio_utils.py:549: UserWarning: At least one mel filter has all zero values. The value for `num_mel_filters` (128) may be set too high. Or, the value for `num_frequency_bins` (257) may be set too low.
+  warnings.warn(
+{"name": "g4_e4b", "loader": "mlx_vlm (fallback)", "acc_raw": 0.9722222222222222, "acc_pmi": 0.9444444444444444, "nll": 4.71, "gen_correct": 5, "bos": 2, "no_bos": {"acc_raw": 0.6944444444444444, "acc_pmi": 0.5833333333333334, "n": 36}, "secs": 24}
+=== g4_e4b wall 28s
+=== qwen3_4b_it start 2026-09-28T07:24:24Z
+{"name": "qwen3_4b_it", "loader": "mlx_lm", "acc_raw": 0.9444444444444444, "acc_pmi": 0.9166666666666666, "nll": 2.61, "gen_correct": 5, "bos": null, "no_bos": null, "secs": 6}
+=== qwen3_4b_it wall 10s
+=== qwen3_4b_th start 2026-09-28T07:24:34Z
+{"name": "qwen3_4b_th", "loader": "mlx_lm", "acc_raw": 0.9722222222222222, "acc_pmi": 0.8055555555555556, "nll": 2.891, "gen_correct": 5, "bos": null, "no_bos": null, "secs": 20}
+=== qwen3_4b_th wall 23s
+=== gptoss_20b start 2026-09-28T07:24:57Z
+{"name": "gptoss_20b", "loader": "mlx_lm", "acc_raw": 0.8888888888888888, "acc_pmi": 0.6944444444444444, "nll": 2.948, "gen_correct": 5, "bos": 199998, "no_bos": {"acc_raw": 0.9722222222222222, "acc_pmi": 0.8611111111111112, "n": 36}, "secs": 64}
+=== gptoss_20b wall 68s
+=== gemma4_26b start 2026-09-28T07:26:05Z
+{"name": "gemma4_26b", "loader": "mlx_lm", "acc_raw": 0.9166666666666666, "acc_pmi": 0.6111111111111112, "nll": 10.944, "gen_correct": 5, "bos": 2, "no_bos": {"acc_raw": 0.5833333333333334, "acc_pmi": 0.5833333333333334, "n": 36}, "secs": 23}
+=== gemma4_26b wall 27s
+=== gemma4_26b start 2026-09-28T07:26:32Z
+/opt/homebrew/lib/python3.14/site-packages/transformers/audio_utils.py:549: UserWarning: At least one mel filter has all zero values. The value for `num_mel_filters` (128) may be set too high. Or, the value for `num_frequency_bins` (257) may be set too low.
+  warnings.warn(
+{"name": "gemma4_26b", "loader": "mlx_vlm (forced)", "acc_raw": 0.9166666666666666, "acc_pmi": 0.6111111111111112, "nll": 10.944, "gen_correct": 5, "bos": 2, "no_bos": {"acc_raw": 0.5833333333333334, "acc_pmi": 0.5833333333333334, "n": 36}, "secs": 24}
+=== gemma4_26b wall 26s
+=== qwen35_27b start 2026-09-28T07:26:58Z
+{"name": "qwen35_27b", "loader": "mlx_lm", "acc_raw": 0.9166666666666666, "acc_pmi": 0.9166666666666666, "nll": 2.31, "gen_correct": 5, "bos": null, "no_bos": null, "secs": 27}
+=== qwen35_27b wall 30s
+=== qwen36_27b start 2026-09-28T07:27:28Z
+{"name": "qwen36_27b", "loader": "mlx_lm", "acc_raw": 0.9444444444444444, "acc_pmi": 0.9444444444444444, "nll": 2.182, "gen_correct": 5, "bos": null, "no_bos": null, "secs": 29}
+=== qwen36_27b wall 32s
+=== qwen38_27b start 2026-09-28T07:28:00Z
+{"name": "qwen38_27b", "loader": "mlx_lm", "acc_raw": 0.9444444444444444, "acc_pmi": 0.9166666666666666, "nll": 2.069, "gen_correct": 5, "bos": null, "no_bos": null, "secs": 28}
+=== qwen38_27b wall 32s
+=== g4_31b start 2026-09-28T07:28:32Z
+{"name": "g4_31b", "loader": "mlx_lm", "acc_raw": 0.9722222222222222, "acc_pmi": 0.8333333333333334, "nll": 4.727, "gen_correct": 5, "bos": 2, "no_bos": {"acc_raw": 0.6944444444444444, "acc_pmi": 0.6111111111111112, "n": 36}, "secs": 123}
+=== g4_31b wall 126s
+=== g4_31b start 2026-09-28T07:30:38Z
+/opt/homebrew/lib/python3.14/site-packages/transformers/audio_utils.py:549: UserWarning: At least one mel filter has all zero values. The value for `num_mel_filters` (128) may be set too high. Or, the value for `num_frequency_bins` (257) may be set too low.
+  warnings.warn(
+!!! g4_31b FAILED
+=== g4_31b wall 1084s
+=== qwen36_35b start 2026-09-28T07:48:42Z
+{"name": "qwen36_35b", "loader": "mlx_lm", "acc_raw": 0.9722222222222222, "acc_pmi": 0.8611111111111112, "nll": 2.492, "gen_correct": 5, "bos": null, "no_bos": null, "secs": 12}
+=== qwen36_35b wall 16s
+=== AUDIT DONE 2026-09-28T07:48:58Z

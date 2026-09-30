@@ -1,0 +1,83 @@
+{
+  "train_filter": false,
+  "arms": {
+    "sft_test": {
+      "n_items": 2693,
+      "n_unique_questions": 2583,
+      "accuracy": 0.0063126624582250275,
+      "policies": {
+        "cross-entropy baseline": {
+          "ece_by_level": 0.4638507240995173,
+          "brier": 0.22628017081321952,
+          "reliability": 0.22038248408022912,
+          "resolution": 0.000375126017923202,
+          "uncertainty": 0.006272812750913544,
+          "ece_binned_10": 0.463814
+        },
+        "volatility-label oracle": {
+          "ece_by_level": 0.4637393241737839,
+          "brier": 0.22630245079836622,
+          "reliability": 0.2200477679863858,
+          "resolution": 1.8129938933209606e-05,
+          "uncertainty": 0.006272812750913544,
+          "ece_binned_10": 0.463739
+        },
+        "constant [TEMPORAL_HEDGE]": {
+          "ece_by_level": 0.443687337541775,
+          "brier": 0.2031312662458226,
+          "reliability": 0.19685845349490896,
+          "resolution": 0.0,
+          "uncertainty": 0.006272812750913544,
+          "ece_binned_10": 0.443687
+        },
+        "constant [UNKNOWN]": {
+          "ece_by_level": 0.09368733754177498,
+          "brier": 0.015050129966580028,
+          "reliability": 0.00877731721566648,
+          "resolution": 0.0,
+          "uncertainty": 0.006272812750913544,
+          "ece_binned_10": 0.093687
+        }
+      }
+    },
+    "tsct_test": {
+      "n_items": 2693,
+      "n_unique_questions": 2583,
+      "accuracy": 0.0051986632008912,
+      "policies": {
+        "trained model": {
+          "ece_by_level": 0.46496472335685113,
+          "brier": 0.2269931303379132,
+          "reliability": 0.22182150090306058,
+          "resolution": 7.666962373009475e-09,
+          "uncertainty": 0.005171637101814899,
+          "ece_binned_10": 0.464965
+        },
+        "volatility-label oracle": {
+          "ece_by_level": 0.46485332343111774,
+          "brier": 0.22685945042703312,
+          "reliability": 0.22168782244857174,
+          "resolution": 9.123353564351916e-09,
+          "uncertainty": 0.005171637101814899,
+          "ece_binned_10": 0.464853
+        },
+        "constant [TEMPORAL_HEDGE]": {
+          "ece_by_level": 0.4448013367991088,
+          "brier": 0.2030198663200892,
+          "reliability": 0.19784822921827425,
+          "resolution": 0.0,
+          "uncertainty": 0.005171637101814899,
+          "ece_binned_10": 0.444801
+        },
+        "constant [UNKNOWN]": {
+          "ece_by_level": 0.0948013367991088,
+          "brier": 0.014158930560712962,
+          "reliability": 0.008987293458898062,
+          "resolution": 0.0,
+          "uncertainty": 0.005171637101814899,
+          "ece_binned_10": 0.094801
+        }
+      }
+    }
+  }
+}

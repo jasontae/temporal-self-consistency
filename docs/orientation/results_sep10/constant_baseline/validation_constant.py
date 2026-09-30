@@ -1,0 +1,112 @@
+"""Directive 3 (worker B): a validation-estimated constant versus the test-accuracy
+constant, and fixed vs validation-fit vs continuous confidence mappings.
+
+Fused-critique point (b)12: a constant set to the *test* accuracy is an oracle
+reference, not a baseline. A deployable constant must be estimated without the test
+labels. No validation split is on disk (the train/val files are FETCH_ALL step 2), so
+the constant is estimated two ways that never see the scored record's label:
+  - cross-fitted: 5-fold within the test set (each record scored by the rate of the
+    other four folds);
+  - cross-run: the realized accuracy of the *other* run of the same arm family
+    (seed 0 <-> seed 1; SFT and base use TSCT seed 0 / seed 1 respectively).
+Table 1's constant [UNKNOWN] = 0.10 is a fixed vocabulary level chosen without test
+labels, so it is also a legitimate baseline; it is listed for reference.
+
+Mappings (all on the same records):
+  fixed           emitted hedge -> 0.95 / 0.75 / 0.45 / 0.10
+  oracle fixed    gold hedge    -> same levels (the volatility-label oracle)
+  validation-fit  emitted hedge -> realized accuracy of that hedge, cross-fitted
+  oracle val-fit  gold hedge    -> realized accuracy of that class, cross-fitted
+  continuous      answer mean log-prob -> isotonic map, cross-fitted
+
+Run from the repo root:
+    python3 docs/orientation/results_sep10/constant_baseline/validation_constant.py
+"""
+import json
+import sys
+from pathlib import Path
+
+import numpy as np
+
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "docs/orientation/results_sep10/vocabulary"))
+from vocab_sweep import H, PRED, SEED, class_rate, const_rate, crossfit, iso, score  # noqa: E402
+
+OUT = Path(__file__).resolve().parent
+RUNS = {"tsct_test_lp": ("TSCT seed 0", "tsctS1_test_lp"), "tsctS1_test_lp": ("TSCT seed 1", "tsct_test_lp"),
+        "sftS1_test_lp": ("SFT seed 1", "tsct_test_lp"), "base_test_lp": ("base Qwen2.5-7B", "tsctS1_test_lp")}
+N_BOOT = 2000
+
+
+def load(name):
+    recs = [json.loads(l) for l in open(PRED / f"{name}.jsonl")]
+    y = np.array([float(r["correct"]) for r in recs])
+    emitted = np.array([H.get(r["predicted_hedge"], 0.10) for r in recs])
+    gold = np.array([H[r["gold_hedge"]] for r in recs])
+    lp = np.array([r["mean_logprob"] for r in recs], dtype=float)
+    return y, emitted, gold, lp
+
+
+def crossfit_groups(g, y):
+    out = np.zeros(len(y))
+    from sklearn.model_selection import StratifiedKFold
+    for tr, te in StratifiedKFold(5, shuffle=True, random_state=SEED).split(g.reshape(-1, 1), y):
+        out[te] = class_rate(g[tr], y[tr], g[te])
+    return out
+
+
+def main():
+    acc = {k: load(k)[0].mean() for k in RUNS}
+    rng = np.random.default_rng(SEED)
+    res = {}
+    for name, (label, other) in RUNS.items():
+        y, emitted, gold, lp = load(name)
+        ok = np.isfinite(lp)
+        pol = {
+            "fixed mapping (emitted hedge)": emitted,
+            "oracle, fixed mapping (gold hedge)": gold,
+            "validation-fit mapping (emitted hedge)": crossfit_groups(emitted, y),
+            "oracle, validation-fit mapping (gold hedge)": crossfit_groups(gold, y),
+            "constant, cross-fitted base rate": crossfit(np.zeros(len(y)), y, const_rate),
+            f"constant, cross-run base rate ({RUNS[other][0]} accuracy {acc[other]:.4f})": np.full(len(y), acc[other]),
+            "constant [UNKNOWN] = 0.10 (fixed level)": np.full(len(y), 0.10),
+            "constant at test accuracy (oracle reference, not a baseline)": np.full(len(y), y.mean()),
+        }
+        if ok.all():
+            pol["continuous (log-prob, isotonic, cross-fitted)"] = crossfit(lp, y, iso)
+        rows = {k: score(np.clip(v, 0, 1), y) for k, v in pol.items()}
+        # the two contrasts that matter: best informative vs deployable constant
+        ref = pol["constant, cross-fitted base rate"]
+        diffs = {}
+        for k in ("continuous (log-prob, isotonic, cross-fitted)", "validation-fit mapping (emitted hedge)",
+                  "oracle, validation-fit mapping (gold hedge)"):
+            if k not in pol:
+                continue
+            d_brier, d_ece = [], []
+            n = len(y)
+            for _ in range(N_BOOT):
+                i = rng.integers(0, n, n)
+                d_brier.append(((pol[k][i] - y[i]) ** 2).mean() - ((ref[i] - y[i]) ** 2).mean())
+            diffs[k] = {"brier_minus_constant": float(((pol[k] - y) ** 2).mean() - ((ref - y) ** 2).mean()),
+                        "ci95": [float(np.percentile(d_brier, 2.5)), float(np.percentile(d_brier, 97.5))]}
+        res[label] = {"n": int(len(y)), "accuracy": float(y.mean()), "policies": rows, "brier_vs_crossfit_constant": diffs}
+
+    json.dump(res, open(OUT / "validation_constant.json", "w"), indent=1)
+    L = ["# Validation-estimated constant vs test-accuracy constant; fixed vs validation-fit vs continuous mappings",
+         "", "Generated by `validation_constant.py`. ECE = pipeline estimator (10 equal-frequency bins). "
+         "Brier decomposition on 15 equal-width bins. AUROC for correctness.", ""]
+    for label, r in res.items():
+        L += [f"## {label} (n = {r['n']}, accuracy {r['accuracy']:.4f})", "",
+              "| policy | ECE | Brier | reliability | resolution | AUROC |", "|---|---|---|---|---|---|"]
+        for k, v in r["policies"].items():
+            L.append(f"| {k} | {v['ece_eqfreq10']:.4f} | {v['brier']:.4f} | {v['reliability']:.5f} | {v['resolution']:.5f} | {v['auroc']:.3f} |")
+        L += ["", "Brier(policy) − Brier(cross-fitted constant), 95% bootstrap CI:", ""]
+        for k, v in r["brier_vs_crossfit_constant"].items():
+            L.append(f"- {k}: {v['brier_minus_constant']:+.5f} [{v['ci95'][0]:+.5f}, {v['ci95'][1]:+.5f}]")
+        L.append("")
+    (OUT / "validation_constant.md").write_text("\n".join(L))
+    print("\n".join(L))
+
+
+if __name__ == "__main__":
+    main()

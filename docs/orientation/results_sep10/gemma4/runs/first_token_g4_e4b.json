@@ -1,0 +1,22 @@
+{
+  "name": "g4_e4b",
+  "bos": 2,
+  "standard": {
+    "truth_raw": 0.7626379494482022,
+    "truth_pmi": 0.7378070487718049,
+    "regime_raw": 0.6021715913136347,
+    "regime_pmi": 0.6010145959416162,
+    "staleness_raw": 0.5008899964400142,
+    "staleness_pmi": 0.49768600925596296,
+    "first_token_nll_name_frame_sd": 2.4791342538406105
+  },
+  "skip_first": {
+    "truth_raw": 0.7706479174083304,
+    "truth_pmi": 0.7427910288358847,
+    "regime_raw": 0.6071555713777145,
+    "regime_pmi": 0.5923816304734781,
+    "staleness_raw": 0.5003559985760057,
+    "staleness_pmi": 0.49786400854396584,
+    "first_token_nll_name_frame_sd": 2.4791342538406105
+  }
+}

@@ -1,0 +1,205 @@
+{
+ "models": [
+  "g3_4b",
+  "qwen3_4b_th",
+  "tsct",
+  "qwen3_4b_it",
+  "qwen25_7b",
+  "gptoss_20b",
+  "qwen36_35b",
+  "qwen35_27b",
+  "qwen36_27b_stock"
+ ],
+ "proxies": {
+  "truth AUROC (in-instrument, reference)": {
+   "available_for": [
+    "g3_4b",
+    "qwen3_4b_th",
+    "tsct",
+    "qwen3_4b_it",
+    "qwen25_7b",
+    "gptoss_20b",
+    "qwen36_35b",
+    "qwen35_27b",
+    "qwen36_27b_stock"
+   ],
+   "regime AUROC": {
+    "n": 9,
+    "slope": -0.9608654205219078,
+    "spearman": -0.7166666666666667,
+    "perm_p": 0.008198302469135802,
+    "leave_one_family_out": {
+     "without gemma": {
+      "n": 8,
+      "slope": -1.1713653781202695,
+      "spearman": -0.7619047619047621
+     },
+     "without gpt-oss": {
+      "n": 8,
+      "slope": -0.9638717503805891,
+      "spearman": -0.6428571428571429
+     }
+    }
+   },
+   "regime paired win": {
+    "n": 9,
+    "slope": -1.2025733509994654,
+    "spearman": -0.8284591346681658,
+    "perm_p": 0.014346340388007054,
+    "leave_one_family_out": {
+     "without gemma": {
+      "n": 8,
+      "slope": -1.1838325078499865,
+      "spearman": -0.7545045450053531
+     },
+     "without gpt-oss": {
+      "n": 8,
+      "slope": -1.191401886534347,
+      "spearman": -0.814385858101016
+     }
+    }
+   }
+  },
+  "log10 total parameters (B)": {
+   "available_for": [
+    "g3_4b",
+    "qwen3_4b_th",
+    "tsct",
+    "qwen3_4b_it",
+    "qwen25_7b",
+    "gptoss_20b",
+    "qwen36_35b",
+    "qwen35_27b",
+    "qwen36_27b_stock"
+   ],
+   "regime AUROC": {
+    "n": 9,
+    "slope": -0.11190332195566449,
+    "spearman": -0.6329621044272916,
+    "perm_p": 0.017923280423280424,
+    "leave_one_family_out": {
+     "without gemma": {
+      "n": 8,
+      "slope": -0.11264019800136679,
+      "spearman": -0.7031465352048644
+     },
+     "without gpt-oss": {
+      "n": 8,
+      "slope": -0.11882634274537253,
+      "spearman": -0.5819143739626463
+     }
+    }
+   },
+   "regime paired win": {
+    "n": 9,
+    "slope": -0.1283821052683841,
+    "spearman": -0.6864653288442438,
+    "perm_p": 0.03489858906525573,
+    "leave_one_family_out": {
+     "without gemma": {
+      "n": 8,
+      "slope": -0.1105313313116867,
+      "spearman": -0.7073696754891154
+     },
+     "without gpt-oss": {
+      "n": 8,
+      "slope": -0.13036060208850003,
+      "spearman": -0.6707815888258855
+     }
+    }
+   }
+  },
+  "log10 active parameters (B)": {
+   "available_for": [
+    "g3_4b",
+    "qwen3_4b_th",
+    "tsct",
+    "qwen3_4b_it",
+    "qwen25_7b",
+    "gptoss_20b",
+    "qwen36_35b",
+    "qwen35_27b",
+    "qwen36_27b_stock"
+   ],
+   "regime AUROC": {
+    "n": 9,
+    "slope": -0.05368447667461891,
+    "spearman": 0.12659242088545833,
+    "perm_p": 0.3500661375661376,
+    "leave_one_family_out": {
+     "without gemma": {
+      "n": 8,
+      "slope": -0.04652965360414707,
+      "spearman": 0.0969857289937744
+     },
+     "without gpt-oss": {
+      "n": 8,
+      "slope": -0.06052078328423036,
+      "spearman": 0.0969857289937744
+     }
+    }
+   },
+   "regime paired win": {
+    "n": 9,
+    "slope": -0.06073986999834298,
+    "spearman": -0.08474880603015357,
+    "perm_p": 0.40097001763668433,
+    "leave_one_family_out": {
+     "without gemma": {
+      "n": 8,
+      "slope": -0.04295669668184901,
+      "spearman": -0.10976425998969035
+     },
+     "without gpt-oss": {
+      "n": 8,
+      "slope": -0.07525522292806208,
+      "spearman": -0.18294043331615056
+     }
+    }
+   }
+  },
+  "published MMLU-Pro (7 of 9; settings differ across cards)": {
+   "available_for": [
+    "g3_4b",
+    "qwen3_4b_th",
+    "qwen3_4b_it",
+    "qwen25_7b",
+    "qwen36_35b",
+    "qwen35_27b",
+    "qwen36_27b_stock"
+   ],
+   "regime AUROC": {
+    "n": 7,
+    "slope": -0.002880807396751202,
+    "spearman": -0.7142857142857144,
+    "perm_p": 0.02242063492063492,
+    "leave_one_family_out": {
+     "without gemma": {
+      "n": 6,
+      "slope": -0.004196972300875172,
+      "spearman": -0.7714285714285715
+     }
+    }
+   },
+   "regime paired win": {
+    "n": 7,
+    "slope": -0.003775149888268478,
+    "spearman": -0.7207499701564473,
+    "perm_p": 0.03571428571428571,
+    "leave_one_family_out": {
+     "without gemma": {
+      "n": 6,
+      "slope": -0.004161351774675466,
+      "spearman": -0.5507824838698261
+     }
+    }
+   }
+  }
+ },
+ "proxy_vs_truth_spearman": {
+  "truth AUROC (in-instrument, reference)": 1.0,
+  "log10 total parameters (B)": 0.8355099778440249,
+  "log10 active parameters (B)": 0.2785033259480083,
+  "published MMLU-Pro (7 of 9; settings differ across cards)": 0.8571428571428573
+ }
+}

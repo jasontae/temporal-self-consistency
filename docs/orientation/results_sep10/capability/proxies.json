@@ -1,0 +1,128 @@
+{
+ "retrieved": "2026-09-28, official model cards / tech reports (lookup by a subagent; every value carries its source)",
+ "proxies": {
+  "log10 total parameters (B)": {
+   "log10": true,
+   "values": {
+    "g3_4b": {
+     "value": 4.3,
+     "src": "https://arxiv.org/html/2503.19786v1 Table 1 (417M vision + 675M embedding + 3,209M non-embedding; sum; card says 4B)"
+    },
+    "qwen3_4b_th": {
+     "value": 4.0,
+     "src": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507"
+    },
+    "qwen3_4b_it": {
+     "value": 4.0,
+     "src": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+    },
+    "qwen25_7b": {
+     "value": 7.61,
+     "src": "https://qwenlm.github.io/blog/qwen2.5-llm/ ; https://arxiv.org/html/2412.15115v2 Table 8"
+    },
+    "tsct": {
+     "value": 7.61,
+     "src": "Qwen2.5-7B-Instruct + LoRA adapter (base count)"
+    },
+    "gptoss_20b": {
+     "value": 20.91,
+     "src": "https://arxiv.org/html/2508.10925v1 Table 1"
+    },
+    "qwen36_35b": {
+     "value": 35.0,
+     "src": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B"
+    },
+    "qwen35_27b": {
+     "value": 27.0,
+     "src": "https://huggingface.co/Qwen/Qwen3.5-27B"
+    },
+    "qwen36_27b_stock": {
+     "value": 27.0,
+     "src": "https://huggingface.co/Qwen/Qwen3.6-27B"
+    }
+   }
+  },
+  "log10 active parameters (B)": {
+   "log10": true,
+   "values": {
+    "g3_4b": {
+     "value": 4.3,
+     "src": "https://arxiv.org/html/2503.19786v1"
+    },
+    "qwen3_4b_th": {
+     "value": 4.0,
+     "src": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507"
+    },
+    "qwen3_4b_it": {
+     "value": 4.0,
+     "src": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+    },
+    "qwen25_7b": {
+     "value": 7.61,
+     "src": "https://qwenlm.github.io/blog/qwen2.5-llm/ ; https://arxiv.org/html/2412.15115v2 Table 8"
+    },
+    "tsct": {
+     "value": 7.61,
+     "src": "base count"
+    },
+    "gptoss_20b": {
+     "value": 3.61,
+     "src": "https://arxiv.org/html/2508.10925v1 Table 1"
+    },
+    "qwen36_35b": {
+     "value": 3.0,
+     "src": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B"
+    },
+    "qwen35_27b": {
+     "value": 27.0,
+     "src": "https://huggingface.co/Qwen/Qwen3.5-27B"
+    },
+    "qwen36_27b_stock": {
+     "value": 27.0,
+     "src": "https://huggingface.co/Qwen/Qwen3.6-27B"
+    }
+   }
+  },
+  "published MMLU-Pro (7 of 9; settings differ across cards)": {
+   "log10": false,
+   "values": {
+    "g3_4b": {
+     "value": 43.6,
+     "src": "https://arxiv.org/html/2503.19786v1 Table 6 (IT, zero-shot)"
+    },
+    "qwen3_4b_th": {
+     "value": 74.0,
+     "src": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507 Performance > Knowledge"
+    },
+    "qwen3_4b_it": {
+     "value": 69.6,
+     "src": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507 Performance > Knowledge"
+    },
+    "qwen25_7b": {
+     "value": 56.3,
+     "src": "https://qwenlm.github.io/blog/qwen2.5-llm/ ; https://arxiv.org/html/2412.15115v2 Table 8 (instruct)"
+    },
+    "qwen36_35b": {
+     "value": 85.2,
+     "src": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B Benchmark Results > Language > Knowledge"
+    },
+    "qwen35_27b": {
+     "value": 86.1,
+     "src": "https://huggingface.co/Qwen/Qwen3.5-27B Benchmark Results > Language > Knowledge"
+    },
+    "qwen36_27b_stock": {
+     "value": 86.2,
+     "src": "https://huggingface.co/Qwen/Qwen3.6-27B Benchmark Results > Language > Knowledge"
+    },
+    "tsct": {
+     "value": null,
+     "src": "fine-tune; no published score"
+    },
+    "gptoss_20b": {
+     "value": null,
+     "src": "no official MMLU-Pro (HF community value 73.6 is unverified; not used)"
+    }
+   }
+  }
+ }
+}

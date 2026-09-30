@@ -1,0 +1,407 @@
+{
+  "g3_4b": {
+    "truth": {
+      "auroc_4bit": 0.7703809184763261,
+      "auroc_aug": 0.7703809184763261,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.8076717693129227,
+      "n_equal_name_length_pairs": 26,
+      "paired_win_equal_length": 0.9230769230769231,
+      "paired_win_all": 0.7924528301886793,
+      "auroc_chat_frame": 0.7481310074759701
+    },
+    "regime": {
+      "auroc_4bit": 0.6197935208259167,
+      "auroc_aug": 0.6197935208259167,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.6359024563901744,
+      "n_equal_name_length_pairs": 25,
+      "paired_win_equal_length": 0.6,
+      "paired_win_all": 0.6698113207547169,
+      "auroc_chat_frame": 0.4840690637237451
+    },
+    "staleness": {
+      "auroc_4bit": 0.45354218583125666,
+      "auroc_aug": 0.45354218583125666,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.43832324670701317,
+      "n_equal_name_length_pairs": 22,
+      "paired_win_equal_length": 0.5,
+      "paired_win_all": 0.44339622641509435,
+      "auroc_chat_frame": 0.47249911000356
+    },
+    "requantized_from": "already 4-bit affine g64 (reused)"
+  },
+  "qwen3_4b_th": {
+    "truth": {
+      "auroc_4bit": 0.763438946244215,
+      "auroc_aug": 0.7765218939124243,
+      "delta_4bit_minus_aug": -0.013082947668209277,
+      "delta_ci95": [
+        -0.046017265930936364,
+        0.020202919188323176
+      ],
+      "auroc_token_residualized": 0.7946778212887149,
+      "n_equal_name_length_pairs": 25,
+      "paired_win_equal_length": 0.84,
+      "paired_win_all": 0.8301886792452831,
+      "auroc_chat_frame": 0.7288180847276611
+    },
+    "regime": {
+      "auroc_4bit": 0.6009255962976148,
+      "auroc_aug": 0.6219295122819509,
+      "delta_4bit_minus_aug": -0.021003915984336152,
+      "delta_ci95": [
+        -0.06221520113919544,
+        0.01735715557137775
+      ],
+      "auroc_token_residualized": 0.63812744749021,
+      "n_equal_name_length_pairs": 23,
+      "paired_win_equal_length": 0.5652173913043478,
+      "paired_win_all": 0.5754716981132075,
+      "auroc_chat_frame": 0.49385902456390174
+    },
+    "staleness": {
+      "auroc_4bit": 0.46609113563545745,
+      "auroc_aug": 0.45639017443930224,
+      "delta_4bit_minus_aug": 0.009700961196155211,
+      "delta_ci95": [
+        -0.02866011035955857,
+        0.04672703809184765
+      ],
+      "auroc_token_residualized": 0.46448914204343184,
+      "n_equal_name_length_pairs": 21,
+      "paired_win_equal_length": 0.42857142857142855,
+      "paired_win_all": 0.46226415094339623,
+      "auroc_chat_frame": 0.4437522249911
+    },
+    "requantized_from": "8-bit"
+  },
+  "qwen3_4b_it": {
+    "truth": {
+      "auroc_4bit": 0.781683873264507,
+      "auroc_aug": 0.7967248131007476,
+      "delta_4bit_minus_aug": -0.015040939836240663,
+      "delta_ci95": [
+        -0.04832680669277323,
+        0.017799928800284803
+      ],
+      "auroc_token_residualized": 0.8171057315770737,
+      "n_equal_name_length_pairs": 25,
+      "paired_win_equal_length": 0.92,
+      "paired_win_all": 0.8679245283018868,
+      "auroc_chat_frame": 0.7371840512637949
+    },
+    "regime": {
+      "auroc_4bit": 0.524118903524386,
+      "auroc_aug": 0.5677287290850836,
+      "delta_4bit_minus_aug": -0.0436098255606977,
+      "delta_ci95": [
+        -0.07992390530437876,
+        -0.00595852616589529
+      ],
+      "auroc_token_residualized": 0.561498754004984,
+      "n_equal_name_length_pairs": 23,
+      "paired_win_equal_length": 0.4782608695652174,
+      "paired_win_all": 0.4716981132075472,
+      "auroc_chat_frame": 0.5993236027055892
+    },
+    "staleness": {
+      "auroc_4bit": 0.4583481666073336,
+      "auroc_aug": 0.4796190815236739,
+      "delta_4bit_minus_aug": -0.02127091491634031,
+      "delta_ci95": [
+        -0.05838376646493415,
+        0.015132164471342094
+      ],
+      "auroc_token_residualized": 0.4530081879672481,
+      "n_equal_name_length_pairs": 21,
+      "paired_win_equal_length": 0.38095238095238093,
+      "paired_win_all": 0.44339622641509435,
+      "auroc_chat_frame": 0.46119615521537916
+    },
+    "requantized_from": "8-bit"
+  },
+  "qwen25_7b": {
+    "truth": {
+      "auroc_4bit": 0.8180847276610893,
+      "auroc_aug": 0.8180847276610893,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.8462086151655394,
+      "n_equal_name_length_pairs": 25,
+      "paired_win_equal_length": 0.96,
+      "paired_win_all": 0.839622641509434,
+      "auroc_chat_frame": 0.7076361694553222
+    },
+    "regime": {
+      "auroc_4bit": 0.6335884656461375,
+      "auroc_aug": 0.6335884656461375,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.66625133499466,
+      "n_equal_name_length_pairs": 23,
+      "paired_win_equal_length": 0.8260869565217391,
+      "paired_win_all": 0.6415094339622641,
+      "auroc_chat_frame": 0.7163581345674618
+    },
+    "staleness": {
+      "auroc_4bit": 0.425685297258811,
+      "auroc_aug": 0.425685297258811,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.43431826272694907,
+      "n_equal_name_length_pairs": 21,
+      "paired_win_equal_length": 0.47619047619047616,
+      "paired_win_all": 0.39622641509433965,
+      "auroc_chat_frame": 0.4485582057671769
+    },
+    "requantized_from": "already 4-bit affine g64 (reused)"
+  },
+  "tsct": {
+    "truth": {
+      "auroc_4bit": 0.7942328230687077,
+      "auroc_aug": 0.7942328230687077,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.8298326806692773,
+      "n_equal_name_length_pairs": 25,
+      "paired_win_equal_length": 0.92,
+      "paired_win_all": 0.8018867924528302,
+      "auroc_chat_frame": 0.757564969740121
+    },
+    "regime": {
+      "auroc_4bit": 0.6395514417942328,
+      "auroc_aug": 0.6395514417942328,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.6781772872908508,
+      "n_equal_name_length_pairs": 23,
+      "paired_win_equal_length": 0.7391304347826086,
+      "paired_win_all": 0.6320754716981132,
+      "auroc_chat_frame": 0.5629227483090068
+    },
+    "staleness": {
+      "auroc_4bit": 0.4101103595585618,
+      "auroc_aug": 0.4101103595585618,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.41002135991456035,
+      "n_equal_name_length_pairs": 21,
+      "paired_win_equal_length": 0.3333333333333333,
+      "paired_win_all": 0.3490566037735849,
+      "auroc_chat_frame": 0.387059451762193
+    },
+    "requantized_from": "already 4-bit affine g64 (reused)"
+  },
+  "gptoss_20b": {
+    "truth": {
+      "auroc_4bit": 0.6650053399786401,
+      "auroc_aug": 0.7992168031327874,
+      "delta_4bit_minus_aug": -0.13421146315414734,
+      "delta_ci95": [
+        -0.18414693841224639,
+        -0.08810742257030967
+      ],
+      "auroc_token_residualized": 0.6695443218227127,
+      "n_equal_name_length_pairs": 26,
+      "paired_win_equal_length": 0.8076923076923077,
+      "paired_win_all": 0.6698113207547169,
+      "auroc_chat_frame": 0.6933072267710929
+    },
+    "regime": {
+      "auroc_4bit": 0.5733357066571734,
+      "auroc_aug": 0.5695087219651122,
+      "delta_4bit_minus_aug": 0.0038269846920612194,
+      "delta_ci95": [
+        -0.037916073335706686,
+        0.04975525097899616
+      ],
+      "auroc_token_residualized": 0.5841046635813457,
+      "n_equal_name_length_pairs": 23,
+      "paired_win_equal_length": 0.5217391304347826,
+      "paired_win_all": 0.5849056603773585,
+      "auroc_chat_frame": 0.5470808116767533
+    },
+    "staleness": {
+      "auroc_4bit": 0.4588821644713421,
+      "auroc_aug": 0.4146493414026344,
+      "delta_4bit_minus_aug": 0.04423282306870774,
+      "delta_ci95": [
+        0.007119971520113955,
+        0.08276966892132431
+      ],
+      "auroc_token_residualized": 0.46119615521537916,
+      "n_equal_name_length_pairs": 29,
+      "paired_win_equal_length": 0.4827586206896552,
+      "paired_win_all": 0.4811320754716981,
+      "auroc_chat_frame": 0.5107689569241723
+    },
+    "requantized_from": "6.5-bit"
+  },
+  "qwen36_35b": {
+    "truth": {
+      "auroc_4bit": 0.8655215379138483,
+      "auroc_aug": 0.8462976148095408,
+      "delta_4bit_minus_aug": 0.01922392310430754,
+      "delta_ci95": [
+        -0.002049216803132752,
+        0.040494838020647905
+      ],
+      "auroc_token_residualized": 0.9054823780704877,
+      "n_equal_name_length_pairs": 21,
+      "paired_win_equal_length": 1.0,
+      "paired_win_all": 0.8962264150943396,
+      "auroc_chat_frame": 0.8502135991456035
+    },
+    "regime": {
+      "auroc_4bit": 0.5533997864008544,
+      "auroc_aug": 0.5057849768600926,
+      "delta_4bit_minus_aug": 0.047614809540761804,
+      "delta_ci95": [
+        0.015663937344250645,
+        0.08126112495550022
+      ],
+      "auroc_token_residualized": 0.5905126379494482,
+      "n_equal_name_length_pairs": 26,
+      "paired_win_equal_length": 0.4230769230769231,
+      "paired_win_all": 0.5754716981132075,
+      "auroc_chat_frame": 0.5612317550729797
+    },
+    "staleness": {
+      "auroc_4bit": 0.44989320042719827,
+      "auroc_aug": 0.4504271982912068,
+      "delta_4bit_minus_aug": -0.0005339978640085397,
+      "delta_ci95": [
+        -0.03052910288358846,
+        0.02812388750444994
+      ],
+      "auroc_token_residualized": 0.44401922392310433,
+      "n_equal_name_length_pairs": 25,
+      "paired_win_equal_length": 0.44,
+      "paired_win_all": 0.4528301886792453,
+      "auroc_chat_frame": 0.4757030971876112
+    },
+    "requantized_from": "nvfp4"
+  },
+  "qwen35_27b": {
+    "truth": {
+      "auroc_4bit": 0.8519935920256319,
+      "auroc_aug": 0.8519935920256319,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.8926664293342826,
+      "n_equal_name_length_pairs": 21,
+      "paired_win_equal_length": 1.0,
+      "paired_win_all": 0.9056603773584906,
+      "auroc_chat_frame": 0.8244927020291919
+    },
+    "regime": {
+      "auroc_4bit": 0.5206479174083304,
+      "auroc_aug": 0.5206479174083304,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.5546457814168744,
+      "n_equal_name_length_pairs": 26,
+      "paired_win_equal_length": 0.4230769230769231,
+      "paired_win_all": 0.5,
+      "auroc_chat_frame": 0.5201139195443218
+    },
+    "staleness": {
+      "auroc_4bit": 0.41509433962264153,
+      "auroc_aug": 0.41509433962264153,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.4084193663225347,
+      "n_equal_name_length_pairs": 25,
+      "paired_win_equal_length": 0.32,
+      "paired_win_all": 0.37735849056603776,
+      "auroc_chat_frame": 0.44846920612317553
+    },
+    "requantized_from": "already 4-bit affine g64 (reused)"
+  },
+  "qwen36_27b_stock": {
+    "truth": {
+      "auroc_4bit": 0.8561765752936988,
+      "auroc_aug": 0.8561765752936988,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.9024563901744393,
+      "n_equal_name_length_pairs": 21,
+      "paired_win_equal_length": 1.0,
+      "paired_win_all": 0.9339622641509434,
+      "auroc_chat_frame": 0.7946778212887149
+    },
+    "regime": {
+      "auroc_4bit": 0.5097009611961553,
+      "auroc_aug": 0.5097009611961553,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.5388928444286223,
+      "n_equal_name_length_pairs": 26,
+      "paired_win_equal_length": 0.4230769230769231,
+      "paired_win_all": 0.5188679245283019,
+      "auroc_chat_frame": 0.5100569597721609
+    },
+    "staleness": {
+      "auroc_4bit": 0.442061231755073,
+      "auroc_aug": 0.442061231755073,
+      "delta_4bit_minus_aug": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "auroc_token_residualized": 0.4337842648629405,
+      "n_equal_name_length_pairs": 25,
+      "paired_win_equal_length": 0.48,
+      "paired_win_all": 0.37735849056603776,
+      "auroc_chat_frame": 0.4929690281238875
+    },
+    "requantized_from": "already 4-bit affine g64 (reused)"
+  }
+}

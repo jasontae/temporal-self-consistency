@@ -1,0 +1,35 @@
+{
+ "observed_slope": -0.9608654205219078,
+ "variance_components": {
+  "sigma_u2": 0.3573289690772885,
+  "sigma_e2": 0.4745191476880979,
+  "rho_across_models": 0.7328680933839636
+ },
+ "n_sim": 2000,
+ "scenarios": {
+  "r = 0 (no temporal sensitivity)": {
+   "r": 0.0,
+   "slope_mean": 0.0863766454135238,
+   "slope_sd": 0.20340938522939325,
+   "slope_2.5_97.5": [
+    -0.36100727857592324,
+    0.4556771516029787
+   ],
+   "share_slopes_le_observed": 0.0,
+   "sim_truth_auroc_mean": 0.7951245203908073,
+   "obs_truth_auroc_mean": 0.7942723784660416
+  },
+  "r fixed at the observed mean regime AUROC": {
+   "r": 0.2486120936137244,
+   "slope_mean": 0.08841032810935581,
+   "slope_sd": 0.20511521657422427,
+   "slope_2.5_97.5": [
+    -0.3735863267241349,
+    0.4416804876861162
+   ],
+   "share_slopes_le_observed": 0.0,
+   "sim_truth_auroc_mean": 0.7948213233258178,
+   "obs_truth_auroc_mean": 0.7942723784660416
+  }
+ }
+}

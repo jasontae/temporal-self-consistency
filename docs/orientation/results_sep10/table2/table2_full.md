@@ -1,0 +1,8 @@
+| policy (correctness from) | items | accuracy | ECE binned | ECE by level | Brier | reliability | resolution | AUROC | Sep 2 (acc, ECE, Brier, res) |
+|---|---|---|---|---|---|---|---|---|---|
+| cross-entropy baseline (sft_test) | 1849 | 0.0049 | 0.4693 | 0.4693 | 0.2305 | 0.2262 | 0.000558 | 0.687 | (0.0046, 0.4768, 0.231, 0.001) |
+| constant [TEMPORAL_HEDGE] (sft_test) | 1849 | 0.0049 | 0.4451 | 0.4451 | 0.2030 | 0.1981 | 0.000000 | 0.500 |  |
+| trained model (tsct_test) | 1849 | 0.0027 | 0.4715 | 0.4715 | 0.2315 | 0.2288 | 0.000001 | 0.560 | (0.0026, 0.4789, 0.233, 0.001) |
+| volatility-label oracle (tsct_test) | 1849 | 0.0027 | 0.4713 | 0.4713 | 0.2313 | 0.2286 | 0.000001 | 0.560 | (None, 0.4788, 0.232, 0.001) |
+| constant [TEMPORAL_HEDGE] (tsct_test) | 1849 | 0.0027 | 0.4473 | 0.4473 | 0.2028 | 0.2001 | 0.000000 | 0.500 |  |
+| constant [UNKNOWN] (tsct_test) | 1849 | 0.0027 | 0.0973 | 0.0973 | 0.0122 | 0.0095 | 0.000000 | 0.500 | (None, 0.0974, 0.012, 0.0) |
