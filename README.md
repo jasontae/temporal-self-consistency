@@ -17,6 +17,39 @@ Language models answer questions about a changing world using frozen weights. Th
 
 This repository contains the **evaluation and data-pipeline** side of the project. Training and inference are maintained separately by the training lead.
 
+## What's new (September 2026 revision)
+
+The evaluation was extended into a measurement-validity audit. Every result sits in `docs/orientation/results_sep10/<experiment>/` with the script that produced it, its logs and a README; `docs/orientation/RESULTS_FINAL.md` lists each final number with its source file. Pre-registered analysis plans are `docs/orientation/PLAN_*.md` and `results_sep10/item5/ENDPOINTS.md`. Per-record model outputs and the derived inputs are now committed under `data/prep/`; see **Data** below for what is not committed and how to get it.
+
+| Experiment | Directory |
+|---|---|
+| ECE computed per level vs binned; Brier / Murphy decomposition | `ece_check/` |
+| Where a constant policy beats the volatility-label oracle (exact crossover, 0.314) | `crossover/` |
+| Confidence vocabulary: a 0.01 level and continuous confidence | `vocabulary/` |
+| Repaired answer key (Table 2) and why repair raises ECE | `table2/`, `repair_mechanism/` |
+| Validation-estimated constant and confidence mappings | `constant_baseline/` |
+| Second aged benchmark: FreshQA, with the threshold curve | `item1/` |
+| Model audit (revisions, quantization, tokenizers, known-answer checks) and the Gemma-4 exclusion | `MODELS.md`, `model_audit/`, `gemma4/` |
+| Stale-value preference: estimands, prominence, time since change | `a5_prominence/` |
+| Disjoint false-founder pool and the no-model form screen | `a6_disjoint/`, `screen_rule/` |
+| Fixed 4-bit quantization ladder with tokenizer, prompt and length controls | `item4/` |
+| Base vs instruct (Qwen2.5-7B) and a date-conditioning probe | `base_instruct/`, `date_probe/` |
+| Vintage ladder (Qwen3.5 / 3.6 / 3.8, 27B) | `vintage/` |
+| Inverse truth-discrimination result, capability proxy and null simulation | `inverse/`, `capability/` |
+| TSCT seeds: 5 paired, compute-matched seeds on Qwen2.5-7B and on Meta-Llama-3-8B | `item5/`, `item5_llama3/` |
+| Evergreen (Pletenev et al.) replication rebuilt on answers | `evergreen/` |
+| Reproduction check of earlier reported numbers | `provenance/` |
+| In-context evidence control, knowledge probe (partial), frequency pre-registration | `context_control/`, `knowledge_probe/`, `frequency/` |
+
+### Data
+
+- **TemporalDelta splits** are the Hugging Face dataset [`jasontae/temporal-delta`](https://huggingface.co/datasets/jasontae/temporal-delta) (`temporal_delta_{train,val,test}.jsonl`). The training and generation code reads a local copy from `data/prep/temporal_delta/` when present (download the files there) and falls back to `datasets.load_dataset("jasontae/temporal-delta")` otherwise.
+- **Wikidata API cache** (`data/prep/wikidata_cache/`, about 200 MB of raw entity JSON) is not committed. Regenerate it with
+  `python3 src/evaluation/verify_gold_currency.py --cache-dir data/prep/wikidata_cache --out /tmp/gold_currency_audit.new.json`.
+  The committed `data/prep/gold_currency_audit.json` was queried on 2026-08-11; live Wikidata changes, so write a re-query to a new `--out` rather than over it.
+- **FreshQA** snapshots come from [freshllms/freshqa](https://github.com/freshllms/freshqa) (Apache-2.0); the joined set used here is `data/prep/freshqa/freshqa_built.jsonl`.
+- **Model checkpoints** are MLX conversions listed with revisions in `docs/orientation/results_sep10/MODELS.md`; scripts look for them under `$TSCT_MODELS_DIR` (default `~/.oMLX/models`).
+
 ## Repository structure
 
 ```
